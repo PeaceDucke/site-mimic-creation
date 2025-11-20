@@ -902,7 +902,7 @@ const Index = () => {
                     <span>14</span>
                   </div>
                 </div>
-                <Button variant="outline" className="w-full text-blue-600 border-blue-200">
+                <Button onClick={scrollToForm} variant="outline" className="w-full text-blue-600 border-blue-200">
                   {t.activeTraders.viewProfile}
                   <Icon name="ArrowRight" size={16} className="ml-2" />
                 </Button>
@@ -948,7 +948,7 @@ const Index = () => {
                     <span>9</span>
                   </div>
                 </div>
-                <Button variant="outline" className="w-full text-blue-600 border-blue-200">
+                <Button onClick={scrollToForm} variant="outline" className="w-full text-blue-600 border-blue-200">
                   {t.activeTraders.viewProfile}
                   <Icon name="ArrowRight" size={16} className="ml-2" />
                 </Button>
@@ -994,7 +994,7 @@ const Index = () => {
                     <span>12</span>
                   </div>
                 </div>
-                <Button variant="outline" className="w-full text-blue-600 border-blue-200">
+                <Button onClick={scrollToForm} variant="outline" className="w-full text-blue-600 border-blue-200">
                   {t.activeTraders.viewProfile}
                   <Icon name="ArrowRight" size={16} className="ml-2" />
                 </Button>
@@ -1040,7 +1040,7 @@ const Index = () => {
                     <span>16</span>
                   </div>
                 </div>
-                <Button variant="outline" className="w-full text-blue-600 border-blue-200">
+                <Button onClick={scrollToForm} variant="outline" className="w-full text-blue-600 border-blue-200">
                   {t.activeTraders.viewProfile}
                   <Icon name="ArrowRight" size={16} className="ml-2" />
                 </Button>
@@ -1085,7 +1085,7 @@ const Index = () => {
                     <span>10</span>
                   </div>
                 </div>
-                <Button variant="outline" className="w-full text-blue-600 border-blue-200">
+                <Button onClick={scrollToForm} variant="outline" className="w-full text-blue-600 border-blue-200">
                   {t.activeTraders.viewProfile}
                   <Icon name="ArrowRight" size={16} className="ml-2" />
                 </Button>
@@ -1131,7 +1131,7 @@ const Index = () => {
                     <span>11</span>
                   </div>
                 </div>
-                <Button variant="outline" className="w-full text-blue-600 border-blue-200">
+                <Button onClick={scrollToForm} variant="outline" className="w-full text-blue-600 border-blue-200">
                   {t.activeTraders.viewProfile}
                   <Icon name="ArrowRight" size={16} className="ml-2" />
                 </Button>
