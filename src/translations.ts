@@ -139,20 +139,14 @@ export const translations = {
   sv: {
     nav: { home: 'Hem', faq: 'FAQ', getStarted: 'KOM IGANG' },
     hero: { title: 'Intelligenta Affarer', volume: '980M+', description: 'Upplev utvecklingen', rating: '4.9/5', reviews: 'Baserat pa 12 847 recensioner', formTitle: 'Fa Exklusiv Atkomst', trustedMembers: 'Betrodda Medlemmar', activeInvestors: 'Aktiva Investerare', firstName: 'Fornamn', lastName: 'Efternamn', email: 'exempel@gmail.com', phone: 'Telefon', submit: 'BORJA NU', submitting: 'SKICKAR...', successMessage: '✅ Ansokan skickad!', errorMessage: '✖ Kunde inte skicka' },
-    whyChoose: { title: 'Varfor Envariax?', description: 'Envariax utrustar investerare', feature1Title: 'Intelligens', feature1Desc: 'Genom AI', feature2Title: 'Global Expertis', feature2Desc: 'Varldsomspa
-
-nnande natverk', feature3Title: 'Blixtsnabb', feature3Desc: 'Millisekunder', startTrading: 'Borja Handla' },
+    whyChoose: { title: 'Varfor Envariax?', description: 'Envariax utrustar investerare', feature1Title: 'Intelligens', feature1Desc: 'Genom AI', feature2Title: 'Global Expertis', feature2Desc: 'Varldsomspaннande natverk', feature3Title: 'Blixtsnabb', feature3Desc: 'Millisekunder', startTrading: 'Borja Handla' },
     liveTrading: { badge: 'EXPERTER', title: 'Live Handel', subtitle: 'Realtidsmarknad', liveDashboard: 'Live Dashboard', executedTrade: 'BTC/USDT-handel', ago: 'sedan' },
-    features: { badge: 'PALITLIG', title: 'Hur Envariax?', description: 'Ga bortom granser', feature1Title: 'Sakerhet', feature1Desc: 'Ditt kapital', feature2Title: 'Ultrahog', feature2Desc: 'I handelsv
-
-arlden', learnMore: 'Las Mer', ctaText: 'Redo?', getStartedNow: 'KOM IGANG NU' },
+    features: { badge: 'PALITLIG', title: 'Hur Envariax?', description: 'Ga bortom granser', feature1Title: 'Sakerhet', feature1Desc: 'Ditt kapital', feature2Title: 'Ultrahog', feature2Desc: 'I handelsvarлden', learnMore: 'Las Mer', ctaText: 'Redo?', getStartedNow: 'KOM IGANG NU' },
     activeTraders: { title: 'Aktiva Handlare', description: 'Handla smartare', totalEarnings: 'TOTALA INTAKTER', pastLevel: 'pa senaste nivan', viewProfile: 'Visa Profil', joinNow: 'GA MED NU', joinText: 'Ga med' },
     security: { badge: 'BETRODD', title: 'Betrodd', description: 'Over 66 000 investerare', encryption: 'Kryptering', encryptionDesc: 'AES-XS20', coldStorage: 'Kall Lagring', coldStorageDesc: 'Offline skyddade', uptime: 'Infrastruktur', uptimeDesc: 'Redundans', compliance: 'Cybersakerhet', complianceDesc: 'Externa revisioner', reserve: 'Tillgangsskydd', reserveDesc: 'Skyddsfond', certified: 'Certifieringar', getStartedSecurely: 'KOM IGANG SAKERT' },
     timer: { badge: 'TIDSBEGRANSAT', title: 'Ga Med', description: 'Starta din resa', days: 'Dagar', hours: 'Timmar', minutes: 'Minuter', seconds: 'Sekunder', claimBonus: 'GOR ANSPRAK', spotsRemaining: 'Endast 47 platser!' },
     faq: { badge: 'VANLIGA FRAGOR', title: 'FAQ', description: 'Allt om Envariax', q1: 'Vad Ar Envariax?', a1: 'Handelsekosystem', q2: 'Varfor Plattformen?', a2: 'Envariax forutser', q3: 'Hur Skyddar Envariax?', a3: 'Sakerhet', q4: 'Ar Plattformen Lamplig?', a4: 'Absolut' },
-    footer: { description: 'Handelsekosystem', quickLinks: 'SNABBLANKAR', home: 'Hem', advantages: 'Fordelar', testimonials: 'Vittnesmal', faq: 'FAQ', aboutUs: 'Om Oss', contact: 'Kontakt', resources: 'RESURSER', privacy: 'Integritetspolicy', terms: 'Anvandarvill
-
-kor', contactTitle: 'KONTAKT', support: 'SUPPORT', support247: '24/7 Tillganglig', coverage: 'TACKNING', countries: '150+ Lander', copyright: '© 2025 Envariax' }
+    footer: { description: 'Handelsekosystem', quickLinks: 'SNABBLANKAR', home: 'Hem', advantages: 'Fordelar', testimonials: 'Vittnesmal', faq: 'FAQ', aboutUs: 'Om Oss', contact: 'Kontakt', resources: 'RESURSER', privacy: 'Integritetspolicy', terms: 'Anvandarvillkor', contactTitle: 'KONTAKT', support: 'SUPPORT', support247: '24/7 Tillganglig', coverage: 'TACKNING', countries: '150+ Lander', copyright: '© 2025 Envariax' }
   }
 };
 
