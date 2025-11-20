@@ -9,10 +9,18 @@ const Index = () => {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [phone, setPhone] = useState('');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submitted:', { name, email, message });
+  };
+
+  const handleJoinSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log('Join form submitted:', { firstName, lastName, email, phone });
   };
 
   return (
@@ -41,52 +49,98 @@ const Index = () => {
         </div>
       </nav>
 
-      <section id="home" className="pt-32 pb-20 px-6">
+      <section id="home" className="pt-32 pb-20 px-6 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
         <div className="container mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-8 animate-fade-in">
-              <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-                Transforming Business with{' '}
-                <span className="text-gradient">AI Innovation</span>
+              <div className="text-4xl font-bold tracking-wider" style={{ color: '#4A90E2' }}>
+                ENVARIAX
+              </div>
+              <h1 className="text-5xl lg:text-6xl font-black leading-tight">
+                Intelligent Trades Executed Globally
               </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed">
-                Envariax delivers cutting-edge artificial intelligence solutions that drive digital transformation and unlock new possibilities for your business.
+              <div className="text-5xl font-bold" style={{ color: '#4A90E2' }}>
+                980M+
+              </div>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Experience the evolution of digital wealth with Envariax — a next-generation, AI-driven trading platform engineered to anticipate, adapt, and optimize every decision in today's dynamic markets.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90">
-                  Explore Solutions
-                  <Icon name="ArrowRight" size={20} className="ml-2" />
-                </Button>
-                <Button size="lg" variant="outline">
-                  Watch Demo
-                  <Icon name="Play" size={20} className="ml-2" />
-                </Button>
-              </div>
-              <div className="flex items-center gap-8 pt-4">
-                <div>
-                  <div className="text-3xl font-bold text-gradient">500+</div>
-                  <div className="text-sm text-muted-foreground">Projects Delivered</div>
-                </div>
-                <div className="h-12 w-px bg-border" />
-                <div>
-                  <div className="text-3xl font-bold text-gradient">98%</div>
-                  <div className="text-sm text-muted-foreground">Client Satisfaction</div>
-                </div>
-                <div className="h-12 w-px bg-border" />
-                <div>
-                  <div className="text-3xl font-bold text-gradient">50+</div>
-                  <div className="text-sm text-muted-foreground">AI Experts</div>
-                </div>
-              </div>
+              <Card className="bg-white/90 border-none shadow-lg">
+                <CardContent className="p-6">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <Icon name="Star" className="fill-yellow-400 text-yellow-400" size={24} />
+                    <Icon name="Star" className="fill-yellow-400 text-yellow-400" size={24} />
+                    <Icon name="Star" className="fill-yellow-400 text-yellow-400" size={24} />
+                    <Icon name="Star" className="fill-yellow-400 text-yellow-400" size={24} />
+                    <Icon name="Star" className="fill-yellow-400 text-yellow-400" size={24} />
+                    <span className="text-xl font-bold ml-2" style={{ color: '#4A90E2' }}>4.9/5</span>
+                  </div>
+                  <p className="text-center text-sm text-gray-600">Based on 12,847 verified reviews</p>
+                </CardContent>
+              </Card>
             </div>
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-3xl blur-3xl" />
-              <img
-                src="https://cdn.poehali.dev/projects/dec2b247-100c-4952-8c09-827ed14bdcb9/files/07adedf2-730c-4c6d-891e-2944926bf13b.jpg"
-                alt="AI Innovation"
-                className="relative rounded-3xl shadow-2xl w-full"
-              />
-            </div>
+
+            <Card className="bg-white/95 backdrop-blur-sm border-none shadow-2xl">
+              <CardContent className="p-8">
+                <h2 className="text-2xl font-bold text-center mb-6">Join Exclusive Access</h2>
+                
+                <div className="grid grid-cols-2 gap-4 mb-8">
+                  <div className="text-center p-4 bg-blue-50 rounded-lg">
+                    <div className="text-3xl font-bold" style={{ color: '#4A90E2' }}>1200</div>
+                    <div className="text-sm text-gray-600">Trusted Members</div>
+                  </div>
+                  <div className="text-center p-4 bg-blue-50 rounded-lg">
+                    <div className="text-3xl font-bold" style={{ color: '#4A90E2' }}>700</div>
+                    <div className="text-sm text-gray-600">Active Global Investors</div>
+                  </div>
+                </div>
+
+                <form onSubmit={handleJoinSubmit} className="space-y-4">
+                  <Input
+                    placeholder="Enter your first name"
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
+                    className="h-14 bg-gray-50 border-gray-200"
+                  />
+                  <Input
+                    placeholder="Enter your last name"
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
+                    className="h-14 bg-gray-50 border-gray-200"
+                  />
+                  <Input
+                    type="email"
+                    placeholder="example@gmail.com"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="h-14 bg-gray-50 border-gray-200"
+                  />
+                  <div>
+                    <label className="text-sm font-medium text-gray-700 mb-2 block">Phone</label>
+                    <div className="flex gap-2">
+                      <div className="flex items-center gap-2 px-4 bg-gray-50 border border-gray-200 rounded-md">
+                        <span className="text-lg">🇺🇸</span>
+                        <span className="text-sm">+1</span>
+                        <Icon name="ChevronDown" size={16} className="text-gray-500" />
+                      </div>
+                      <Input
+                        type="tel"
+                        placeholder="(201) 555-0123"
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
+                        className="h-14 bg-gray-50 border-gray-200 flex-1"
+                      />
+                    </div>
+                  </div>
+                  <Button 
+                    type="submit" 
+                    className="w-full h-14 text-lg font-semibold bg-gradient-to-r from-blue-500 via-purple-500 to-orange-400 hover:opacity-90 border-none"
+                  >
+                    BEGIN NOW
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
