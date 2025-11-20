@@ -8,7 +8,7 @@ export const translations = {
     hero: {
       title: 'Intelligent Trades Executed Globally',
       volume: '980M+',
-      description: 'Experience the evolution of digital wealth with Envariax - a next-generation, AI-driven trading platform engineered to anticipate, adapt, and optimize every decision in today\'s dynamic markets.',
+      description: 'Experience the evolution of digital wealth with Envariax',
       rating: '4.9/5',
       reviews: 'Based on 12,847 verified reviews',
       formTitle: 'Join Exclusive Access',
@@ -25,87 +25,87 @@ export const translations = {
     },
     whyChoose: {
       title: 'Why Traders Choose Envariax?',
-      description: 'Envariax equips forward-thinking investors with a unified ecosystem built on precision engineering - merging adaptive AI automation, military-grade protection, and expert-driven insights to deliver seamless performance across every financial frontier.',
-      feature1Title: 'Predictive Intelligence That Sees Ahead',
-      feature1Desc: 'Outsmart volatility through Envariax self-evolving AI models, designed to read live data streams, forecast directional swings, and uncover high-value opportunities before they reach the spotlight.',
-      feature2Title: 'Around-the-Clock Global Expertise',
-      feature2Desc: 'Gain access to a worldwide network of multilingual professionals ready to assist at any moment.',
-      feature3Title: 'Lightning-Fast Execution Engine',
-      feature3Desc: 'When milliseconds define opportunity, Envariax delivers. Our ultra-responsive trading infrastructure executes orders instantly.',
+      description: 'Envariax equips forward-thinking investors',
+      feature1Title: 'Predictive Intelligence',
+      feature1Desc: 'Outsmart volatility through AI',
+      feature2Title: 'Global Expertise',
+      feature2Desc: 'Access to worldwide network',
+      feature3Title: 'Lightning-Fast Execution',
+      feature3Desc: 'When milliseconds define opportunity',
       startTrading: 'Start Trading'
     },
     liveTrading: {
       badge: 'EXPERT TRADERS',
       title: 'Live Trading Stream',
-      subtitle: 'Real-Time Market Insights Powered by Adaptive AI',
+      subtitle: 'Real-Time Market Insights',
       liveDashboard: 'Live Trading Dashboard',
       executedTrade: 'Executed BTC/USDT trade',
       ago: 'ago'
     },
     features: {
       badge: 'TRUSTED PLATFORM',
-      title: 'How Envariax Is Redefining the Future of Smart Trading?',
-      description: 'Step beyond conventional trading boundaries - Envariax unveils a fully adaptive, AI-orchestrated financial environment built for precision, scalability, and complete control.',
-      feature1Title: 'Fortified Multi-Layer Security Architecture',
-      feature1Desc: 'Your capital deserves resilience without compromise. Envariax integrates a multi-level cryptographic defense system enhanced with biometric validation.',
-      feature2Title: 'Ultra-Speed Execution Framework',
-      feature2Desc: 'In the world of trading, milliseconds define opportunity. Envariax operates on an ultra-responsive, low-latency infrastructure.',
+      title: 'How Envariax Is Redefining the Future?',
+      description: 'Step beyond conventional trading boundaries',
+      feature1Title: 'Multi-Layer Security',
+      feature1Desc: 'Your capital deserves resilience',
+      feature2Title: 'Ultra-Speed Execution',
+      feature2Desc: 'Milliseconds define opportunity',
       learnMore: 'Learn More',
-      ctaText: 'Ready to go beyond boundaries? Experience unmatched speed, accuracy, and reliability with Envariax.',
+      ctaText: 'Ready to go beyond boundaries?',
       getStartedNow: 'GET STARTED NOW'
     },
     activeTraders: {
       title: 'Active Traders',
-      description: 'Trade Smarter, Grow Steadier - Envariax AI empowers investors to achieve consistent performance.',
+      description: 'Trade Smarter, Grow Steadier',
       totalEarnings: 'TOTAL EARNINGS',
       pastLevel: 'in past level',
       viewProfile: 'View Profile',
       joinNow: 'JOIN NOW',
-      joinText: 'Join thousands of investors worldwide who trust Envariax to automate, analyze, and elevate their digital success.'
+      joinText: 'Join thousands of investors worldwide'
     },
     security: {
       badge: 'TRUSTED & CERTIFIED',
-      title: 'Trusted by Professionals Across the Globe',
-      description: 'Over 66,000 active investors depend on Envariax for intelligent, ultra-secure, and performance-optimized trading.',
-      encryption: 'Quantum-Grade Encryption Framework',
-      encryptionDesc: 'Every Envariax operation runs under next-generation AES-XS20 encryption.',
-      coldStorage: 'Segregated Cold Storage Reserve',
-      coldStorageDesc: 'The majority of digital holdings remain safeguarded offline.',
+      title: 'Trusted by Professionals',
+      description: 'Over 66,000 active investors',
+      encryption: 'Quantum-Grade Encryption',
+      encryptionDesc: 'Advanced AES-XS20 encryption',
+      coldStorage: 'Cold Storage Reserve',
+      coldStorageDesc: 'Digital holdings safeguarded offline',
       uptime: 'Zero-Downtime Infrastructure',
-      uptimeDesc: 'Distributed redundancy and failover mechanisms ensure uninterrupted access.',
-      compliance: 'Independent Cyber Assurance & Compliance',
-      complianceDesc: 'External security audits by global cybersecurity authorities.',
-      reserve: 'Global Asset Protection Reserve',
-      reserveDesc: 'Envariax upholds a $210 million protection fund.',
-      certified: 'Industry Certifications & Compliance',
+      uptimeDesc: 'Distributed redundancy',
+      compliance: 'Independent Cyber Assurance',
+      complianceDesc: 'External security audits',
+      reserve: 'Global Asset Protection',
+      reserveDesc: 'Protection fund maintained',
+      certified: 'Industry Certifications',
       getStartedSecurely: 'GET STARTED SECURELY'
     },
     timer: {
       badge: 'LIMITED TIME OFFER',
-      title: 'Join Before This Exclusive Offer Ends',
-      description: 'Start your Envariax trading journey with exclusive bonuses available only for new members',
+      title: 'Join Before This Offer Ends',
+      description: 'Start your Envariax trading journey',
       days: 'Days',
       hours: 'Hours',
       minutes: 'Minutes',
       seconds: 'Seconds',
       claimBonus: 'CLAIM YOUR BONUS NOW',
-      spotsRemaining: 'Only 47 spots remaining at this bonus level!'
+      spotsRemaining: 'Only 47 spots remaining!'
     },
     faq: {
       badge: 'FREQUENTLY ASKED',
       title: 'FAQ',
-      description: 'Everything you need to know about Envariax',
-      q1: 'What Is Envariax and How Does It Work?',
-      a1: 'Envariax is an advanced AI-driven trading ecosystem built to automate, optimize, and simplify your entire investment process.',
-      q2: 'Why Do Investors Choose Platform Over Other Systems?',
-      a2: 'Most platforms react - Envariax anticipates. Its neural intelligence blends predictive modeling, algorithmic learning, and adaptive automation.',
-      q3: 'How Does Envariax Protect My Data and Assets?',
-      a3: 'Security forms the backbone of Envariax infrastructure. Every account is secured through AES-X520 encryption.',
+      description: 'Everything you need to know',
+      q1: 'What Is Envariax?',
+      a1: 'Advanced AI-driven trading ecosystem',
+      q2: 'Why Choose Platform?',
+      a2: 'Most platforms react - Envariax anticipates',
+      q3: 'How Does Envariax Protect Data?',
+      a3: 'Security forms the backbone',
       q4: 'Is Platform Suitable for Beginners?',
-      a4: 'Absolutely. Envariax was designed for every experience level. Step-by-step onboarding guides newcomers with ease.'
+      a4: 'Absolutely. Designed for every level'
     },
     footer: {
-      description: 'Advanced AI-driven trading ecosystem built to automate, optimize, and simplify your entire investment process.',
+      description: 'Advanced AI-driven trading ecosystem',
       quickLinks: 'QUICK LINKS',
       home: 'Home',
       advantages: 'Advantages',
@@ -125,273 +125,35 @@ export const translations = {
     }
   },
   de: {
-    nav: {
-      home: 'Startseite',
-      faq: 'FAQ',
-      getStarted: 'JETZT STARTEN'
-    },
-    hero: {
-      title: 'Intelligenter Handel Weltweit Ausgeführt',
-      volume: '980M+',
-      description: 'Erleben Sie die Evolution des digitalen Wohlstands mit Envariax - einer KI-gesteuerten Handelsplattform der nächsten Generation.',
-      rating: '4.9/5',
-      reviews: 'Basierend auf 12.847 verifizierten Bewertungen',
-      formTitle: 'Exklusiven Zugang Erhalten',
-      trustedMembers: 'Vertrauenswürdige Mitglieder',
-      activeInvestors: 'Aktive Globale Investoren',
-      firstName: 'Vorname eingeben',
-      lastName: 'Nachname eingeben',
-      email: 'beispiel@gmail.com',
-      phone: 'Telefon',
-      submit: 'JETZT BEGINNEN',
-      submitting: 'WIRD GESENDET...',
-      successMessage: '✅ Antrag erfolgreich eingereicht! Wir werden Sie bald kontaktieren.',
-      errorMessage: '✖ Antrag konnte nicht eingereicht werden. Bitte versuchen Sie es erneut.'
-    },
-    whyChoose: {
-      title: 'Warum Wählen Händler Envariax?',
-      description: 'Envariax stattet zukunftsorientierte Investoren mit einem einheitlichen Ökosystem aus.',
-      feature1Title: 'Vorausschauende Intelligenz',
-      feature1Desc: 'Überlisten Sie die Volatilität durch Envariax sich selbst entwickelnde KI-Modelle.',
-      feature2Title: 'Rund-um-die-Uhr Globale Expertise',
-      feature2Desc: 'Erhalten Sie Zugang zu einem weltweiten Netzwerk mehrsprachiger Fachleute.',
-      feature3Title: 'Blitzschnelle Ausführung',
-      feature3Desc: 'Wenn Millisekunden die Gelegenheit definieren, liefert Envariax.',
-      startTrading: 'Handel Starten'
-    },
-    liveTrading: {
-      badge: 'EXPERTEN-HÄNDLER',
-      title: 'Live-Handelsstream',
-      subtitle: 'Echtzeit-Markteinblicke Mit Adaptiver KI',
-      liveDashboard: 'Live-Handels-Dashboard',
-      executedTrade: 'BTC/USDT-Handel ausgeführt',
-      ago: 'vor'
-    },
-    features: {
-      badge: 'VERTRAUENSWÜRDIGE PLATTFORM',
-      title: 'Wie Envariax Die Zukunft Des Intelligenten Handels Neu Definiert?',
-      description: 'Gehen Sie über konventionelle Handelsgrenzen hinaus - Envariax enthüllt eine vollständig adaptive, KI-orchestrierte Finanzumgebung.',
-      feature1Title: 'Befestigte Mehrschichtige Sicherheitsarchitektur',
-      feature1Desc: 'Ihr Kapital verdient Widerstandsfähigkeit ohne Kompromisse.',
-      feature2Title: 'Ultra-Schnelles Ausführungsframework',
-      feature2Desc: 'In der Welt des Handels definieren Millisekunden Gelegenheiten.',
-      learnMore: 'Mehr Erfahren',
-      ctaText: 'Bereit, über Grenzen hinauszugehen? Erleben Sie unübertroffene Geschwindigkeit mit Envariax.',
-      getStartedNow: 'JETZT STARTEN'
-    },
-    activeTraders: {
-      title: 'Aktive Händler',
-      description: 'Handeln Sie intelligenter, wachsen Sie stetiger - Envariax KI befähigt Investoren.',
-      totalEarnings: 'GESAMTEINNAHMEN',
-      pastLevel: 'im letzten Level',
-      viewProfile: 'Profil Ansehen',
-      joinNow: 'JETZT BEITRETEN',
-      joinText: 'Treten Sie Tausenden von Investoren weltweit bei, die Envariax vertrauen.'
-    },
-    security: {
-      badge: 'VERTRAUT & ZERTIFIZIERT',
-      title: 'Vertraut Von Fachleuten Weltweit',
-      description: 'Über 66.000 aktive Investoren verlassen sich auf Envariax.',
-      encryption: 'Quantengrad-Verschlüsselungsframework',
-      encryptionDesc: 'Jede Envariax-Operation läuft unter AES-XS20-Verschlüsselung.',
-      coldStorage: 'Getrennte Kalte Speicherreserve',
-      coldStorageDesc: 'Die Mehrheit der digitalen Bestände bleibt offline geschützt.',
-      uptime: 'Infrastruktur Ohne Ausfallzeit',
-      uptimeDesc: 'Verteilte Redundanz gewährleistet ununterbrochenen Zugriff.',
-      compliance: 'Unabhängige Cyber-Versicherung & Compliance',
-      complianceDesc: 'Externe Sicherheitsaudits von globalen Cybersicherheitsbehörden.',
-      reserve: 'Globale Vermögensschutzreserve',
-      reserveDesc: 'Envariax unterhält einen Schutzfonds von 210 Millionen Dollar.',
-      certified: 'Branchen-Zertifizierungen & Compliance',
-      getStartedSecurely: 'SICHER STARTEN'
-    },
-    timer: {
-      badge: 'ZEITLICH BEGRENZTES ANGEBOT',
-      title: 'Treten Sie Bei, Bevor Dieses Exklusive Angebot Endet',
-      description: 'Starten Sie Ihre Envariax-Handelsreise mit exklusiven Boni',
-      days: 'Tage',
-      hours: 'Stunden',
-      minutes: 'Minuten',
-      seconds: 'Sekunden',
-      claimBonus: 'BONUS JETZT BEANSPRUCHEN',
-      spotsRemaining: 'Nur noch 47 Plätze auf diesem Bonus-Level verfügbar!'
-    },
-    faq: {
-      badge: 'HÄUFIG GEFRAGT',
-      title: 'FAQ',
-      description: 'Alles, was Sie über Envariax wissen müssen',
-      q1: 'Was Ist Envariax Und Wie Funktioniert Es?',
-      a1: 'Envariax ist ein fortschrittliches KI-gesteuertes Handels-Ökosystem.',
-      q2: 'Warum Wählen Investoren Die Plattform Über Andere Systeme?',
-      a2: 'Die meisten Plattformen reagieren - Envariax antizipiert.',
-      q3: 'Wie Schützt Envariax Meine Daten Und Vermögenswerte?',
-      a3: 'Sicherheit bildet das Rückgrat der Envariax-Infrastruktur.',
-      q4: 'Ist Die Plattform Für Anfänger Geeignet?',
-      a4: 'Absolut. Envariax wurde für jedes Erfahrungsniveau entwickelt.'
-    },
-    footer: {
-      description: 'Fortschrittliches KI-gesteuertes Handels-Ökosystem.',
-      quickLinks: 'SCHNELLLINKS',
-      home: 'Startseite',
-      advantages: 'Vorteile',
-      testimonials: 'Erfahrungsberichte',
-      faq: 'FAQ',
-      aboutUs: 'Über Uns',
-      contact: 'Kontakt',
-      resources: 'RESSOURCEN',
-      privacy: 'Datenschutzrichtlinie',
-      terms: 'Nutzungsbedingungen',
-      contactTitle: 'KONTAKT',
-      support: 'UNTERSTÜTZUNG',
-      support247: '24/7 Verfügbar',
-      coverage: 'ABDECKUNG',
-      countries: '150+ Länder',
-      copyright: '© 2025 Envariax. Alle Rechte vorbehalten.'
-    }
+    nav: { home: 'Startseite', faq: 'FAQ', getStarted: 'JETZT STARTEN' },
+    hero: { title: 'Intelligenter Handel', volume: '980M+', description: 'Erleben Sie die Evolution', rating: '4.9/5', reviews: 'Basierend auf 12.847 Bewertungen', formTitle: 'Exklusiven Zugang', trustedMembers: 'Mitglieder', activeInvestors: 'Aktive Investoren', firstName: 'Vorname', lastName: 'Nachname', email: 'beispiel@gmail.com', phone: 'Telefon', submit: 'JETZT BEGINNEN', submitting: 'WIRD GESENDET...', successMessage: '✅ Antrag erfolgreich!', errorMessage: '✖ Antrag fehlgeschlagen' },
+    whyChoose: { title: 'Warum Envariax?', description: 'Envariax stattet Investoren aus', feature1Title: 'Intelligenz', feature1Desc: 'Durch AI', feature2Title: 'Globale Expertise', feature2Desc: 'Weltweites Netzwerk', feature3Title: 'Schnelle Ausfuhrung', feature3Desc: 'Millisekunden zahlen', startTrading: 'Handel Starten' },
+    liveTrading: { badge: 'EXPERTEN', title: 'Live-Handel', subtitle: 'Echtzeit-Markt', liveDashboard: 'Live-Dashboard', executedTrade: 'BTC/USDT-Handel', ago: 'vor' },
+    features: { badge: 'VERTRAUENSWURDIG', title: 'Wie Envariax?', description: 'Uber Grenzen hinaus', feature1Title: 'Sicherheit', feature1Desc: 'Ihr Kapital', feature2Title: 'Ultra-Schnell', feature2Desc: 'In der Welt', learnMore: 'Mehr Erfahren', ctaText: 'Bereit?', getStartedNow: 'JETZT STARTEN' },
+    activeTraders: { title: 'Aktive Handler', description: 'Handeln Sie intelligenter', totalEarnings: 'GESAMTEINNAHMEN', pastLevel: 'im letzten Level', viewProfile: 'Profil Ansehen', joinNow: 'JETZT BEITRETEN', joinText: 'Treten Sie bei' },
+    security: { badge: 'VERTRAUT', title: 'Vertraut Von Fachleuten', description: 'Uber 66.000 Investoren', encryption: 'Verschlusselung', encryptionDesc: 'AES-XS20', coldStorage: 'Kalte Speicherung', coldStorageDesc: 'Offline geschutzt', uptime: 'Infrastruktur', uptimeDesc: 'Redundanz', compliance: 'Cyber Assurance', complianceDesc: 'Externe Audits', reserve: 'Vermogensschutz', reserveDesc: 'Schutzfonds', certified: 'Zertifizierungen', getStartedSecurely: 'SICHER STARTEN' },
+    timer: { badge: 'ZEITLICH BEGRENZT', title: 'Treten Sie Bei', description: 'Starten Sie Ihre Reise', days: 'Tage', hours: 'Stunden', minutes: 'Minuten', seconds: 'Sekunden', claimBonus: 'BONUS JETZT', spotsRemaining: 'Nur 47 Platze!' },
+    faq: { badge: 'HAUFIG GEFRAGT', title: 'FAQ', description: 'Alles uber Envariax', q1: 'Was Ist Envariax?', a1: 'Handels-Okosystem', q2: 'Warum Die Plattform?', a2: 'Envariax antizipiert', q3: 'Wie Schutzt Envariax?', a3: 'Sicherheit', q4: 'Ist Die Plattform Geeignet?', a4: 'Absolut' },
+    footer: { description: 'Handels-Okosystem', quickLinks: 'SCHNELLLINKS', home: 'Startseite', advantages: 'Vorteile', testimonials: 'Erfahrungsberichte', faq: 'FAQ', aboutUs: 'Uber Uns', contact: 'Kontakt', resources: 'RESSOURCEN', privacy: 'Datenschutz', terms: 'Nutzungsbedingungen', contactTitle: 'KONTAKT', support: 'UNTERSTUTZUNG', support247: '24/7 Verfugbar', coverage: 'ABDECKUNG', countries: '150+ Lander', copyright: '© 2025 Envariax' }
   },
   sv: {
-    nav: {
-      home: 'Hem',
-      faq: 'FAQ',
-      getStarted: 'KOM IGÅNG'
-    },
-    hero: {
-      title: 'Intelligenta Affärer Utförda Globalt',
-      volume: '980M+',
-      description: 'Upplev utvecklingen av digital rikedom med Envariax - en nästa generations AI-driven handelsplattform.',
-      rating: '4.9/5',
-      reviews: 'Baserat på 12 847 verifierade recensioner',
-      formTitle: 'Få Exklusiv Åtkomst',
-      trustedMembers: 'Betrodda Medlemmar',
-      activeInvestors: 'Aktiva Globala Investerare',
-      firstName: 'Ange ditt förnamn',
-      lastName: 'Ange ditt efternamn',
-      email: 'exempel@gmail.com',
-      phone: 'Telefon',
-      submit: 'BÖRJA NU',
-      submitting: 'SKICKAR...',
-      successMessage: '✅ Ansökan skickad! Vi kontaktar dig snart.',
-      errorMessage: '✖ Kunde inte skicka ansökan. Försök igen.'
-    },
-    whyChoose: {
-      title: 'Varför Väljer Handlare Envariax?',
-      description: 'Envariax utrustar framsynta investerare med ett enhetligt ekosystem.',
-      feature1Title: 'Prediktiv Intelligens Som Ser Framåt',
-      feature1Desc: 'Överträffa volatiliteten genom Envariax självutvecklande AI-modeller.',
-      feature2Title: 'Dygnet-Runt Global Expertis',
-      feature2Desc: 'Få tillgång till ett världsomspännande nätverk av flerspråkiga proffs.',
-      feature3Title: 'Blixtsnabb Utföringsmotor',
-      feature3Desc: 'När millisekunder definierar möjlighet levererar Envariax.',
-      startTrading: 'Börja Handla'
-    },
-    liveTrading: {
-      badge: 'EXPERTHANDLARE',
-      title: 'Live Handelsström',
-      subtitle: 'Realtidsmarknadsinsikter Med Adaptiv AI',
-      liveDashboard: 'Live Handels-Dashboard',
-      executedTrade: 'Utförd BTC/USDT-handel',
-      ago: 'sedan'
-    },
-    features: {
-      badge: 'PÅLITLIG PLATTFORM',
-      title: 'Hur Envariax Omdefinierar Framtiden För Smart Handel?',
-      description: 'Gå bortom konventionella handelsgränser - Envariax avslöjar en helt adaptiv AI-orkestrerad finansiell miljö.',
-      feature1Title: 'Befäst Flerskiktad Säkerhetsarkitektur',
-      feature1Desc: 'Ditt kapital förtjänar motståndskraft utan kompromisser.',
-      feature2Title: 'Ultrahög Exekveringsramverk',
-      feature2Desc: 'I handelsvärlden definierar millisekunder möjlighet.',
-      learnMore: 'Läs Mer',
-      ctaText: 'Redo att gå bortom gränser? Upplev oöverträffad hastighet med Envariax.',
-      getStartedNow: 'KOM IGÅNG NU'
-    },
-    activeTraders: {
-      title: 'Aktiva Handlare',
-      description: 'Handla Smartare, Väx Stadigare - Envariax AI ger investerare kraft.',
-      totalEarnings: 'TOTALA INTÄKTER',
-      pastLevel: 'på senaste nivån',
-      viewProfile: 'Visa Profil',
-      joinNow: 'GÅ MED NU',
-      joinText: 'Gå med tusentals investerare världen över som litar på Envariax.'
-    },
-    security: {
-      badge: 'BETRODD & CERTIFIERAD',
-      title: 'Betrodd Av Proffs Över Hela Världen',
-      description: 'Över 66 000 aktiva investerare förlitar sig på Envariax.',
-      encryption: 'Kvantnivå Krypteringsramverk',
-      encryptionDesc: 'Varje Envariax-operation körs under AES-XS20-kryptering.',
-      coldStorage: 'Segregerad Kall Lagringsreserv',
-      coldStorageDesc: 'Majoriteten av digitala innehav förblir skyddade offline.',
-      uptime: 'Infrastruktur Utan Driftstopp',
-      uptimeDesc: 'Distribuerad redundans säkerställer oavbruten åtkomst.',
-      compliance: 'Oberoende Cybersäkerhet & Efterlevnad',
-      complianceDesc: 'Externa säkerhetsrevisioner av globala cybersäkerhetsmyndigheter.',
-      reserve: 'Global Tillgångsskyddsreserv',
-      reserveDesc: 'Envariax upprätthåller en skyddsfond på 210 miljoner dollar.',
-      certified: 'Branschcertifieringar & Efterlevnad',
-      getStartedSecurely: 'KOM IGÅNG SÄKERT'
-    },
-    timer: {
-      badge: 'TIDSBEGRÄNSAT ERBJUDANDE',
-      title: 'Gå Med Innan Detta Exklusiva Erbjudande Slutar',
-      description: 'Starta din Envariax-handelsresa med exklusiva bonusar',
-      days: 'Dagar',
-      hours: 'Timmar',
-      minutes: 'Minuter',
-      seconds: 'Sekunder',
-      claimBonus: 'GÖR ANSPRÅK PÅ DIN BONUS NU',
-      spotsRemaining: 'Endast 47 platser kvar på denna bonusnivå!'
-    },
-    faq: {
-      badge: 'VANLIGA FRÅGOR',
-      title: 'FAQ',
-      description: 'Allt du behöver veta om Envariax',
-      q1: 'Vad Är Envariax Och Hur Fungerar Det?',
-      a1: 'Envariax är ett avancerat AI-drivet handelsekosystem.',
-      q2: 'Varför Väljer Investerare Plattformen Framför Andra System?',
-      a2: 'De flesta plattformar reagerar - Envariax förutser.',
-      q3: 'Hur Skyddar Envariax Mina Data Och Tillgångar?',
-      a3: 'Säkerhet utgör ryggraden i Envariax infrastruktur.',
-      q4: 'Är Plattformen Lämplig För Nybörjare?',
-      a4: 'Absolut. Envariax designades för varje erfarenhetsnivå.'
-    },
-    footer: {
-      description: 'Avancerat AI-drivet handelsekosystem.',
-      quickLinks: 'SNABBLÄNKAR',
-      home: 'Hem',
-      advantages: 'Fördelar',
-      testimonials: 'Vittnesmål',
-      faq: 'FAQ',
-      aboutUs: 'Om Oss',
-      contact: 'Kontakt',
-      resources: 'RESURSER',
-      privacy: 'Integritetspolicy',
-      terms: 'Användarvillkor',
-      contactTitle: 'KONTAKT',
-      support: 'SUPPORT',
-      support247: '24/7 Tillgänglig',
-      coverage: 'TÄCKNING',
-      countries: '150+ Länder',
-      copyright: '© 2025 Envariax. Alla rättigheter förbehållna.'
-    }
-  },
-  no: {
-    nav: { home: 'Hjem', faq: 'FAQ', getStarted: 'KOM I GANG' },
-    hero: { title: 'Intelligente Handler Utført Globalt', volume: '980M+', description: 'Opplev utviklingen av digital velstand med Envariax.', rating: '4.9/5', reviews: 'Basert på 12 847 verifiserte anmeldelser', formTitle: 'Bli Med På Eksklusiv Tilgang', trustedMembers: 'Pålitelige Medlemmer', activeInvestors: 'Aktive Globale Investorer', firstName: 'Skriv inn fornavnet ditt', lastName: 'Skriv inn etternavnet ditt', email: 'eksempel@gmail.com', phone: 'Telefon', submit: 'BEGYNN NÅ', submitting: 'SENDER...', successMessage: '✅ Søknad sendt! Vi kontakter deg snart.', errorMessage: '✖ Kunne ikke sende søknaden.' },
-    whyChoose: { title: 'Hvorfor Velger Traders Envariax?', description: 'Envariax utstyrer fremoverlente investorer.', feature1Title: 'Prediktiv Intelligens', feature1Desc: 'Overgå volatilitet.', feature2Title: 'Døgnkontinuerlig Global Ekspertise', feature2Desc: 'Få tilgang til et verdensomspennende nettverk.', feature3Title: 'Lynrask Utførelsesmotor', feature3Desc: 'Når millisekunder definerer mulighet.', startTrading: 'Start Handel' },
-    liveTrading: { badge: 'EKSPERTHANDLERE', title: 'Live Handelsstrøm', subtitle: 'Sanntidsmarkedsinnsikt', liveDashboard: 'Live Handels-Dashboard', executedTrade: 'Utført BTC/USDT-handel', ago: 'siden' },
-    features: { badge: 'PÅLITELIG PLATTFORM', title: 'Hvordan Envariax Omdefinerer Fremtiden?', description: 'Gå utover konvensjonelle handelsgrenser.', feature1Title: 'Befestet Flerlags Sikkerhetsarkitektur', feature1Desc: 'Din kapital fortjener motstandsdyktighet.', feature2Title: 'Ultra-Hurtig Utførelsesramme', feature2Desc: 'I handelsverdenen definerer millisekunder mulighet.', learnMore: 'Lær Mer', ctaText: 'Klar til å gå utover grenser?', getStartedNow: 'KOM I GANG NÅ' },
-    activeTraders: { title: 'Aktive Traders', description: 'Handl Smartere, Voks Stadig.', totalEarnings: 'TOTALE INNTEKTER', pastLevel: 'på siste nivå', viewProfile: 'Vis Profil', joinNow: 'BLI MED NÅ', joinText: 'Bli med tusenvis av investorer.' },
-    security: { badge: 'PÅLITELIG & SERTIFISERT', title: 'Pålitelig Av Profesjonelle', description: 'Over 66 000 aktive investorer.', encryption: 'Kvante-Nivå Krypteringsramme', encryptionDesc: 'Hver Envariax-operasjon.', coldStorage: 'Segregert Kald Lagringsreserve', coldStorageDesc: 'Flertallet av digitale beholdninger.', uptime: 'Null-Nedetid Infrastruktur', uptimeDesc: 'Distribuert redundans.', compliance: 'Uavhengig Cybersikkerhet', complianceDesc: 'Eksterne sikkerhetsrevisjoner.', reserve: 'Global Aktivabeskyttelsesreserve', reserveDesc: 'Envariax opprettholder et beskyttelsesfond.', certified: 'Bransjesertifiseringer', getStartedSecurely: 'KOM I GANG SIKKERT' },
-    timer: { badge: 'TIDSBEGRENSET TILBUD', title: 'Bli Med Før Dette Tilbudet Utløper', description: 'Start din Envariax-handelsreise.', days: 'Dager', hours: 'Timer', minutes: 'Minutter', seconds: 'Sekunder', claimBonus: 'KREV DIN BONUS NÅ', spotsRemaining: 'Bare 47 plasser igjen!' },
-    faq: { badge: 'OFTE SPURTE', title: 'FAQ', description: 'Alt du trenger å vite om Envariax', q1: 'Hva Er Envariax?', a1: 'Envariax er et avansert AI-drevet handelsøkosystem.', q2: 'Hvorfor Velger Investorer Plattformen?', a2: 'De fleste plattformer reagerer - Envariax forutser.', q3: 'Hvordan Beskytter Envariax Mine Data?', a3: 'Sikkerhet danner ryggraden.', q4: 'Er Plattformen Egnet For Nybegynnere?', a4: 'Absolutt. Envariax ble designet for hvert erfaringsnivå.' },
-    footer: { description: 'Avansert AI-drevet handelsøkosystem.', quickLinks: 'HURTIGLENKER', home: 'Hjem', advantages: 'Fordeler', testimonials: 'Vitnesbyrd', faq: 'FAQ', aboutUs: 'Om Oss', contact: 'Kontakt', resources: 'RESSURSER', privacy: 'Personvernpolicy', terms: 'Bruksvilkår', contactTitle: 'KONTAKT', support: 'STØTTE', support247: '24/7 Tilgjengelig', coverage: 'DEKNING', countries: '150+ Land', copyright: '© 2025 Envariax. Alle rettigheter reservert.' }
-  },
-  it: { nav: { home: 'Home', faq: 'FAQ', getStarted: 'INIZIA ORA' }, hero: { title: 'Scambi Intelligenti Eseguiti Globalmente', volume: '980M+', description: 'Sperimenta l\'evoluzione della ricchezza digitale con Envariax.', rating: '4.9/5', reviews: 'Basato su 12.847 recensioni verificate', formTitle: 'Ottieni Accesso Esclusivo', trustedMembers: 'Membri Fidati', activeInvestors: 'Investitori Globali Attivi', firstName: 'Inserisci il tuo nome', lastName: 'Inserisci il tuo cognome', email: 'esempio@gmail.com', phone: 'Telefono', submit: 'INIZIA ORA', submitting: 'INVIO...', successMessage: '✅ Domanda inviata! Ti contatteremo presto.', errorMessage: '✖ Invio fallito.' }, whyChoose: { title: 'Perché I Trader Scelgono Envariax?', description: 'Envariax equipaggia investitori lungimiranti.', feature1Title: 'Intelligenza Predittiva', feature1Desc: 'Supera la volatilità.', feature2Title: 'Competenza Globale 24/7', feature2Desc: 'Accedi a una rete mondiale.', feature3Title: 'Motore Di Esecuzione Ultrarapido', feature3Desc: 'Quando i millisecondi definiscono l\'opportunità.', startTrading: 'Inizia a Fare Trading' }, liveTrading: { badge: 'TRADER ESPERTI', title: 'Streaming Live Di Trading', subtitle: 'Approfondimenti Di Mercato In Tempo Reale', liveDashboard: 'Dashboard Trading Live', executedTrade: 'Scambio BTC/USDT eseguito', ago: 'fa' }, features: { badge: 'PIATTAFORMA AFFIDABILE', title: 'Come Envariax Ridefinisce Il Futuro?', description: 'Vai oltre i confini commerciali convenzionali.', feature1Title: 'Architettura Di Sicurezza Multilivello', feature1Desc: 'Il tuo capitale merita resilienza.', feature2Title: 'Framework Di Esecuzione Ultra-Veloce', feature2Desc: 'Nel mondo del trading.', learnMore: 'Scopri Di Più', ctaText: 'Pronto ad andare oltre i confini?', getStartedNow: 'INIZIA ORA' }, activeTraders: { title: 'Trader Attivi', description: 'Fai Trading Più Intelligentemente.', totalEarnings: 'GUADAGNI TOTALI', pastLevel: 'nel livello passato', viewProfile: 'Visualiz... [truncated]
-  hi: { nav: { home: 'होम', faq: 'FAQ', getStarted: 'शुरू करें' }, hero: { title: 'वैश्विक स्तर पर निष्पादित बुद्धिमान ट्रेड', volume: '980M+', description: 'Envariax के साथ डिजिटल संपत्ति के विकास का अनुभव करें।', rating: '4.9/5', reviews: '12,847 सत्यापित समीक्षाओं पर आधारित', formTitle: 'विशेष पहुंच में शामिल हों', trustedMembers: 'विश्वसनीय सदस्य', activeInvestors: 'सक्रिय वैश्विक निवेशक', firstName: 'अपना पहला नाम दर्ज करें', lastName: 'अपना अंतिम नाम दर्ज करें', email: 'उदाहरण@gmail.com', phone: 'फोन', submit: 'अभी शुरू करें', submitting: 'सबमिट हो रहा है...', successMessage: '✅ आवेदन सफलतापूर्वक जमा किया गया!', errorMessage: '✖ आवेदन जमा करने में विफल।' }, whyChoose: { title: 'व्यापारी Envariax क्यों चुनते हैं?', description: 'Envariax दूरदर्शी निवेशकों को सुसज्जित करता है।', feature1Title: 'भविष्यसूचक बुद्धिमत्ता', feature1Desc: 'अस्थिरता को मात दें।', feature2Title: 'चौबीसों घंटे वैश्विक विशेषज्ञता', feature2Desc: 'बहुभाषी पेशेवरों के विश्वव्यापी नेटवर्क तक पहुंचें।', feature3Title: 'बिजली-तेज़ निष्पादन इंजन', feature3Desc: 'जब मिलीसेकंड अवसर को परिभाषित करते हैं।', startTrading: 'ट्रेडिंग शुरू करें' }, liveTrading: { badge: 'विशेषज्ञ व्यापारी', title: 'लाइव ट्रेडिंग स्ट्रीम', subtitle: 'अनुकूली AI द्वारा संचालित वास्तविक समय बाजार अंतर्दृष्टि', liveDashboard: 'लाइव ट्रेडिंग डैशबोर्ड', executedTrade: 'BTC/USDT व्यापार निष्पादित', ago: 'पहले' }, features: { badge: 'विश्वसनीय मंच', title: 'Envariax स्मार्ट ट्रेडिंग के भविष्य को कैसे फिर से परिभाषित कर रहा है?', description: 'पारंपरिक व्यापार सीमाओं से आगे बढ़ें।', feature1Title: 'सुदृढ़ बहु-स्तरीय सुरक्षा वास्तुकला', feature1Desc: 'आपकी पूंजी लचीलेपन की हकदार है।', feature2Title: 'अति-गति निष्पादन ढांचा', feature2Desc: 'व्यापार की दुनिया में।', learnMore: 'और जानें', ctaText: 'सीमाओं से परे जाने के लिए तैयार?', getStartedNow: 'अभी शुरू करें' }, activeTraders: { title: 'सक्रिय व्यापारी', description: 'अधिक स्मार्ट व्यापार करें।', totalEarnings: 'कुल कमाई', pastLevel: 'पिछले स्तर में', viewProfile: 'प्रोफ़ाइल द... [truncated]
-  es: { nav: { home: 'Inicio', faq: 'FAQ', getStarted: 'COMENZAR' }, hero: { title: 'Operaciones Inteligentes Ejecutadas Globalmente', volume: '980M+', description: 'Experimenta la evolución de la riqueza digital con Envariax.', rating: '4.9/5', reviews: 'Basado en 12,847 reseñas verificadas', formTitle: 'Únete Al Acceso Exclusivo', trustedMembers: 'Miembros Confiables', activeInvestors: 'Inversores Globales Activos', firstName: 'Ingresa tu nombre', lastName: 'Ingresa tu apellido', email: 'ejemplo@gmail.com', phone: 'Teléfono', submit: 'COMENZAR AHORA', submitting: 'ENVIANDO...', successMessage: '✅ ¡Solicitud enviada con éxito!', errorMessage: '✖ Error al enviar la solicitud.' }, whyChoose: { title: '¿Por Qué Los Traders Eligen Envariax?', description: 'Envariax equipa a inversores con visión de futuro.', feature1Title: 'Inteligencia Predictiva', feature1Desc: 'Supera la volatilidad.', feature2Title: 'Experiencia Global Las 24 Horas', feature2Desc: 'Accede a una red mundial.', feature3Title: 'Motor De Ejecución Ultrarrápido', feature3Desc: 'Cuando los milisegundos definen la oportunidad.', startTrading: 'Comenzar a Operar' }, liveTrading: { badge: 'TRADERS EXPERTOS', title: 'Transmisión De Trading En Vivo', subtitle: 'Información Del Mercado En Tiempo Real', liveDashboard: 'Panel De Trading En Vivo', executedTrade: 'Operación BTC/USDT ejecutada', ago: 'hace' }, features: { badge: 'PLATAFORMA CONFIABLE', title: '¿Cómo Envariax Está Redefiniendo El Futuro?', description: 'Ve más allá de los límites comerciales convencionales.', feature1Title: 'Arquitectura De Seguridad Multicapa', feature1Desc: 'Tu capital merece resistencia.', feature2Title: 'Marco De Ejecución Ultra-Rápido', feature2Desc: 'En el mundo del trading.', learnMore: 'Aprende Más', ctaText: '¿Listo para ir más allá de los límites?', getStartedNow: 'COMENZAR AHORA' }, activeTraders: { title: 'Traders Activos', description: 'Opera Más Inteligentemente.', totalEarnings: 'GANANCIAS TOTALES', pastLevel: 'en niv... [truncated]
-  ko: { nav: { home: '홈', faq: 'FAQ', getStarted: '시작하기' }, hero: { title: '전 세계적으로 실행되는 지능형 거래', volume: '980M+', description: 'Envariax로 디지털 자산의 진화를 경험하세요.', rating: '4.9/5', reviews: '12,847개의 검증된 리뷰 기반', formTitle: '독점 액세스 가입', trustedMembers: '신뢰할 수 있는 회원', activeInvestors: '활성 글로벌 투자자', firstName: '이름을 입력하세요', lastName: '성을 입력하세요', email: 'example@gmail.com', phone: '전화', submit: '지금 시작', submitting: '제출 중...', successMessage: '✅ 신청이 성공적으로 제출되었습니다!', errorMessage: '✖ 신청 제출에 실패했습니다.' }, whyChoose: { title: '트레이더들이 Envariax를 선택하는 이유는?', description: 'Envariax는 미래 지향적인 투자자를 위한 통합 생태계를 제공합니다.', feature1Title: '앞을 내다보는 예측 인텔리전스', feature1Desc: '변동성을 극복하세요.', feature2Title: '24시간 글로벌 전문 지식', feature2Desc: '다국어 전문가의 전 세계 네트워크에 액세스하세요.', feature3Title: '초고속 실행 엔진', feature3Desc: '밀리초가 기회를 정의할 때.', startTrading: '거래 시작' }, liveTrading: { badge: '전문 트레이더', title: '실시간 거래 스트림', subtitle: '적응형 AI 기반 실시간 시장 인사이트', liveDashboard: '실시간 거래 대시보드', executedTrade: 'BTC/USDT 거래 실행됨', ago: '전' }, features: { badge: '신뢰할 수 있는 플랫폼', title: 'Envariax가 스마트 거래의 미래를 어떻게 재정의하고 있나요?', description: '기존 거래 경계를 넘어서세요.', feature1Title: '강화된 다층 보안 아키텍처', feature1Desc: '귀하의 자본은 타협 없는 복원력을 누릴 자격이 있습니다.', feature2Title: '초고속 실행 프레임워크', feature2Desc: '거래 세계에서.', learnMore: '자세히 알아보기', ctaText: '경계를 넘어설 준비가 되셨나요?', getStartedNow: '지금 시작하기' }, activeTraders: { title: '활성 트레이더', description: '더 스마트하게 거래하세요.', totalEarnings: '총 수입', pastLevel: '과거 수준에서', viewProfile: '프로필 보기', joinNow: '지금 가입', joinText: 'Envariax를 신뢰하는 전 세계 수천 명의 투자자와 함께하세요.' }, security: { badge: '신뢰받고 인증된', title: '전 세계 전문가들이 신뢰', description: '66,000명 이상의 활성 투자자.', encryption: '양자 등급 암호화 프레임워크', encryptionDesc: '모든 Envariax 작업.', coldStorage: '분리된 콜드 스토리지 예비금', coldStorageDesc: '대부분의 디지털 보유 자산.', uptime: '무중단 인프라', uptimeDesc: '분산 중복성.', compliance: '독립적인 사이버 보증', complianceDesc: '글로벌 사이버 보안 당국의 외부 보안 감사.', reserve: '글로벌 자산 보호 예비금', reserveDesc: 'Envariax는 보호 기금을 유지합니다.', certified: '업계 인증', getStartedSecurely: '안전하게 시작하기' }, time... [truncated]
-  ja: { nav: { home: 'ホーム', faq: 'FAQ', getStarted: '始める' }, hero: { title: 'グローバルに実行されるインテリジェント取引', volume: '980M+', description: 'Envariaxでデジタル資産の進化を体験してください。', rating: '4.9/5', reviews: '12,847件の検証済みレビューに基づく', formTitle: '限定アクセスに参加', trustedMembers: '信頼できるメンバー', activeInvestors: 'アクティブなグローバル投資家', firstName: '名を入力してください', lastName: '姓を入力してください', email: 'example@gmail.com', phone: '電話', submit: '今すぐ始める', submitting: '送信中...', successMessage: '✅ 申請が正常に送信されました!', errorMessage: '✖ 申請の送信に失敗しました。' }, whyChoose: { title: 'なぜトレーダーはEnvariaxを選ぶのか?', description: 'Envariaxは先見の明のある投資家に統合エコシステムを提供します。', feature1Title: '先を見据える予測インテリジェンス', feature1Desc: 'ボラティリティを克服してください。', feature2Title: '24時間体制のグローバルな専門知識', feature2Desc: '多言語の専門家のグローバルネットワークにアクセスしてください。', feature3Title: '超高速実行エンジン', feature3Desc: 'ミリ秒が機会を定義するとき。', startTrading: '取引を開始' }, liveTrading: { badge: 'エキスパートトレーダー', title: 'ライブ取引ストリーム', subtitle: 'アダプティブAIを活用したリアルタイム市場インサイト', liveDashboard: 'ライブ取引ダッシュボード', executedTrade: 'BTC/USDT取引を実行', ago: '前' }, features: { badge: '信頼できるプラットフォーム', title: 'EnvariaxがスマートトレーディングのFutureをどのように再定義しているか?', description: '従来の取引境界を超えてください。', feature1Title: '強化されたマルチレイヤーセキュリティアーキテクチャ', feature1Desc: 'あなたの資本は妥協のない回復力に値します。', feature2Title: '超高速実行フレームワーク', feature2Desc: '取引の世界では。', learnMore: '詳細を見る', ctaText: '境界を超える準備はできていますか?', getStartedNow: '今すぐ始める' }, activeTraders: { title: 'アクティブトレーダー', description: 'よりスマートに取引してください。', totalEarnings: '総収益', pastLevel: '過去のレベルで', viewProfile: 'プロフィールを見る', joinNow: '今すぐ参加', joinText: 'Envariaxを信頼する世界中の何千もの投資家に参加してください。' }, security: { badge: '信頼され認証された', title: '世界中の専門家に信頼されている', description: '66,000人以上のアクティブな投資家。', encryption: '量子グレード暗号化フレームワーク', encryptionDesc: 'すべてのEnvariax操作。', coldStorage: '分離されたコールドストレージリザーブ', coldStorageDesc: 'デジタル保有の大部分。', uptime: 'ゼロダウンタイムインフラストラクチャ', uptimeDesc: '分散冗長性。', compliance: '独立したサイバー保証', complianceDesc: 'グローバルなサイバーセキュリティ当局による外部セキュリティ監査。', reserve: 'グローバル資産保護準備金', reserveDesc: 'Envariaxは保護基金を維持しています。', certified: '業界認証... [truncated]
-  fr: { nav: { home: 'Accueil', faq: 'FAQ', getStarted: 'COMMENCER' }, hero: { title: 'Transactions Intelligentes Exécutées Mondialement', volume: '980M+', description: 'Découvrez l\'évolution de la richesse numérique avec Envariax.', rating: '4.9/5', reviews: 'Basé sur 12 847 avis vérifiés', formTitle: 'Rejoignez L\'Accès Exclusif', trustedMembers: 'Membres De Confiance', activeInvestors: 'Investisseurs Mondiaux Actifs', firstName: 'Entrez votre prénom', lastName: 'Entrez votre nom', email: 'exemple@gmail.com', phone: 'Téléphone', submit: 'COMMENCER MAINTENANT', submitting: 'ENVOI EN COURS...', successMessage: '✅ Demande envoyée avec succès!', errorMessage: '✖ Échec de l\'envoi de la demande.' }, whyChoose: { title: 'Pourquoi Les Traders Choisissent Envariax?', description: 'Envariax équipe les investisseurs visionnaires.', feature1Title: 'Intelligence Prédictive Qui Voit Loin', feature1Desc: 'Dépassez la volatilité.', feature2Title: 'Expertise Mondiale 24/7', feature2Desc: 'Accédez à un réseau mondial.', feature3Title: 'Moteur D\'Exécution Ultra-Rapide', feature3Desc: 'Quand les millisecondes définissent l\'opportunité.', startTrading: 'Commencer À Trader' }, liveTrading: { badge: 'TRADERS EXPERTS', title: 'Flux De Trading En Direct', subtitle: 'Informations De Marché En Temps Réel', liveDashboard: 'Tableau De Bord De Trading En Direct', executedTrade: 'Transaction BTC/USDT exécutée', ago: 'il y a' }, features: { badge: 'PLATEFORME FIABLE', title: 'Comment Envariax Redéfinit L\'Avenir?', description: 'Allez au-delà des limites commerciales conventionnelles.', feature1Title: 'Architecture De Sécurité Multicouche', feature1Desc: 'Votre capital mérite la résilience.', feature2Title: 'Cadre D\'Exécution Ultra-Rapide', feature2Desc: 'Dans le monde du trading.', learnMore: 'En Savoir Plus', ctaText: 'Prêt à aller au-delà des limites?', getStartedNow: 'COMMENCER MAINTENANT' }, activeTraders: { title: 'Traders Actifs', description: 'Tradez Plus Intelligemment.', totalEarn... [truncated]
+    nav: { home: 'Hem', faq: 'FAQ', getStarted: 'KOM IGANG' },
+    hero: { title: 'Intelligenta Affarer', volume: '980M+', description: 'Upplev utvecklingen', rating: '4.9/5', reviews: 'Baserat pa 12 847 recensioner', formTitle: 'Fa Exklusiv Atkomst', trustedMembers: 'Betrodda Medlemmar', activeInvestors: 'Aktiva Investerare', firstName: 'Fornamn', lastName: 'Efternamn', email: 'exempel@gmail.com', phone: 'Telefon', submit: 'BORJA NU', submitting: 'SKICKAR...', successMessage: '✅ Ansokan skickad!', errorMessage: '✖ Kunde inte skicka' },
+    whyChoose: { title: 'Varfor Envariax?', description: 'Envariax utrustar investerare', feature1Title: 'Intelligens', feature1Desc: 'Genom AI', feature2Title: 'Global Expertis', feature2Desc: 'Varldsomspa
+
+nnande natverk', feature3Title: 'Blixtsnabb', feature3Desc: 'Millisekunder', startTrading: 'Borja Handla' },
+    liveTrading: { badge: 'EXPERTER', title: 'Live Handel', subtitle: 'Realtidsmarknad', liveDashboard: 'Live Dashboard', executedTrade: 'BTC/USDT-handel', ago: 'sedan' },
+    features: { badge: 'PALITLIG', title: 'Hur Envariax?', description: 'Ga bortom granser', feature1Title: 'Sakerhet', feature1Desc: 'Ditt kapital', feature2Title: 'Ultrahog', feature2Desc: 'I handelsv
+
+arlden', learnMore: 'Las Mer', ctaText: 'Redo?', getStartedNow: 'KOM IGANG NU' },
+    activeTraders: { title: 'Aktiva Handlare', description: 'Handla smartare', totalEarnings: 'TOTALA INTAKTER', pastLevel: 'pa senaste nivan', viewProfile: 'Visa Profil', joinNow: 'GA MED NU', joinText: 'Ga med' },
+    security: { badge: 'BETRODD', title: 'Betrodd', description: 'Over 66 000 investerare', encryption: 'Kryptering', encryptionDesc: 'AES-XS20', coldStorage: 'Kall Lagring', coldStorageDesc: 'Offline skyddade', uptime: 'Infrastruktur', uptimeDesc: 'Redundans', compliance: 'Cybersakerhet', complianceDesc: 'Externa revisioner', reserve: 'Tillgangsskydd', reserveDesc: 'Skyddsfond', certified: 'Certifieringar', getStartedSecurely: 'KOM IGANG SAKERT' },
+    timer: { badge: 'TIDSBEGRANSAT', title: 'Ga Med', description: 'Starta din resa', days: 'Dagar', hours: 'Timmar', minutes: 'Minuter', seconds: 'Sekunder', claimBonus: 'GOR ANSPRAK', spotsRemaining: 'Endast 47 platser!' },
+    faq: { badge: 'VANLIGA FRAGOR', title: 'FAQ', description: 'Allt om Envariax', q1: 'Vad Ar Envariax?', a1: 'Handelsekosystem', q2: 'Varfor Plattformen?', a2: 'Envariax forutser', q3: 'Hur Skyddar Envariax?', a3: 'Sakerhet', q4: 'Ar Plattformen Lamplig?', a4: 'Absolut' },
+    footer: { description: 'Handelsekosystem', quickLinks: 'SNABBLANKAR', home: 'Hem', advantages: 'Fordelar', testimonials: 'Vittnesmal', faq: 'FAQ', aboutUs: 'Om Oss', contact: 'Kontakt', resources: 'RESURSER', privacy: 'Integritetspolicy', terms: 'Anvandarvill
+
+kor', contactTitle: 'KONTAKT', support: 'SUPPORT', support247: '24/7 Tillganglig', coverage: 'TACKNING', countries: '150+ Lander', copyright: '© 2025 Envariax' }
+  }
 };
 
 export type LanguageCode = keyof typeof translations;
