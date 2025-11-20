@@ -318,16 +318,16 @@ const Index = () => {
       const data = await response.json();
 
       if (response.ok) {
-        setSubmitMessage('✅ Application submitted successfully! We will contact you soon.');
+        setSubmitMessage(t.hero.successMessage);
         setFirstName('');
         setLastName('');
         setEmail('');
         setPhone('');
       } else {
-        setSubmitMessage('❌ ' + (data.error || 'Failed to submit application. Please try again.'));
+        setSubmitMessage(data.error || t.hero.errorMessage);
       }
     } catch (error) {
-      setSubmitMessage('❌ Network error. Please check your connection and try again.');
+      setSubmitMessage(t.hero.errorMessage);
     } finally {
       setIsSubmitting(false);
     }
@@ -404,13 +404,13 @@ const Index = () => {
                 ENVARIAX
               </div>
               <h1 className="text-5xl lg:text-6xl font-black leading-tight">
-                Intelligent Trades Executed Globally
+                {t.hero.title}
               </h1>
               <div className="text-5xl font-bold" style={{ color: '#4A90E2' }}>
-                980M+
+                {t.hero.volume}
               </div>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Experience the evolution of digital wealth with Envariax — a next-generation, AI-driven trading platform engineered to anticipate, adapt, and optimize every decision in today's dynamic markets.
+                {t.hero.description}
               </p>
               <Card className="bg-white/90 border-none shadow-lg">
                 <CardContent className="p-6">
@@ -420,50 +420,50 @@ const Index = () => {
                     <Icon name="Star" className="fill-yellow-400 text-yellow-400" size={24} />
                     <Icon name="Star" className="fill-yellow-400 text-yellow-400" size={24} />
                     <Icon name="Star" className="fill-yellow-400 text-yellow-400" size={24} />
-                    <span className="text-xl font-bold ml-2" style={{ color: '#4A90E2' }}>4.9/5</span>
+                    <span className="text-xl font-bold ml-2" style={{ color: '#4A90E2' }}>{t.hero.rating}</span>
                   </div>
-                  <p className="text-center text-sm text-gray-600">Based on 12,847 verified reviews</p>
+                  <p className="text-center text-sm text-gray-600">{t.hero.reviews}</p>
                 </CardContent>
               </Card>
             </div>
 
             <Card id="join-form" className="bg-white/95 backdrop-blur-sm border-none shadow-2xl">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-center mb-6">Join Exclusive Access</h2>
+                <h2 className="text-2xl font-bold text-center mb-6">{t.hero.formTitle}</h2>
                 
                 <div className="grid grid-cols-2 gap-4 mb-8">
                   <div className="text-center p-4 bg-blue-50 rounded-lg">
                     <div className="text-3xl font-bold" style={{ color: '#4A90E2' }}>1200</div>
-                    <div className="text-sm text-gray-600">Trusted Members</div>
+                    <div className="text-sm text-gray-600">{t.hero.trustedMembers}</div>
                   </div>
                   <div className="text-center p-4 bg-blue-50 rounded-lg">
                     <div className="text-3xl font-bold" style={{ color: '#4A90E2' }}>700</div>
-                    <div className="text-sm text-gray-600">Active Global Investors</div>
+                    <div className="text-sm text-gray-600">{t.hero.activeInvestors}</div>
                   </div>
                 </div>
 
                 <form onSubmit={handleJoinSubmit} className="space-y-4">
                   <Input
-                    placeholder="Enter your first name"
+                    placeholder={t.hero.firstName}
                     value={firstName}
                     onChange={(e) => setFirstName(e.target.value)}
                     className="h-14 bg-gray-50 border-gray-200"
                   />
                   <Input
-                    placeholder="Enter your last name"
+                    placeholder={t.hero.lastName}
                     value={lastName}
                     onChange={(e) => setLastName(e.target.value)}
                     className="h-14 bg-gray-50 border-gray-200"
                   />
                   <Input
                     type="email"
-                    placeholder="example@gmail.com"
+                    placeholder={t.hero.email}
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     className="h-14 bg-gray-50 border-gray-200"
                   />
                   <div>
-                    <label className="text-sm font-medium text-gray-700 mb-2 block">Phone</label>
+                    <label className="text-sm font-medium text-gray-700 mb-2 block">{t.hero.phone}</label>
                     <div className="flex gap-2">
                       <div className="relative">
                         <button
@@ -540,7 +540,7 @@ const Index = () => {
                     disabled={isSubmitting}
                     className="w-full h-14 text-lg font-semibold bg-gradient-to-r from-blue-500 via-purple-500 to-orange-400 hover:opacity-90 border-none disabled:opacity-50"
                   >
-                    {isSubmitting ? 'SUBMITTING...' : 'BEGIN NOW'}
+                    {isSubmitting ? t.hero.submitting : t.hero.submit}
                   </Button>
                 </form>
               </CardContent>
@@ -552,10 +552,10 @@ const Index = () => {
       <section className="py-20 px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl lg:text-5xl font-bold text-center mb-6" style={{ color: '#5B6B8C' }}>
-            Why Traders Choose Envariax?
+            {t.whyChoose.title}
           </h2>
           <p className="text-center text-lg text-gray-600 mb-16 max-w-3xl mx-auto leading-relaxed">
-            Envariax equips forward-thinking investors with a unified ecosystem built on precision engineering — merging adaptive AI automation, military-grade protection, and expert-driven insights to deliver seamless performance across every financial frontier.
+            {t.whyChoose.description}
           </p>
 
           <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -568,10 +568,10 @@ const Index = () => {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold mb-3 text-gray-900">
-                        Predictive Intelligence That Sees Ahead
+                        {t.whyChoose.feature1Title}
                       </h3>
                       <p className="text-gray-600 leading-relaxed">
-                        Outsmart volatility through Envariax's self-evolving AI models, designed to read live data streams, forecast directional swings, and uncover high-value opportunities before they reach the spotlight. Anticipation becomes your edge — every decision powered by data that thinks forward.
+                        {t.whyChoose.feature1Desc}
                       </p>
                     </div>
                   </div>
@@ -586,10 +586,10 @@ const Index = () => {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold mb-3 text-gray-900">
-                        Bulletproof Asset Protection
+                        {t.whyChoose.feature2Title}
                       </h3>
                       <p className="text-gray-600 leading-relaxed">
-                        Every signal, order, and transaction flows through layered encryption, isolated network protocols, and continuous AI surveillance, ensuring your capital stays protected under any market condition. With Envariax, digital security isn't an add-on — it's the foundation.
+                        {t.whyChoose.feature2Desc}
                       </p>
                     </div>
                   </div>
@@ -604,28 +604,10 @@ const Index = () => {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold mb-3 text-gray-900">
-                        Around-the-Clock Global Expertise
+                        {t.whyChoose.feature3Title}
                       </h3>
                       <p className="text-gray-600 leading-relaxed">
-                        Gain access to a worldwide network of multilingual professionals ready to assist at any moment. From strategic refinement to technical calibration, Envariax's support experts ensure your trading experience remains efficient, stable, and future-proof.
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-white border border-gray-200 shadow-sm hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center flex-shrink-0">
-                      <Icon name="Check" size={24} className="text-white" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold mb-3 text-gray-900">
-                        Lightning-Fast Execution Engine
-                      </h3>
-                      <p className="text-gray-600 leading-relaxed">
-                        When milliseconds define opportunity, Envariax delivers. Our ultra-responsive trading infrastructure executes orders instantly and synchronizes liquidity in real time — so you never miss a move when the market turns.
+                        {t.whyChoose.feature3Desc}
                       </p>
                     </div>
                   </div>
@@ -638,7 +620,7 @@ const Index = () => {
                 className="mt-6 bg-white text-gray-900 border-2 border-gray-900 hover:bg-gray-50"
               >
                 <Icon name="Play" size={18} className="mr-2" />
-                Start Trading
+                {t.whyChoose.startTrading}
               </Button>
             </div>
 
@@ -648,7 +630,7 @@ const Index = () => {
                   <div className="flex items-center justify-between mb-6">
                     <div className="flex items-center gap-2">
                       <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                      <span className="font-semibold text-gray-900">Live Trading Dashboard</span>
+                      <span className="font-semibold text-gray-900">{t.liveTrading.liveDashboard}</span>
                     </div>
                     <div className="px-4 py-1 bg-green-100 text-green-700 rounded-full text-sm font-bold flex items-center gap-1">
                       <Icon name="TrendingUp" size={16} />
@@ -688,8 +670,8 @@ const Index = () => {
                         <Icon name="Check" size={20} className="text-green-600" />
                       </div>
                       <div className="flex-1">
-                        <div className="font-semibold text-gray-900">Executed <span className="font-bold">BTC/USDT</span> trade</div>
-                        <div className="text-sm text-gray-500">2m ago</div>
+                        <div className="font-semibold text-gray-900">{t.liveTrading.executedTrade}</div>
+                        <div className="text-sm text-gray-500">2m {t.liveTrading.ago}</div>
                       </div>
                     </div>
                   </div>
@@ -705,13 +687,13 @@ const Index = () => {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white border-2 border-blue-200 rounded-full mb-6">
               <Icon name="Eye" size={18} style={{ color: '#4A90E2' }} />
-              <span className="text-sm font-semibold" style={{ color: '#4A90E2' }}>EXPERT TRADERS</span>
+              <span className="text-sm font-semibold" style={{ color: '#4A90E2' }}>{t.liveTrading.badge}</span>
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#5B6B8C' }}>
-              Live Trading Stream
+              {t.liveTrading.title}
             </h2>
             <p className="text-lg text-gray-600">
-              Real-Time Market Insights Powered by Adaptive AI
+              {t.liveTrading.subtitle}
             </p>
           </div>
 
@@ -786,48 +768,30 @@ const Index = () => {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 border border-blue-200 rounded-full mb-6">
               <Icon name="Star" size={18} style={{ color: '#4A90E2' }} />
-              <span className="text-sm font-semibold" style={{ color: '#4A90E2' }}>TRUSTED PLATFORM</span>
+              <span className="text-sm font-semibold" style={{ color: '#4A90E2' }}>{t.features.badge}</span>
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold mb-6" style={{ color: '#5B6B8C' }}>
-              How Envariax Is Redefining the Future of Smart Trading?
+              {t.features.title}
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Step beyond conventional trading boundaries — Envariax unveils a fully adaptive, AI-orchestrated financial environment built for precision, scalability, and complete control across every digital transaction. This isn't just progress — it's intelligent evolution at maximum velocity.
+              {t.features.description}
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <Card className="bg-gradient-to-br from-blue-50 to-white border-none shadow-lg hover:shadow-xl transition-all">
-              <CardContent className="p-8">
-                <div className="w-20 h-20 rounded-full bg-blue-100 flex items-center justify-center mb-6 mx-auto">
-                  <Icon name="MapPin" size={36} style={{ color: '#4A90E2' }} />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
-                  AI-Powered Market Cognition
-                </h3>
-                <p className="text-gray-600 leading-relaxed mb-6 text-center">
-                  At the core of Envariax lies a continuously evolving analytical engine — designed to interpret volatility patterns, forecast directional trends, and uncover emerging profit windows before they materialize. Trade with algorithmic precision powered by intelligence that learns, adapts, and sharpens with every market pulse.
-                </p>
-                <Button variant="outline" className="w-full text-blue-600 border-blue-200 hover:bg-blue-50">
-                  Learn More
-                  <Icon name="ArrowRight" size={16} className="ml-2" />
-                </Button>
-              </CardContent>
-            </Card>
-
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
             <Card className="bg-gradient-to-br from-blue-50 to-white border-none shadow-lg hover:shadow-xl transition-all">
               <CardContent className="p-8">
                 <div className="w-20 h-20 rounded-full bg-blue-100 flex items-center justify-center mb-6 mx-auto">
                   <Icon name="Shield" size={36} style={{ color: '#4A90E2' }} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
-                  Fortified Multi-Layer Security Architecture
+                  {t.features.feature1Title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-6 text-center">
-                  Your capital deserves resilience without compromise. Envariax integrates a multi-level cryptographic defense system enhanced with biometric validation and real-time threat monitoring. Its proactive defense layer identifies anomalies before they escalate — ensuring unwavering institutional-grade protection 24/7.
+                  {t.features.feature1Desc}
                 </p>
                 <Button variant="outline" className="w-full text-blue-600 border-blue-200 hover:bg-blue-50">
-                  Learn More
+                  {t.features.learnMore}
                   <Icon name="ArrowRight" size={16} className="ml-2" />
                 </Button>
               </CardContent>
@@ -839,13 +803,13 @@ const Index = () => {
                   <Icon name="Rocket" size={36} style={{ color: '#4A90E2' }} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
-                  Ultra-Speed Execution Framework
+                  {t.features.feature2Title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-6 text-center">
-                  In the world of trading, milliseconds define opportunity. Envariax operates on an ultra-responsive, low-latency infrastructure that synchronizes liquidity, accelerates execution, and ensures immediate order fulfillment. When timing meets intelligence, every move becomes a strategic advantage.
+                  {t.features.feature2Desc}
                 </p>
                 <Button variant="outline" className="w-full text-blue-600 border-blue-200 hover:bg-blue-50">
-                  Learn More
+                  {t.features.learnMore}
                   <Icon name="ArrowRight" size={16} className="ml-2" />
                 </Button>
               </CardContent>
@@ -854,10 +818,10 @@ const Index = () => {
 
           <div className="text-center">
             <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
-              Ready to go beyond boundaries? Experience unmatched speed, accuracy, and reliability with Envariax — where autonomous intelligence drives every trade.
+              {t.features.ctaText}
             </p>
             <Button size="lg" onClick={scrollToForm} className="bg-blue-600 hover:bg-blue-700 text-white px-8 h-14 text-lg font-semibold">
-              GET STARTED NOW
+              {t.features.getStartedNow}
               <Icon name="Rocket" size={20} className="ml-2" />
             </Button>
           </div>
@@ -868,10 +832,10 @@ const Index = () => {
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#5B6B8C' }}>
-              Active Traders
+              {t.activeTraders.title}
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Trade Smarter, Grow Steadier — Envariax AI empowers investors to achieve consistent performance through intelligent automation and adaptive precision analytics.
+              {t.activeTraders.description}
             </p>
           </div>
 
@@ -900,9 +864,9 @@ const Index = () => {
                   Envariax finally gave automation the control it was missing. Execution feels seamless, and the AI reacts faster than any manual setup I've ever used.
                 </p>
                 <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-4 mb-4">
-                  <div className="text-xs text-gray-500 mb-1">TOTAL EARNINGS</div>
+                  <div className="text-xs text-gray-500 mb-1">{t.activeTraders.totalEarnings}</div>
                   <div className="text-3xl font-bold text-green-600">$16 420</div>
-                  <div className="text-xs text-gray-500 mt-2">52% (in past level)</div>
+                  <div className="text-xs text-gray-500 mt-2">52% ({t.activeTraders.pastLevel})</div>
                 </div>
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-2 text-sm text-gray-600">
@@ -915,7 +879,7 @@ const Index = () => {
                   </div>
                 </div>
                 <Button variant="outline" className="w-full text-blue-600 border-blue-200">
-                  View Profile
+                  {t.activeTraders.viewProfile}
                   <Icon name="ArrowRight" size={16} className="ml-2" />
                 </Button>
               </CardContent>
@@ -946,9 +910,9 @@ const Index = () => {
                   Precision and prediction — that's what Envariax delivers. Its algorithms catch shifts before the charts even reflect them.
                 </p>
                 <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-4 mb-4">
-                  <div className="text-xs text-gray-500 mb-1">TOTAL EARNINGS</div>
+                  <div className="text-xs text-gray-500 mb-1">{t.activeTraders.totalEarnings}</div>
                   <div className="text-3xl font-bold text-green-600">$23 580</div>
-                  <div className="text-xs text-gray-500 mt-2">85% (in past level)</div>
+                  <div className="text-xs text-gray-500 mt-2">85% ({t.activeTraders.pastLevel})</div>
                 </div>
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-2 text-sm text-gray-600">
@@ -961,7 +925,7 @@ const Index = () => {
                   </div>
                 </div>
                 <Button variant="outline" className="w-full text-blue-600 border-blue-200">
-                  View Profile
+                  {t.activeTraders.viewProfile}
                   <Icon name="ArrowRight" size={16} className="ml-2" />
                 </Button>
               </CardContent>
@@ -992,7 +956,7 @@ const Index = () => {
                   Smooth interface, near-zero delay, and intelligence that grows with me. Envariax understands both the data and the trader behind it.
                 </p>
                 <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-4 mb-4">
-                  <div className="text-xs text-gray-500 mb-1">TOTAL EARNINGS</div>
+                  <div className="text-xs text-gray-500 mb-1">{t.activeTraders.totalEarnings}</div>
                   <div className="text-3xl font-bold text-green-600">$15 370</div>
                   <div className="text-xs text-gray-500 mt-2">73% (in past level)</div>
                 </div>
@@ -1007,7 +971,7 @@ const Index = () => {
                   </div>
                 </div>
                 <Button variant="outline" className="w-full text-blue-600 border-blue-200">
-                  View Profile
+                  {t.activeTraders.viewProfile}
                   <Icon name="ArrowRight" size={16} className="ml-2" />
                 </Button>
               </CardContent>
@@ -1038,9 +1002,9 @@ const Index = () => {
                   The automation feels effortless, and the results speak for themselves. Envariax helped me stabilize my portfolio week after week.
                 </p>
                 <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-4 mb-4">
-                  <div className="text-xs text-gray-500 mb-1">TOTAL EARNINGS</div>
+                  <div className="text-xs text-gray-500 mb-1">{t.activeTraders.totalEarnings}</div>
                   <div className="text-3xl font-bold text-green-600">$10 280</div>
-                  <div className="text-xs text-gray-500 mt-2">68% (in past level)</div>
+                  <div className="text-xs text-gray-500 mt-2">68% ({t.activeTraders.pastLevel})</div>
                 </div>
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-2 text-sm text-gray-600">
@@ -1053,7 +1017,7 @@ const Index = () => {
                   </div>
                 </div>
                 <Button variant="outline" className="w-full text-blue-600 border-blue-200">
-                  View Profile
+                  {t.activeTraders.viewProfile}
                   <Icon name="ArrowRight" size={16} className="ml-2" />
                 </Button>
               </CardContent>
@@ -1083,7 +1047,7 @@ const Index = () => {
                   Professional design, instant execution, and accuracy that feels surgical. Envariax is built for traders who demand reliability.
                 </p>
                 <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-4 mb-4">
-                  <div className="text-xs text-gray-500 mb-1">TOTAL EARNINGS</div>
+                  <div className="text-xs text-gray-500 mb-1">{t.activeTraders.totalEarnings}</div>
                   <div className="text-3xl font-bold text-green-600">$12 190</div>
                   <div className="text-xs text-gray-500 mt-2">81% (in past level)</div>
                 </div>
@@ -1098,7 +1062,7 @@ const Index = () => {
                   </div>
                 </div>
                 <Button variant="outline" className="w-full text-blue-600 border-blue-200">
-                  View Profile
+                  {t.activeTraders.viewProfile}
                   <Icon name="ArrowRight" size={16} className="ml-2" />
                 </Button>
               </CardContent>
@@ -1129,9 +1093,9 @@ const Index = () => {
                   Finally, a platform that merges data transparency with real performance. Envariax delivers measurable consistency and absolute trust.
                 </p>
                 <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-4 mb-4">
-                  <div className="text-xs text-gray-500 mb-1">TOTAL EARNINGS</div>
+                  <div className="text-xs text-gray-500 mb-1">{t.activeTraders.totalEarnings}</div>
                   <div className="text-3xl font-bold text-green-600">$14 530</div>
-                  <div className="text-xs text-gray-500 mt-2">80% (in past level)</div>
+                  <div className="text-xs text-gray-500 mt-2">80% ({t.activeTraders.pastLevel})</div>
                 </div>
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-2 text-sm text-gray-600">
@@ -1144,7 +1108,7 @@ const Index = () => {
                   </div>
                 </div>
                 <Button variant="outline" className="w-full text-blue-600 border-blue-200">
-                  View Profile
+                  {t.activeTraders.viewProfile}
                   <Icon name="ArrowRight" size={16} className="ml-2" />
                 </Button>
               </CardContent>
@@ -1153,10 +1117,10 @@ const Index = () => {
 
           <div className="text-center">
             <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
-              Join thousands of investors worldwide who trust Envariax to automate, analyze, and elevate their digital success.
+              {t.activeTraders.joinText}
             </p>
             <Button size="lg" onClick={scrollToForm} className="bg-blue-600 hover:bg-blue-700 text-white px-8 h-14 text-lg font-semibold">
-              JOIN NOW
+              {t.activeTraders.joinNow}
               <Icon name="Rocket" size={20} className="ml-2" />
             </Button>
           </div>
@@ -1168,13 +1132,13 @@ const Index = () => {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 border border-blue-200 rounded-full mb-6">
               <Icon name="Shield" size={18} style={{ color: '#4A90E2' }} />
-              <span className="text-sm font-semibold" style={{ color: '#4A90E2' }}>TRUSTED & CERTIFIED</span>
+              <span className="text-sm font-semibold" style={{ color: '#4A90E2' }}>{t.security.badge}</span>
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold mb-6" style={{ color: '#5B6B8C' }}>
-              Trusted by Professionals Across the Globe
+              {t.security.title}
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Over 66,000 active investors depend on Envariax for intelligent, ultra-secure, and performance-optimized trading — built on adaptive AI frameworks and fortified with institutional-grade protection for the modern digital economy.
+              {t.security.description}
             </p>
           </div>
 
@@ -1346,7 +1310,7 @@ const Index = () => {
               Start trading with unmatched security and intelligence
             </p>
             <Button size="lg" onClick={scrollToForm} className="bg-blue-600 hover:bg-blue-700 text-white px-8 h-14 text-lg font-semibold">
-              GET STARTED SECURELY
+              {t.security.getStartedSecurely}
               <Icon name="Shield" size={20} className="ml-2" />
             </Button>
           </div>
@@ -1358,13 +1322,13 @@ const Index = () => {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white border-2 border-blue-300 rounded-full mb-6">
               <Icon name="Clock" size={18} style={{ color: '#4A90E2' }} />
-              <span className="text-sm font-semibold" style={{ color: '#4A90E2' }}>LIMITED TIME OFFER</span>
+              <span className="text-sm font-semibold" style={{ color: '#4A90E2' }}>{t.timer.badge}</span>
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold mb-6" style={{ color: '#5B6B8C' }}>
-              Join Before This Exclusive Offer Ends
+              {t.timer.title}
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Start your Envariax trading journey with exclusive bonuses available only for new members
+              {t.timer.description}
             </p>
           </div>
 
@@ -1374,7 +1338,7 @@ const Index = () => {
                 <div className="text-5xl font-bold" style={{ color: '#4A90E2' }}>
                   {timeLeft.days.toString().padStart(2, '0')}
                 </div>
-                <div className="text-xs text-gray-500 uppercase mt-2">Days</div>
+                <div className="text-xs text-gray-500 uppercase mt-2">{t.timer.days}</div>
               </CardContent>
             </Card>
             <div className="text-3xl font-bold text-gray-400">:</div>
@@ -1383,7 +1347,7 @@ const Index = () => {
                 <div className="text-5xl font-bold" style={{ color: '#4A90E2' }}>
                   {timeLeft.hours.toString().padStart(2, '0')}
                 </div>
-                <div className="text-xs text-gray-500 uppercase mt-2">Hours</div>
+                <div className="text-xs text-gray-500 uppercase mt-2">{t.timer.hours}</div>
               </CardContent>
             </Card>
             <div className="text-3xl font-bold text-gray-400">:</div>
@@ -1392,7 +1356,7 @@ const Index = () => {
                 <div className="text-5xl font-bold" style={{ color: '#4A90E2' }}>
                   {timeLeft.minutes.toString().padStart(2, '0')}
                 </div>
-                <div className="text-xs text-gray-500 uppercase mt-2">Minutes</div>
+                <div className="text-xs text-gray-500 uppercase mt-2">{t.timer.minutes}</div>
               </CardContent>
             </Card>
             <div className="text-3xl font-bold text-gray-400">:</div>
@@ -1401,7 +1365,7 @@ const Index = () => {
                 <div className="text-5xl font-bold" style={{ color: '#4A90E2' }}>
                   {timeLeft.seconds.toString().padStart(2, '0')}
                 </div>
-                <div className="text-xs text-gray-500 uppercase mt-2">Seconds</div>
+                <div className="text-xs text-gray-500 uppercase mt-2">{t.timer.seconds}</div>
               </CardContent>
             </Card>
           </div>
@@ -1409,11 +1373,11 @@ const Index = () => {
           <div className="text-center">
             <Button size="lg" onClick={scrollToForm} className="bg-blue-600 hover:bg-blue-700 text-white px-10 h-14 text-lg font-semibold mb-4">
               <Icon name="Zap" size={20} className="mr-2" />
-              CLAIM YOUR BONUS NOW
+              {t.timer.claimBonus}
             </Button>
             <div className="flex items-center justify-center gap-2 text-orange-600">
               <Icon name="AlertTriangle" size={18} />
-              <span className="text-sm font-semibold">Only 47 spots remaining at this bonus level!</span>
+              <span className="text-sm font-semibold">{t.timer.spotsRemaining}</span>
             </div>
           </div>
         </div>
@@ -1424,13 +1388,13 @@ const Index = () => {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 border border-blue-200 rounded-full mb-6">
               <Icon name="HelpCircle" size={18} style={{ color: '#4A90E2' }} />
-              <span className="text-sm font-semibold" style={{ color: '#4A90E2' }}>FREQUENTLY ASKED</span>
+              <span className="text-sm font-semibold" style={{ color: '#4A90E2' }}>{t.faq.badge}</span>
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#5B6B8C' }}>
-              FAQ
+              {t.faq.title}
             </h2>
             <p className="text-lg text-gray-600">
-              Everything you need to know about Envariax
+              {t.faq.description}
             </p>
           </div>
 
@@ -1441,11 +1405,11 @@ const Index = () => {
                   <div className="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center flex-shrink-0">
                     <span className="text-lg font-bold" style={{ color: '#4A90E2' }}>01</span>
                   </div>
-                  <span className="text-lg font-semibold text-gray-900 text-left">What Is Envariax and How Does It Work?</span>
+                  <span className="text-lg font-semibold text-gray-900 text-left">{t.faq.q1}</span>
                 </div>
               </AccordionTrigger>
               <AccordionContent className="pl-16 pr-4 pb-4 text-gray-600 leading-relaxed">
-                Envariax is an advanced AI-driven trading ecosystem built to automate, optimize, and simplify your entire investment process. It continuously monitors live market behavior, identifies high-probability opportunities, and executes trades with adaptive precision — even when you're offline. The platform evolves in real time, ensuring seamless performance and continuity 24/7.
+                {t.faq.a1}
               </AccordionContent>
             </AccordionItem>
 
@@ -1455,11 +1419,11 @@ const Index = () => {
                   <div className="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center flex-shrink-0">
                     <span className="text-lg font-bold" style={{ color: '#4A90E2' }}>02</span>
                   </div>
-                  <span className="text-lg font-semibold text-gray-900 text-left">Why Do Investors Choose Platform Over Other Systems?</span>
+                  <span className="text-lg font-semibold text-gray-900 text-left">{t.faq.q2}</span>
                 </div>
               </AccordionTrigger>
               <AccordionContent className="pl-16 pr-4 pb-4 text-gray-600 leading-relaxed">
-                Most platforms react — Envariax anticipates. Its neural intelligence blends predictive modeling, algorithmic learning, and adaptive automation to forecast movements before they happen. The result: faster execution, optimized entries, and measurable advantages in fast-changing markets.
+                {t.faq.a2}
               </AccordionContent>
             </AccordionItem>
 
@@ -1469,11 +1433,11 @@ const Index = () => {
                   <div className="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center flex-shrink-0">
                     <span className="text-lg font-bold" style={{ color: '#4A90E2' }}>03</span>
                   </div>
-                  <span className="text-lg font-semibold text-gray-900 text-left">How Does Envariax Protect My Data and Assets?</span>
+                  <span className="text-lg font-semibold text-gray-900 text-left">{t.faq.q3}</span>
                 </div>
               </AccordionTrigger>
               <AccordionContent className="pl-16 pr-4 pb-4 text-gray-600 leading-relaxed">
-                Security forms the backbone of Envariax's infrastructure. Every account is secured through AES-X520 encryption, multi-factor and biometric authentication, and segregated cold storage for the majority of holdings. AI-driven monitoring, independent audits, and international compliance frameworks guarantee full transparency and protection at every layer.
+                {t.faq.a3}
               </AccordionContent>
             </AccordionItem>
 
@@ -1483,39 +1447,11 @@ const Index = () => {
                   <div className="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center flex-shrink-0">
                     <span className="text-lg font-bold" style={{ color: '#4A90E2' }}>04</span>
                   </div>
-                  <span className="text-lg font-semibold text-gray-900 text-left">Is Platform Suitable for Beginners?</span>
+                  <span className="text-lg font-semibold text-gray-900 text-left">{t.faq.q4}</span>
                 </div>
               </AccordionTrigger>
               <AccordionContent className="pl-16 pr-4 pb-4 text-gray-600 leading-relaxed">
-                Absolutely. Envariax was designed for every experience level. Step-by-step onboarding, interactive visual analytics, and adaptive AI tutorials guide newcomers with ease — while experienced traders unlock advanced automation and strategic customization to evolve naturally within one unified system.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-5" className="bg-gray-50 border border-gray-200 rounded-2xl px-6 py-2">
-              <AccordionTrigger className="hover:no-underline">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center flex-shrink-0">
-                    <span className="text-lg font-bold" style={{ color: '#4A90E2' }}>05</span>
-                  </div>
-                  <span className="text-lg font-semibold text-gray-900 text-left">Does Envariax Support Both Short- and Long-Term Strategies?</span>
-                </div>
-              </AccordionTrigger>
-              <AccordionContent className="pl-16 pr-4 pb-4 text-gray-600 leading-relaxed">
-                Yes. Flexibility is fundamental to Envariax. Whether your focus is on high-frequency scalping or structured portfolio growth, the platform automatically adjusts algorithms, risk parameters, and analytic depth to match your objectives — ensuring consistency and precision across all time horizons.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-6" className="bg-gray-50 border border-gray-200 rounded-2xl px-6 py-2">
-              <AccordionTrigger className="hover:no-underline">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center flex-shrink-0">
-                    <span className="text-lg font-bold" style={{ color: '#4A90E2' }}>06</span>
-                  </div>
-                  <span className="text-lg font-semibold text-gray-900 text-left">What Kind of Analytics Does Platform Provide?</span>
-                </div>
-              </AccordionTrigger>
-              <AccordionContent className="pl-16 pr-4 pb-4 text-gray-600 leading-relaxed">
-                The Envariax Insight Suite delivers full-spectrum analysis of your trading activity — including win rates, cumulative returns, exposure ratios, and performance efficiency. Its AI engine translates complex data into clear strategic insights, helping you refine decisions and scale intelligently with every trade.
+                {t.faq.a4}
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -1630,37 +1566,37 @@ const Index = () => {
                 <span className="text-2xl font-bold">Envariax</span>
               </div>
               <p className="text-gray-400 leading-relaxed">
-                Advanced AI-driven trading ecosystem built to automate, optimize, and simplify your entire investment process.
+                {t.footer.description}
               </p>
             </div>
             <div>
-              <h4 className="font-semibold mb-4 text-lg">QUICK LINKS</h4>
+              <h4 className="font-semibold mb-4 text-lg">{t.footer.quickLinks}</h4>
               <ul className="space-y-3">
-                <li><a href="#home" className="text-gray-400 hover:text-white transition-colors">Home</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Advantages</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Testimonials</a></li>
-                <li><a href="#faq" className="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                <li><a href="#home" className="text-gray-400 hover:text-white transition-colors">{t.footer.home}</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t.footer.advantages}</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t.footer.testimonials}</a></li>
+                <li><a href="#faq" className="text-gray-400 hover:text-white transition-colors">{t.footer.faq}</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t.footer.aboutUs}</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t.footer.contact}</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4 text-lg">RESOURCES</h4>
+              <h4 className="font-semibold mb-4 text-lg">{t.footer.resources}</h4>
               <ul className="space-y-3">
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t.footer.privacy}</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t.footer.terms}</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4 text-lg">CONTACT</h4>
+              <h4 className="font-semibold mb-4 text-lg">{t.footer.contactTitle}</h4>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <div className="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center flex-shrink-0">
                     <Icon name="Headphones" size={20} className="text-blue-400" />
                   </div>
                   <div>
-                    <div className="text-sm text-gray-400 mb-1">SUPPORT</div>
-                    <div className="text-white font-medium">24/7 Available</div>
+                    <div className="text-sm text-gray-400 mb-1">{t.footer.support}</div>
+                    <div className="text-white font-medium">{t.footer.support247}</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -1668,15 +1604,15 @@ const Index = () => {
                     <Icon name="Globe" size={20} className="text-blue-400" />
                   </div>
                   <div>
-                    <div className="text-sm text-gray-400 mb-1">COVERAGE</div>
-                    <div className="text-white font-medium">150+ Countries</div>
+                    <div className="text-sm text-gray-400 mb-1">{t.footer.coverage}</div>
+                    <div className="text-white font-medium">{t.footer.countries}</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; 2025 Envariax. All rights reserved.</p>
+            <p>{t.footer.copyright}</p>
           </div>
         </div>
       </footer>
