@@ -758,6 +758,196 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-20 px-6 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 border border-blue-200 rounded-full mb-6">
+              <Icon name="Shield" size={18} style={{ color: '#4A90E2' }} />
+              <span className="text-sm font-semibold" style={{ color: '#4A90E2' }}>TRUSTED & CERTIFIED</span>
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6" style={{ color: '#5B6B8C' }}>
+              Trusted by Professionals Across the Globe
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Over 66,000 active investors depend on Envariax for intelligent, ultra-secure, and performance-optimized trading — built on adaptive AI frameworks and fortified with institutional-grade protection for the modern digital economy.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            <Card className="bg-gradient-to-br from-blue-50 to-white border-none shadow-lg hover:shadow-xl transition-all">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 rounded-2xl bg-blue-100 flex items-center justify-center mx-auto mb-6">
+                  <Icon name="Lock" size={32} style={{ color: '#4A90E2' }} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  Quantum-Grade Encryption Framework
+                </h3>
+                <p className="text-gray-600 text-sm mb-6 leading-relaxed">
+                  Every Envariax operation runs under next-generation AES-XS20 encryption, delivering absolute confidentiality, zero exposure, and unbreakable transaction integrity.
+                </p>
+                <div className="px-4 py-2 bg-blue-100 rounded-full text-sm font-semibold text-blue-700">
+                  AES-XS20
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-br from-blue-50 to-white border-none shadow-lg hover:shadow-xl transition-all">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 rounded-2xl bg-blue-100 flex items-center justify-center mx-auto mb-6">
+                  <Icon name="Snowflake" size={32} style={{ color: '#4A90E2' }} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  Distributed Cold Vault Infrastructure
+                </h3>
+                <p className="text-gray-600 text-sm mb-6 leading-relaxed">
+                  Over 97.8% of user assets are secured in multi-layer offline storage — geographically segmented and fully isolated from online access points.
+                </p>
+                <div className="px-4 py-2 bg-blue-100 rounded-full text-sm font-semibold text-blue-700">
+                  97.8% OFFLINE
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-br from-blue-50 to-white border-none shadow-lg hover:shadow-xl transition-all">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 rounded-2xl bg-blue-100 flex items-center justify-center mx-auto mb-6">
+                  <Icon name="ShieldCheck" size={32} style={{ color: '#4A90E2' }} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  Multi-Layer Bio-Identity Verification
+                </h3>
+                <p className="text-gray-600 text-sm mb-6 leading-relaxed">
+                  Envariax integrates biometric validation, adaptive 2FA, and behavioral signature tracking, ensuring airtight account protection on every login and transaction.
+                </p>
+                <div className="px-4 py-2 bg-blue-100 rounded-full text-sm font-semibold text-blue-700">
+                  2FA + BIO-ID
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-br from-blue-50 to-white border-none shadow-lg hover:shadow-xl transition-all">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 rounded-2xl bg-blue-100 flex items-center justify-center mx-auto mb-6">
+                  <Icon name="ShieldAlert" size={32} style={{ color: '#4A90E2' }} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  Autonomous AI Security Grid
+                </h3>
+                <p className="text-gray-600 text-sm mb-6 leading-relaxed">
+                  Powered by self-learning defense nodes, Envariax anticipates and neutralizes threats in real time — maintaining 99.999% uptime across all environments through predictive resilience algorithms.
+                </p>
+                <div className="px-4 py-2 bg-blue-100 rounded-full text-sm font-semibold text-blue-700">
+                  99.999% UPTIME
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-br from-blue-50 to-white border-none shadow-lg hover:shadow-xl transition-all">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 rounded-2xl bg-blue-100 flex items-center justify-center mx-auto mb-6">
+                  <Icon name="FileCheck" size={32} style={{ color: '#4A90E2' }} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  Independent Cyber Assurance & Compliance
+                </h3>
+                <p className="text-gray-600 text-sm mb-6 leading-relaxed">
+                  External security audits by global cybersecurity authorities ensure full transparency and compliance with SOC-2, ISO/IEC 27001, and GDPR-grade data integrity standards.
+                </p>
+                <div className="px-4 py-2 bg-blue-100 rounded-full text-sm font-semibold text-blue-700">
+                  VERIFIED & CERTIFIED
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-br from-blue-50 to-white border-none shadow-lg hover:shadow-xl transition-all">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 rounded-2xl bg-blue-100 flex items-center justify-center mx-auto mb-6">
+                  <Icon name="Wallet" size={32} style={{ color: '#4A90E2' }} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  Global Asset Protection Reserve
+                </h3>
+                <p className="text-gray-600 text-sm mb-6 leading-relaxed">
+                  Envariax upholds a $210 million protection fund designed to safeguard investors from volatility disruptions, systemic anomalies, or unforeseen macroeconomic shocks.
+                </p>
+                <div className="px-4 py-2 bg-blue-100 rounded-full text-sm font-semibold text-blue-700">
+                  $210M RESERVE
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-center mb-10" style={{ color: '#5B6B8C' }}>
+              Industry Certifications & Compliance
+            </h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+              <Card className="bg-white border border-gray-200 shadow-md hover:shadow-lg transition-all">
+                <CardContent className="p-6 flex items-center gap-4">
+                  <div className="w-14 h-14 rounded-lg bg-blue-500 flex items-center justify-center text-white font-bold text-lg flex-shrink-0">
+                    S2
+                  </div>
+                  <div className="flex-1">
+                    <div className="font-bold text-gray-900">SOC 2 Type II</div>
+                    <div className="text-sm text-gray-500">Certified</div>
+                  </div>
+                  <Icon name="CheckCircle2" size={24} className="text-blue-500" />
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border border-gray-200 shadow-md hover:shadow-lg transition-all">
+                <CardContent className="p-6 flex items-center gap-4">
+                  <div className="w-14 h-14 rounded-lg bg-blue-500 flex items-center justify-center text-white font-bold text-lg flex-shrink-0">
+                    I2
+                  </div>
+                  <div className="flex-1">
+                    <div className="font-bold text-gray-900">ISO/IEC 27001</div>
+                    <div className="text-sm text-gray-500">Certified</div>
+                  </div>
+                  <Icon name="CheckCircle2" size={24} className="text-blue-500" />
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border border-gray-200 shadow-md hover:shadow-lg transition-all">
+                <CardContent className="p-6 flex items-center gap-4">
+                  <div className="w-14 h-14 rounded-lg bg-blue-500 flex items-center justify-center text-white font-bold text-lg flex-shrink-0">
+                    PD
+                  </div>
+                  <div className="flex-1">
+                    <div className="font-bold text-gray-900">PCI DSS</div>
+                    <div className="text-sm text-gray-500">Certified</div>
+                  </div>
+                  <Icon name="CheckCircle2" size={24} className="text-blue-500" />
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border border-gray-200 shadow-md hover:shadow-lg transition-all">
+                <CardContent className="p-6 flex items-center gap-4">
+                  <div className="w-14 h-14 rounded-lg bg-blue-500 flex items-center justify-center text-white font-bold text-lg flex-shrink-0">
+                    GC
+                  </div>
+                  <div className="flex-1">
+                    <div className="font-bold text-gray-900">GDPR Compliant</div>
+                    <div className="text-sm text-gray-500">Certified</div>
+                  </div>
+                  <Icon name="CheckCircle2" size={24} className="text-blue-500" />
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
+              Start trading with unmatched security and intelligence
+            </p>
+            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 h-14 text-lg font-semibold">
+              GET STARTED SECURELY
+              <Icon name="Shield" size={20} className="ml-2" />
+            </Button>
+          </div>
+        </div>
+      </section>
+
       <section id="about" className="py-20 px-6 bg-card">
         <div className="container mx-auto">
           <div className="max-w-3xl mx-auto text-center mb-16">
