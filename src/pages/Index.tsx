@@ -23,6 +23,56 @@ const Index = () => {
   const [selectedOffice, setSelectedOffice] = useState(0);
   const [language, setLanguage] = useState('English');
   const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
+  const [selectedCountry, setSelectedCountry] = useState({ flag: '🇺🇸', code: '+1', name: 'United States' });
+  const [isCountryDropdownOpen, setIsCountryDropdownOpen] = useState(false);
+  const [countrySearchQuery, setCountrySearchQuery] = useState('');
+
+  const countries = [
+    { flag: '🇺🇸', code: '+1', name: 'United States' },
+    { flag: '🇨🇦', code: '+1', name: 'Canada' },
+    { flag: '🇲🇽', code: '+52', name: 'Mexico' },
+    { flag: '🇯🇲', code: '+1876', name: 'Jamaica' },
+    { flag: '🇹🇹', code: '+1868', name: 'Trinidad and Tobago' },
+    { flag: '🇧🇷', code: '+55', name: 'Brazil' },
+    { flag: '🇦🇷', code: '+54', name: 'Argentina' },
+    { flag: '🇨🇱', code: '+56', name: 'Chile' },
+    { flag: '🇬🇧', code: '+44', name: 'United Kingdom' },
+    { flag: '🇮🇪', code: '+353', name: 'Ireland' },
+    { flag: '🇫🇷', code: '+33', name: 'France' },
+    { flag: '🇩🇪', code: '+49', name: 'Germany' },
+    { flag: '🇪🇸', code: '+34', name: 'Spain' },
+    { flag: '🇮🇹', code: '+39', name: 'Italy' },
+    { flag: '🇳🇱', code: '+31', name: 'Netherlands' },
+    { flag: '🇧🇪', code: '+32', name: 'Belgium' },
+    { flag: '🇨🇭', code: '+41', name: 'Switzerland' },
+    { flag: '🇦🇹', code: '+43', name: 'Austria' },
+    { flag: '🇳🇴', code: '+47', name: 'Norway' },
+    { flag: '🇸🇪', code: '+46', name: 'Sweden' },
+    { flag: '🇩🇰', code: '+45', name: 'Denmark' },
+    { flag: '🇫🇮', code: '+358', name: 'Finland' },
+    { flag: '🇵🇱', code: '+48', name: 'Poland' },
+    { flag: '🇷🇺', code: '+7', name: 'Russia' },
+    { flag: '🇯🇵', code: '+81', name: 'Japan' },
+    { flag: '🇰🇷', code: '+82', name: 'South Korea' },
+    { flag: '🇨🇳', code: '+86', name: 'China' },
+    { flag: '🇮🇳', code: '+91', name: 'India' },
+    { flag: '🇦🇺', code: '+61', name: 'Australia' },
+    { flag: '🇳🇿', code: '+64', name: 'New Zealand' },
+    { flag: '🇸🇬', code: '+65', name: 'Singapore' },
+    { flag: '🇲🇾', code: '+60', name: 'Malaysia' },
+    { flag: '🇹🇭', code: '+66', name: 'Thailand' },
+    { flag: '🇵🇭', code: '+63', name: 'Philippines' },
+    { flag: '🇮🇩', code: '+62', name: 'Indonesia' },
+    { flag: '🇻🇳', code: '+84', name: 'Vietnam' },
+    { flag: '🇦🇪', code: '+971', name: 'United Arab Emirates' },
+    { flag: '🇸🇦', code: '+966', name: 'Saudi Arabia' },
+    { flag: '🇿🇦', code: '+27', name: 'South Africa' },
+  ];
+
+  const filteredCountries = countries.filter(country =>
+    country.name.toLowerCase().includes(countrySearchQuery.toLowerCase()) ||
+    country.code.includes(countrySearchQuery)
+  );
 
   const offices = [
     {
@@ -363,10 +413,49 @@ const Index = () => {
                   <div>
                     <label className="text-sm font-medium text-gray-700 mb-2 block">Phone</label>
                     <div className="flex gap-2">
-                      <div className="flex items-center gap-2 px-4 bg-gray-50 border border-gray-200 rounded-md">
-                        <span className="text-lg">🇺🇸</span>
-                        <span className="text-sm">+1</span>
-                        <Icon name="ChevronDown" size={16} className="text-gray-500" />
+                      <div className="relative">
+                        <button
+                          type="button"
+                          onClick={() => setIsCountryDropdownOpen(!isCountryDropdownOpen)}
+                          className="flex items-center gap-2 px-3 h-14 bg-gray-50 border border-gray-200 rounded-md hover:bg-gray-100 transition-colors"
+                        >
+                          <span className="text-lg">{selectedCountry.flag}</span>
+                          <span className="text-sm font-medium">{selectedCountry.code}</span>
+                          <Icon name="ChevronDown" size={16} className="text-gray-500" />
+                        </button>
+                        
+                        {isCountryDropdownOpen && (
+                          <div className="absolute top-full left-0 mt-2 w-72 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden z-50">
+                            <div className="p-3 border-b border-gray-200">
+                              <Input
+                                placeholder="Search countries..."
+                                value={countrySearchQuery}
+                                onChange={(e) => setCountrySearchQuery(e.target.value)}
+                                className="h-10 bg-gray-50 border-gray-200"
+                              />
+                            </div>
+                            <div className="max-h-64 overflow-y-auto">
+                              {filteredCountries.map((country, index) => (
+                                <button
+                                  key={index}
+                                  type="button"
+                                  onClick={() => {
+                                    setSelectedCountry(country);
+                                    setIsCountryDropdownOpen(false);
+                                    setCountrySearchQuery('');
+                                  }}
+                                  className="w-full flex items-center justify-between px-4 py-3 hover:bg-blue-50 transition-colors text-left"
+                                >
+                                  <div className="flex items-center gap-3">
+                                    <span className="text-lg">{country.flag}</span>
+                                    <span className="text-sm font-medium text-gray-900">{country.name}</span>
+                                  </div>
+                                  <span className="text-sm text-gray-500 font-medium">{country.code}</span>
+                                </button>
+                              ))}
+                            </div>
+                          </div>
+                        )}
                       </div>
                       <Input
                         type="tel"
