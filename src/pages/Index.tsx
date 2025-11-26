@@ -727,7 +727,7 @@ const Index = () => {
                 <div className="flex items-start gap-4 mb-6">
                   <img
                     src="https://cdn.poehali.dev/projects/dec2b247-100c-4952-8c09-827ed14bdcb9/files/deeaeda7-1d69-4f4f-8ea0-8811be3c7906.jpg"
-                    alt="Ethan Morales"
+                    alt="Ethan Morales - Vorexlan Chief Quantitative Architect"
                     className="w-16 h-16 rounded-full object-cover"
                   />
                   <div className="flex-1">
@@ -758,7 +758,7 @@ const Index = () => {
                 <div className="flex items-start gap-4 mb-6">
                   <img
                     src="https://cdn.poehali.dev/projects/dec2b247-100c-4952-8c09-827ed14bdcb9/files/f00d8a1f-3001-4171-94a5-1ea939052c45.jpg"
-                    alt="Amelia Kwon"
+                    alt="Amelia Kwon - Vorexlan Director of Global Asset Strategies"
                     className="w-16 h-16 rounded-full object-cover"
                   />
                   <div className="flex-1">

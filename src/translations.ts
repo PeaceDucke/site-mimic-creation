@@ -6,12 +6,12 @@ export const translations = {
       getStarted: 'GET STARTED'
     },
     hero: {
-      title: 'Intelligent Trades Executed Globally',
+      title: 'Vorexlan: Intelligent Trades Executed Globally',
       volume: '980M+',
-      description: 'Experience the evolution of digital wealth with Vorexlan',
+      description: 'Experience the evolution of digital wealth with Vorexlan - the official AI-driven trading platform trusted by investors worldwide',
       rating: '4.9/5',
       reviews: 'Based on 12,847 verified reviews',
-      formTitle: 'Join Exclusive Access',
+      formTitle: 'Join Vorexlan - Exclusive Access',
       trustedMembers: 'Trusted Members',
       activeInvestors: 'Active Global Investors',
       firstName: 'Enter your first name',
@@ -46,7 +46,7 @@ export const translations = {
     features: {
       badge: 'TRUSTED PLATFORM',
       title: 'How Vorexlan Is Redefining the Future?',
-      description: 'Step beyond conventional trading boundaries',
+      description: 'Vorexlan steps beyond conventional trading boundaries with AI-powered precision',
       feature1Title: 'Multi-Layer Security',
       feature1Desc: 'Your capital deserves resilience',
       feature2Title: 'Ultra-Speed Execution',
@@ -57,12 +57,12 @@ export const translations = {
     },
     activeTraders: {
       title: 'Active Traders',
-      description: 'Trade Smarter, Grow Steadier',
+      description: 'Vorexlan Traders: Trade Smarter, Grow Steadier',
       totalEarnings: 'TOTAL EARNINGS',
       pastLevel: 'in past level',
       viewProfile: 'View Profile',
       joinNow: 'JOIN NOW',
-      joinText: 'Join thousands of investors worldwide'
+      joinText: 'Join thousands of Vorexlan investors worldwide'
     },
     security: {
       badge: 'TRUSTED & CERTIFIED',
@@ -106,7 +106,7 @@ export const translations = {
       a4: 'Absolutely. Designed for every level'
     },
     footer: {
-      description: 'Advanced AI-driven trading ecosystem',
+      description: 'Vorexlan - Advanced AI-driven trading ecosystem trusted by investors worldwide',
       quickLinks: 'QUICK LINKS',
       home: 'Home',
       advantages: 'Advantages',
