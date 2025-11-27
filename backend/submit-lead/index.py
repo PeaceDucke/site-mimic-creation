@@ -11,6 +11,7 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     Args: event with httpMethod, body containing firstName, lastName, email, phone, countryCode, countryName
           context with request_id
     Returns: HTTP response with success status
+    Updated: 2025-11-27
     '''
     method: str = event.get('httpMethod', 'GET')
     
