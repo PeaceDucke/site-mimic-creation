@@ -277,6 +277,28 @@ const Index = () => {
     return () => clearInterval(timer);
   }, []);
 
+  useEffect(() => {
+    const detectCountryByIP = async () => {
+      try {
+        const response = await fetch('https://ipapi.co/json/');
+        const data = await response.json();
+        const detectedCountryCode = data.country_code;
+        
+        const matchedCountry = countries.find(
+          country => country.countryCode === detectedCountryCode
+        );
+        
+        if (matchedCountry) {
+          setSelectedCountry(matchedCountry);
+        }
+      } catch (error) {
+        console.log('Could not detect country by IP:', error);
+      }
+    };
+
+    detectCountryByIP();
+  }, []);
+
   const scrollToForm = () => {
     const formSection = document.getElementById('join-form');
     if (formSection) {
