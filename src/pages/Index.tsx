@@ -445,7 +445,7 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-8 animate-fade-in">
               <div className="text-4xl font-bold tracking-wider" style={{ color: '#4A90E2' }}>
-                VOREXLAN
+                IROXIVOR
               </div>
               <h1 className="text-5xl lg:text-6xl font-black leading-tight">
                 {t.hero.title}
