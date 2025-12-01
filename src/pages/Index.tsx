@@ -681,53 +681,99 @@ const Index = () => {
             </div>
 
             <div className="lg:sticky lg:top-32">
-              <Card className="bg-gradient-to-br from-green-50 to-blue-50 border-none shadow-xl">
-                <CardContent className="p-6">
-                  <div className="flex items-center justify-between mb-6">
-                    <div className="flex items-center gap-2">
-                      <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                      <span className="font-semibold text-gray-900">{t.liveTrading.liveDashboard}</span>
-                    </div>
-                    <div className="px-4 py-1 bg-green-100 text-green-700 rounded-full text-sm font-bold flex items-center gap-1">
-                      <Icon name="TrendingUp" size={16} />
-                      +122%
+              <Card className="bg-gradient-to-br from-green-50 to-blue-50 border-none shadow-xl overflow-hidden">
+                <CardContent className="p-0">
+                  <div className="bg-gradient-to-r from-green-500 to-emerald-600 px-6 py-4">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-3">
+                        <div className="relative">
+                          <div className="w-2.5 h-2.5 bg-white rounded-full animate-pulse" />
+                          <div className="absolute inset-0 w-2.5 h-2.5 bg-white rounded-full animate-ping opacity-75" />
+                        </div>
+                        <span className="font-bold text-white text-lg">Live Trading Dashboard</span>
+                      </div>
+                      <div className="px-4 py-1.5 bg-white/20 backdrop-blur-sm text-white rounded-full text-sm font-bold flex items-center gap-1.5">
+                        <Icon name="TrendingUp" size={16} />
+                        +122%
+                      </div>
                     </div>
                   </div>
                   
-                  <div className="bg-white rounded-2xl p-6 mb-4 shadow-lg">
-                    <div className="relative h-64">
+                  <div className="bg-white p-6">
+                    <div className="relative h-64 bg-gradient-to-b from-gray-50 to-white rounded-xl p-4 border border-gray-100">
                       <svg className="w-full h-full" viewBox="0 0 400 200" preserveAspectRatio="none">
                         <defs>
                           <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%" stopColor="#10B981" stopOpacity="0.3" />
-                            <stop offset="100%" stopColor="#10B981" stopOpacity="0.05" />
+                            <stop offset="0%" stopColor="#10B981" stopOpacity="0.4" />
+                            <stop offset="100%" stopColor="#10B981" stopOpacity="0.02" />
                           </linearGradient>
+                          <filter id="glow">
+                            <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                            <feMerge>
+                              <feMergeNode in="coloredBlur"/>
+                              <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                          </filter>
                         </defs>
+                        
                         <path
-                          d="M 0 180 Q 50 160, 100 140 T 200 100 T 300 60 T 400 40"
+                          d="M 0 180 L 20 175 L 40 170 L 60 168 L 80 160 L 100 155 L 120 145 L 140 140 L 160 130 L 180 120 L 200 110 L 220 100 L 240 85 L 260 75 L 280 65 L 300 55 L 320 48 L 340 42 L 360 38 L 380 35 L 400 32 L 400 200 L 0 200 Z"
                           fill="url(#chartGradient)"
+                        />
+                        
+                        <path
+                          d="M 0 180 L 20 175 L 40 170 L 60 168 L 80 160 L 100 155 L 120 145 L 140 140 L 160 130 L 180 120 L 200 110 L 220 100 L 240 85 L 260 75 L 280 65 L 300 55 L 320 48 L 340 42 L 360 38 L 380 35 L 400 32"
+                          fill="none"
                           stroke="#10B981"
                           strokeWidth="3"
-                        />
-                        <circle cx="400" cy="40" r="6" fill="#10B981" />
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          filter="url(#glow)"
+                        >
+                          <animate
+                            attributeName="stroke-dasharray"
+                            from="0,1000"
+                            to="1000,0"
+                            dur="2s"
+                            fill="freeze"
+                          />
+                        </path>
+                        
+                        <circle cx="400" cy="32" r="5" fill="#10B981">
+                          <animate attributeName="r" values="5;7;5" dur="1.5s" repeatCount="indefinite"/>
+                          <animate attributeName="opacity" values="1;0.7;1" dur="1.5s" repeatCount="indefinite"/>
+                        </circle>
+                        
+                        <circle cx="400" cy="32" r="8" fill="none" stroke="#10B981" strokeWidth="2" opacity="0.5">
+                          <animate attributeName="r" values="8;12;8" dur="1.5s" repeatCount="indefinite"/>
+                          <animate attributeName="opacity" values="0.5;0;0.5" dur="1.5s" repeatCount="indefinite"/>
+                        </circle>
                       </svg>
-                      <div className="absolute top-4 left-4 px-3 py-1 bg-blue-500 text-white text-xs font-bold rounded">
+                      
+                      <div className="absolute top-4 left-4 px-3 py-1.5 bg-blue-500 text-white text-xs font-bold rounded-md shadow-lg">
                         BTC
                       </div>
-                      <div className="absolute top-4 right-4 px-3 py-1 bg-yellow-400 text-gray-900 text-xs font-bold rounded">
+                      <div className="absolute top-4 right-4 px-3 py-1.5 bg-yellow-400 text-gray-900 text-xs font-bold rounded-md shadow-lg">
                         HOLD
                       </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-white rounded-xl p-4 shadow-sm">
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
-                        <Icon name="Check" size={20} className="text-green-600" />
+                      
+                      <div className="absolute bottom-4 left-4 text-xs text-gray-500 font-mono">
+                        00:00
                       </div>
-                      <div className="flex-1">
-                        <div className="font-semibold text-gray-900">{t.liveTrading.executedTrade}</div>
-                        <div className="text-sm text-gray-500">2m {t.liveTrading.ago}</div>
+                      <div className="absolute bottom-4 right-4 text-xs text-gray-500 font-mono">
+                        24:00
+                      </div>
+                    </div>
+                    
+                    <div className="mt-6 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-4 border border-green-200">
+                      <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center shadow-lg">
+                          <Icon name="CheckCircle2" size={20} className="text-white" />
+                        </div>
+                        <div className="flex-1">
+                          <div className="font-bold text-gray-900">{t.liveTrading.executedTrade}</div>
+                          <div className="text-sm text-gray-600">2m {t.liveTrading.ago}</div>
+                        </div>
                       </div>
                     </div>
                   </div>
