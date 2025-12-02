@@ -247,12 +247,12 @@ const Index = () => {
 
   useEffect(() => {
     const getOrCreateEndTime = () => {
-      const stored = localStorage.getItem('iroxivor_offer_end');
+      const stored = localStorage.getItem('torexian_offer_end');
       if (stored) {
         return parseInt(stored);
       }
       const endTime = Date.now() + (7 * 24 * 60 * 60 * 1000);
-      localStorage.setItem('iroxivor_offer_end', endTime.toString());
+      localStorage.setItem('torexian_offer_end', endTime.toString());
       return endTime;
     };
 
@@ -1705,7 +1705,7 @@ const Index = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
                 <span className="text-2xl">💎</span>
-                <span className="text-2xl font-bold">Iroxivor</span>
+                <span className="text-2xl font-bold">Torexian</span>
               </div>
               <p className="text-gray-400 leading-relaxed">
                 {t.footer.description}
