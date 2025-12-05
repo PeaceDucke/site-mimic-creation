@@ -1,5 +1,5 @@
-# Torexian Official - robots.txt
-# https://torexian-official.com
+# Lorviatex Official - robots.txt
+# https://lorviatex-official.com
 
 User-agent: Googlebot
 Allow: /
@@ -47,7 +47,7 @@ Allow: /
 Crawl-delay: 2
 
 # Sitemaps
-Sitemap: https://torexian-official.com/sitemap.xml
+Sitemap: https://lorviatex-official.com/sitemap.xml
 
 # Disallow admin/private areas (if any)
 Disallow: /api/
