@@ -423,10 +423,10 @@ const Index = () => {
             <div className="flex items-center space-x-2">
               <img 
                 src="https://cdn.poehali.dev/files/204f6091-1497-458b-9605-6b56e10eecb0.png"
-                alt="Olutrixon Logo"
+                alt="Zyverium Logo"
                 className="w-7 h-7 md:w-8 md:h-8 object-contain"
               />
-              <span className="text-lg md:text-xl font-bold text-gray-900">Olutrixon</span>
+              <span className="text-lg md:text-xl font-bold text-gray-900">Zyverium</span>
             </div>
             
             <div className="hidden md:flex items-center space-x-8">
@@ -485,7 +485,7 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-8 animate-fade-in">
               <div className="text-4xl font-bold tracking-wider" style={{ color: '#4A90E2' }}>
-                OLUTRIXON
+                ZYVERIUM
               </div>
               <h1 className="text-5xl lg:text-6xl font-black leading-tight">
                 {t.hero.title}
