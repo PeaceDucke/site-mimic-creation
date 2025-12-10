@@ -423,10 +423,10 @@ const Index = () => {
             <div className="flex items-center space-x-2">
               <img 
                 src="https://cdn.poehali.dev/files/204f6091-1497-458b-9605-6b56e10eecb0.png"
-                alt="Zyverium Logo"
+                alt="Axtrovien Logo"
                 className="w-7 h-7 md:w-8 md:h-8 object-contain"
               />
-              <span className="text-lg md:text-xl font-bold text-gray-900">Zyverium</span>
+              <span className="text-lg md:text-xl font-bold text-gray-900">Axtrovien</span>
             </div>
             
             <div className="hidden md:flex items-center space-x-8">
@@ -845,7 +845,7 @@ const Index = () => {
                 <div className="flex items-start gap-4 mb-6">
                   <img
                     src="https://cdn.poehali.dev/projects/dec2b247-100c-4952-8c09-827ed14bdcb9/files/deeaeda7-1d69-4f4f-8ea0-8811be3c7906.jpg"
-                    alt="Ethan Morales - Zyverium Chief Quantitative Architect"
+                    alt="Ethan Morales - Axtrovien Chief Quantitative Architect"
                     className="w-16 h-16 rounded-full object-cover"
                   />
                   <div className="flex-1">
@@ -860,7 +860,7 @@ const Index = () => {
                 
                 <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6 rounded">
                   <p className="text-gray-700 italic leading-relaxed">
-                    Zyverium completely redefined how I interpret market flow. Its predictive intelligence reacts in microseconds - transforming volatility into calculated precision and measurable growth.
+                    Axtrovien completely redefined how I interpret market flow. Its predictive intelligence reacts in microseconds - transforming volatility into calculated precision and measurable growth.
                   </p>
                 </div>
 
@@ -876,7 +876,7 @@ const Index = () => {
                 <div className="flex items-start gap-4 mb-6">
                   <img
                     src="https://cdn.poehali.dev/projects/dec2b247-100c-4952-8c09-827ed14bdcb9/files/f00d8a1f-3001-4171-94a5-1ea939052c45.jpg"
-                    alt="Amelia Kwon - Zyverium Director of Global Asset Strategies"
+                    alt="Amelia Kwon - Axtrovien Director of Global Asset Strategies"
                     className="w-16 h-16 rounded-full object-cover"
                   />
                   <div className="flex-1">
@@ -891,7 +891,7 @@ const Index = () => {
                 
                 <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6 rounded">
                   <p className="text-gray-700 italic leading-relaxed">
-                    No platform matches the consistency of Zyverium. Every trade executes with algorithmic intent, fluid precision, and a level of stability that reshapes high-speed investing.
+                    No platform matches the consistency of Axtrovien. Every trade executes with algorithmic intent, fluid precision, and a level of stability that reshapes high-speed investing.
                   </p>
                 </div>
 
@@ -1003,7 +1003,7 @@ const Index = () => {
                   </div>
                 </div>
                 <p className="text-gray-700 text-sm mb-4 leading-relaxed">
-                  Zyverium finally gave automation the control it was missing. Execution feels seamless, and the AI reacts faster than any manual setup I've ever used.
+                  Axtrovien finally gave automation the control it was missing. Execution feels seamless, and the AI reacts faster than any manual setup I've ever used.
                 </p>
                 <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-4 mb-4">
                   <div className="text-xs text-gray-500 mb-1">{t.activeTraders.totalEarnings}</div>
@@ -1049,7 +1049,7 @@ const Index = () => {
                   </div>
                 </div>
                 <p className="text-gray-700 text-sm mb-4 leading-relaxed">
-                  Precision and prediction - that's what Zyverium delivers. Its algorithms catch shifts before the charts even reflect them.
+                  Precision and prediction - that's what Axtrovien delivers. Its algorithms catch shifts before the charts even reflect them.
                 </p>
                 <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-4 mb-4">
                   <div className="text-xs text-gray-500 mb-1">{t.activeTraders.totalEarnings}</div>
@@ -1095,7 +1095,7 @@ const Index = () => {
                   </div>
                 </div>
                 <p className="text-gray-700 text-sm mb-4 leading-relaxed">
-                  Smooth interface, near-zero delay, and intelligence that grows with me. Zyverium understands both the data and the trader behind it.
+                  Smooth interface, near-zero delay, and intelligence that grows with me. Axtrovien understands both the data and the trader behind it.
                 </p>
                 <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-4 mb-4">
                   <div className="text-xs text-gray-500 mb-1">{t.activeTraders.totalEarnings}</div>
@@ -1141,7 +1141,7 @@ const Index = () => {
                   </div>
                 </div>
                 <p className="text-gray-700 text-sm mb-4 leading-relaxed">
-                  The automation feels effortless, and the results speak for themselves. Zyverium helped me stabilize my portfolio week after week.
+                  The automation feels effortless, and the results speak for themselves. Axtrovien helped me stabilize my portfolio week after week.
                 </p>
                 <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-4 mb-4">
                   <div className="text-xs text-gray-500 mb-1">{t.activeTraders.totalEarnings}</div>
@@ -1186,7 +1186,7 @@ const Index = () => {
                   </div>
                 </div>
                 <p className="text-gray-700 text-sm mb-4 leading-relaxed">
-                  Professional design, instant execution, and accuracy that feels surgical. Zyverium is built for traders who demand reliability.
+                  Professional design, instant execution, and accuracy that feels surgical. Axtrovien is built for traders who demand reliability.
                 </p>
                 <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-4 mb-4">
                   <div className="text-xs text-gray-500 mb-1">{t.activeTraders.totalEarnings}</div>
@@ -1232,7 +1232,7 @@ const Index = () => {
                   </div>
                 </div>
                 <p className="text-gray-700 text-sm mb-4 leading-relaxed">
-                  Finally, a platform that merges data transparency with real performance. Zyverium delivers measurable consistency and absolute trust.
+                  Finally, a platform that merges data transparency with real performance. Axtrovien delivers measurable consistency and absolute trust.
                 </p>
                 <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-4 mb-4">
                   <div className="text-xs text-gray-500 mb-1">{t.activeTraders.totalEarnings}</div>
@@ -1705,7 +1705,7 @@ const Index = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
                 <span className="text-2xl">💎</span>
-                <span className="text-2xl font-bold">Zyverium</span>
+                <span className="text-2xl font-bold">Axtrovien</span>
               </div>
               <p className="text-gray-400 leading-relaxed">
                 {t.footer.description}

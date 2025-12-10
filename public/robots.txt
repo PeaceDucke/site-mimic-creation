@@ -1,5 +1,5 @@
-# Olutrixon Official - robots.txt
-# https://olutrixon.org
+# Axtrovien Official - robots.txt
+# https://axtrovien.net
 
 User-agent: Googlebot
 Allow: /
@@ -47,7 +47,7 @@ Allow: /
 Crawl-delay: 2
 
 # Sitemaps
-Sitemap: https://olutrixon.org/sitemap.xml
+Sitemap: https://axtrovien.net/sitemap.xml
 
 # Disallow admin/private areas (if any)
 Disallow: /api/
