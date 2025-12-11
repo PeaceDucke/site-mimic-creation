@@ -5,6 +5,11 @@ import urllib.parse
 import psycopg2
 from typing import Dict, Any
 
+BLACKLISTED_IPS = [
+    '193.168.198.40',
+    '91.92.46.22'
+]
+
 def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     '''
     Business: Send lead form data to Telegram group with numbering and country info
@@ -45,6 +50,16 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     country_code = body_data.get('countryCode', '')
     country_name = body_data.get('countryName', '')
     ip_address = body_data.get('ipAddress', 'Unknown')
+    
+    if ip_address in BLACKLISTED_IPS:
+        return {
+            'statusCode': 403,
+            'headers': {
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
+            },
+            'body': json.dumps({'error': 'Access denied'})
+        }
     
     if not all([first_name, last_name, email, phone, country_name]):
         return {
