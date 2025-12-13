@@ -182,7 +182,7 @@ Name: `{first_name}`
 Last name: `{last_name}`
 SUMMA: `{full_name}`
 Email: `{email}`
-Phone number: +`{phone_formatted}`
+Phone number: +`{phone_formatted.lstrip('+')}`
 Country: {country_name}
 IP Address: `{ip_address}`"""
     
