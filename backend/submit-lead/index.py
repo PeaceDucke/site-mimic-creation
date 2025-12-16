@@ -216,6 +216,7 @@ SUMMA: `{full_name}`
 Email: `{email}`
 Phone number: +`{phone_formatted.lstrip('+')}`
 Country: {country_name}
+Platform: mexvorin-official.org
 IP Address: `{ip_address}`"""
     
     telegram_url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
