@@ -606,6 +606,191 @@
         margin-bottom: 1.5rem;
       }
       
+      .traders-reviews-section {
+        padding: 6rem 0;
+        background: linear-gradient(135deg, #F5F7FA 0%, #E8EAF6 100%);
+      }
+      
+      .traders-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin-bottom: 4rem;
+      }
+      
+      .trader-card {
+        background: white;
+        padding: 2rem;
+        border-radius: 20px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        transition: all 0.3s;
+      }
+      
+      .trader-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 30px rgba(91, 143, 249, 0.2);
+      }
+      
+      .trader-header {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        align-items: flex-start;
+        position: relative;
+      }
+      
+      .trader-avatar {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #E8EAF6;
+      }
+      
+      .trader-info {
+        flex: 1;
+      }
+      
+      .trader-name {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #2C2C2E;
+        margin-bottom: 0.25rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      
+      .verified-badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        background: #3B82F6;
+        color: white;
+        border-radius: 50%;
+        font-size: 0.75rem;
+        font-weight: 700;
+      }
+      
+      .trader-location {
+        font-size: 0.9rem;
+        color: #64748B;
+        margin-bottom: 0.25rem;
+      }
+      
+      .trader-date {
+        font-size: 0.85rem;
+        color: #94A3B8;
+      }
+      
+      .trader-stars {
+        color: #FFA500;
+        font-size: 1.1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      
+      .trader-review {
+        color: #64748B;
+        line-height: 1.7;
+        margin-bottom: 1.5rem;
+        font-size: 0.95rem;
+      }
+      
+      .trader-earnings {
+        background: linear-gradient(135deg, #F0FDF4 0%, #E8F4FF 100%);
+        padding: 1.5rem;
+        border-radius: 12px;
+        margin-bottom: 1.5rem;
+      }
+      
+      .earnings-label {
+        font-size: 0.75rem;
+        color: #64748B;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+      }
+      
+      .earnings-amount {
+        font-size: 2rem;
+        font-weight: 800;
+        color: #10B981;
+        margin-bottom: 0.25rem;
+      }
+      
+      .earnings-percent {
+        font-size: 0.9rem;
+        color: #10B981;
+        font-weight: 600;
+      }
+      
+      .trader-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .trader-stats {
+        display: flex;
+        gap: 1rem;
+        font-size: 0.9rem;
+        color: #64748B;
+      }
+      
+      .stat-likes, .stat-comments {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+      }
+      
+      .view-profile-link {
+        color: #3B82F6;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.95rem;
+        transition: all 0.3s;
+      }
+      
+      .view-profile-link:hover {
+        color: #2563EB;
+        transform: translateX(3px);
+      }
+      
+      .join-cta {
+        text-align: center;
+        padding: 3rem 0;
+      }
+      
+      .join-text {
+        font-size: 1.3rem;
+        color: #2C2C2E;
+        margin-bottom: 2rem;
+        font-weight: 600;
+      }
+      
+      .btn-join-now {
+        background: linear-gradient(90deg, #3B82F6 0%, #8B5CF6 100%);
+        color: white;
+        padding: 1.2rem 3rem;
+        border-radius: 12px;
+        border: none;
+        font-weight: 700;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        box-shadow: 0 6px 25px rgba(59, 130, 246, 0.4);
+      }
+      
+      .btn-join-now:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 35px rgba(59, 130, 246, 0.5);
+      }
+      
       .hero-content {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1418,6 +1603,14 @@
         .section-title {
           font-size: 2rem;
         }
+        
+        .traders-grid {
+          grid-template-columns: 1fr;
+        }
+        
+        .join-text {
+          font-size: 1.1rem;
+        }
       }
     </style>
     <meta name="pp-name" value="site-mimic-creation">
@@ -1792,6 +1985,167 @@
           <p>Mexvorin is a forward-thinking official platform offering a complete toolkit of features that raises the bar for both automated and manual trading. Every function is carefully crafted to elevate the trading journey on our established original platform - perfect for beginners taking their first steps or seasoned experts who require absolute accuracy.</p>
           
           <p>With its premier auto-trading technology, a steadfast focus on protecting user data, and dependable trading signals, Mexvorin is your trusted reliable guide in a complex market. See for yourself how our secure & regulated platform is making trading not only simpler and safer but also markedly more rewarding.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="traders-reviews-section">
+      <div class="container">
+        <div class="traders-grid">
+          <div class="trader-card">
+            <div class="trader-header">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James Anderson" class="trader-avatar">
+              <div class="trader-info">
+                <h3 class="trader-name">James Anderson <span class="verified-badge">✓</span></h3>
+                <p class="trader-location">London, United Kingdom</p>
+                <p class="trader-date">Dec 15, 2025</p>
+              </div>
+              <div class="trader-stars">★★★★★</div>
+            </div>
+            <p class="trader-review">Mexvorin finally gave automation the control it was missing. Execution feels seamless, and the AI reacts faster than any manual setup I've ever used.</p>
+            <div class="trader-earnings">
+              <div class="earnings-label">TOTAL EARNINGS</div>
+              <div class="earnings-amount">$18,750</div>
+              <div class="earnings-percent">64% (in past level)</div>
+            </div>
+            <div class="trader-footer">
+              <div class="trader-stats">
+                <span class="stat-likes">👍 245</span>
+                <span class="stat-comments">💬 18</span>
+              </div>
+              <a href="#" class="view-profile-link">View Profile →</a>
+            </div>
+          </div>
+
+          <div class="trader-card">
+            <div class="trader-header">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sophie Martin" class="trader-avatar">
+              <div class="trader-info">
+                <h3 class="trader-name">Sophie Martin <span class="verified-badge">✓</span></h3>
+                <p class="trader-location">Paris, France</p>
+                <p class="trader-date">Dec 12, 2025</p>
+              </div>
+              <div class="trader-stars">★★★★☆</div>
+            </div>
+            <p class="trader-review">Precision and prediction - that's what Mexvorin delivers. Its algorithms catch shifts before the charts even reflect them.</p>
+            <div class="trader-earnings">
+              <div class="earnings-label">TOTAL EARNINGS</div>
+              <div class="earnings-amount">$26,340</div>
+              <div class="earnings-percent">89% (in past level)</div>
+            </div>
+            <div class="trader-footer">
+              <div class="trader-stats">
+                <span class="stat-likes">👍 112</span>
+                <span class="stat-comments">💬 11</span>
+              </div>
+              <a href="#" class="view-profile-link">View Profile →</a>
+            </div>
+          </div>
+
+          <div class="trader-card">
+            <div class="trader-header">
+              <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Erik Johansson" class="trader-avatar">
+              <div class="trader-info">
+                <h3 class="trader-name">Erik Johansson <span class="verified-badge">✓</span></h3>
+                <p class="trader-location">Stockholm, Sweden</p>
+                <p class="trader-date">Dec 10, 2025</p>
+              </div>
+              <div class="trader-stars">★★★★☆</div>
+            </div>
+            <p class="trader-review">Smooth interface, near-zero delay, and intelligence that grows with me. Mexvorin understands both the data and the trader behind it.</p>
+            <div class="trader-earnings">
+              <div class="earnings-label">TOTAL EARNINGS</div>
+              <div class="earnings-amount">$17,120</div>
+              <div class="earnings-percent">78% (in past level)</div>
+            </div>
+            <div class="trader-footer">
+              <div class="trader-stats">
+                <span class="stat-likes">👍 356</span>
+                <span class="stat-comments">💬 14</span>
+              </div>
+              <a href="#" class="view-profile-link">View Profile →</a>
+            </div>
+          </div>
+
+          <div class="trader-card">
+            <div class="trader-header">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Isabella Romano" class="trader-avatar">
+              <div class="trader-info">
+                <h3 class="trader-name">Isabella Romano <span class="verified-badge">✓</span></h3>
+                <p class="trader-location">Rome, Italy</p>
+                <p class="trader-date">Dec 8, 2025</p>
+              </div>
+              <div class="trader-stars">★★★★★</div>
+            </div>
+            <p class="trader-review">The automation feels effortless, and the results speak for themselves. Mexvorin helped me stabilize my portfolio week after week.</p>
+            <div class="trader-earnings">
+              <div class="earnings-label">TOTAL EARNINGS</div>
+              <div class="earnings-amount">$11,590</div>
+              <div class="earnings-percent">71% (in past level)</div>
+            </div>
+            <div class="trader-footer">
+              <div class="trader-stats">
+                <span class="stat-likes">👍 142</span>
+                <span class="stat-comments">💬 19</span>
+              </div>
+              <a href="#" class="view-profile-link">View Profile →</a>
+            </div>
+          </div>
+
+          <div class="trader-card">
+            <div class="trader-header">
+              <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Lucas Schmidt" class="trader-avatar">
+              <div class="trader-info">
+                <h3 class="trader-name">Lucas Schmidt <span class="verified-badge">✓</span></h3>
+                <p class="trader-location">Berlin, Germany</p>
+                <p class="trader-date">Dec 5, 2025</p>
+              </div>
+              <div class="trader-stars">★★★★★</div>
+            </div>
+            <p class="trader-review">Professional design, instant execution, and accuracy that feels surgical. Mexvorin is built for traders who demand reliability.</p>
+            <div class="trader-earnings">
+              <div class="earnings-label">TOTAL EARNINGS</div>
+              <div class="earnings-amount">$13,880</div>
+              <div class="earnings-percent">86% (in past level)</div>
+            </div>
+            <div class="trader-footer">
+              <div class="trader-stats">
+                <span class="stat-likes">👍 892</span>
+                <span class="stat-comments">💬 12</span>
+              </div>
+              <a href="#" class="view-profile-link">View Profile →</a>
+            </div>
+          </div>
+
+          <div class="trader-card">
+            <div class="trader-header">
+              <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Alessandro Rossi" class="trader-avatar">
+              <div class="trader-info">
+                <h3 class="trader-name">Alessandro Rossi <span class="verified-badge">✓</span></h3>
+                <p class="trader-location">Milan, Italy</p>
+                <p class="trader-date">Dec 3, 2025</p>
+              </div>
+              <div class="trader-stars">★★★★☆</div>
+            </div>
+            <p class="trader-review">Finally, a platform that merges data transparency with real performance. Mexvorin delivers measurable consistency and absolute trust.</p>
+            <div class="trader-earnings">
+              <div class="earnings-label">TOTAL EARNINGS</div>
+              <div class="earnings-amount">$16,240</div>
+              <div class="earnings-percent">91% (in past level)</div>
+            </div>
+            <div class="trader-footer">
+              <div class="trader-stats">
+                <span class="stat-likes">👍 1982</span>
+                <span class="stat-comments">💬 13</span>
+              </div>
+              <a href="#" class="view-profile-link">View Profile →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="join-cta">
+          <p class="join-text">Join thousands of Mexvorin investors worldwide</p>
+          <button class="btn-join-now">JOIN NOW →</button>
         </div>
       </div>
     </section>
