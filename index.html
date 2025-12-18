@@ -85,8 +85,8 @@
       }
       
       header {
-        background: var(--card-bg);
-        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        background: #2C2C2E;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
         padding: 1rem 0;
         position: sticky;
         top: 0;
@@ -100,29 +100,73 @@
       }
       
       .logo {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #5B8FF9;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      
+      .logo-icon {
+        width: 32px;
+        height: 32px;
+        background: #5B8FF9;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
         font-weight: 800;
-        background: var(--gradient-primary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        font-size: 1.2rem;
       }
       
       .nav-links {
         display: flex;
         gap: 2rem;
         list-style: none;
+        align-items: center;
       }
       
       .nav-links a {
         text-decoration: none;
-        color: var(--text-primary);
+        color: #B4B4B8;
         font-weight: 500;
+        font-size: 0.95rem;
         transition: color 0.3s;
       }
       
       .nav-links a:hover {
-        color: var(--primary);
+        color: white;
+      }
+      
+      .lang-selector {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: #3A3A3C;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        color: white;
+        cursor: pointer;
+        border: none;
+        font-size: 0.9rem;
+      }
+      
+      .btn-connexion {
+        background: white;
+        color: #2C2C2E;
+        padding: 0.6rem 1.5rem;
+        border-radius: 8px;
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+      
+      .btn-connexion:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(255,255,255,0.2);
       }
       
       .btn {
@@ -160,27 +204,124 @@
       }
       
       .hero {
-        padding: 6rem 0;
-        text-align: center;
-        background: linear-gradient(135deg, rgba(124, 58, 237, 0.05) 0%, rgba(14, 165, 233, 0.05) 100%);
+        padding: 4rem 0 6rem;
+        background: linear-gradient(135deg, #E8EAF6 0%, #F3E5F5 50%, #FCE4EC 100%);
       }
       
-      .hero h1 {
-        font-size: 3.5rem;
+      .hero-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+      }
+      
+      .hero-left h1 {
+        font-size: 3rem;
         margin-bottom: 1.5rem;
-        background: var(--gradient-primary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        color: #5B8FF9;
+        font-weight: 800;
       }
       
-      .hero p {
-        font-size: 1.25rem;
-        color: var(--text-muted);
+      .hero-left p {
+        font-size: 1.1rem;
+        color: #64748B;
+        margin-bottom: 1.5rem;
+        line-height: 1.8;
+      }
+      
+      .hero-left .brand-info {
+        font-size: 0.95rem;
+        color: #64748B;
         margin-bottom: 2rem;
-        max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
+      }
+      
+      .hero-left .brand-info a {
+        color: #5B8FF9;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      
+      .hero-reviews {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+      }
+      
+      .review-card {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 16px;
+        text-align: center;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        flex: 1;
+        min-width: 140px;
+      }
+      
+      .review-logo {
+        height: 32px;
+        margin-bottom: 0.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        color: #2C2C2E;
+      }
+      
+      .review-name {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #2C2C2E;
+        margin-bottom: 0.5rem;
+      }
+      
+      .review-stars {
+        color: #FFA500;
+        margin-bottom: 0.25rem;
+        font-size: 1.1rem;
+      }
+      
+      .review-rating {
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: #2C2C2E;
+      }
+      
+      .hero-form-container {
+        background: white;
+        padding: 2.5rem;
+        border-radius: 24px;
+        box-shadow: 0 8px 40px rgba(139, 92, 246, 0.25);
+        border: 3px solid transparent;
+        background-clip: padding-box;
+        position: relative;
+      }
+      
+      .hero-form-container:before {
+        content: '';
+        position: absolute;
+        inset: -3px;
+        border-radius: 24px;
+        padding: 3px;
+        background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 50%, #F59E0B 100%);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        z-index: -1;
+      }
+      
+      .hero-form h3 {
+        font-size: 0.95rem;
+        color: #64748B;
+        margin-bottom: 1.5rem;
+        font-weight: 500;
+      }
+      
+      .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-bottom: 1rem;
       }
       
       .hero-buttons {
@@ -383,6 +524,7 @@
         font-size: 1rem;
         font-family: 'Inter', sans-serif;
         transition: border-color 0.3s;
+        background: #F5F5F7;
       }
       
       .form-input:focus,
@@ -390,6 +532,51 @@
       .form-select:focus {
         outline: none;
         border-color: var(--primary);
+        background: white;
+      }
+      
+      .form-input::placeholder {
+        color: #B4B4B8;
+      }
+      
+      .btn-submit-hero {
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        border-radius: 12px;
+        background: linear-gradient(90deg, #EF4444 0%, #F97316 100%);
+        color: white;
+        font-weight: 700;
+        font-size: 1.05rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      
+      .btn-submit-hero:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(239, 68, 68, 0.4);
+      }
+      
+      .form-security {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
+        padding: 0.75rem;
+        background: #F0FDF4;
+        border-radius: 8px;
+        font-size: 0.85rem;
+        color: #059669;
+      }
+      
+      .form-disclaimer {
+        font-size: 0.8rem;
+        color: #64748B;
+        text-align: center;
+        margin-top: 1rem;
+        line-height: 1.5;
       }
       
       .form-textarea {
@@ -647,12 +834,25 @@
       }
       
       @media (max-width: 768px) {
-        .hero h1 {
+        .hero-content {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+        
+        .hero-left h1 {
           font-size: 2.5rem;
+        }
+        
+        .hero-reviews {
+          grid-template-columns: repeat(2, 1fr);
         }
         
         .nav-links {
           display: none;
+        }
+        
+        .form-row {
+          grid-template-columns: 1fr;
         }
         
         .timer {
@@ -682,43 +882,107 @@
 <body>
     <header>
       <nav class="container">
-        <div class="logo">Mexvorin</div>
+        <div class="logo">
+          <div class="logo-icon">≋</div>
+          Mexvorin
+        </div>
         <ul class="nav-links">
-          <li><a href="#features">Features</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#offices">Offices</a></li>
+          <li><a href="#features">Fonctionnalités</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#certification">Certification</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li>
+            <button class="lang-selector">
+              🇫🇷 Français ▼
+            </button>
+          </li>
+          <li><button class="btn-connexion">Connexion</button></li>
         </ul>
-        <button class="btn btn-primary" onclick="scrollToSection('contact')">Get Started</button>
       </nav>
     </header>
 
     <section class="hero">
       <div class="container">
-        <h1>Transform Your Trading with AI</h1>
-        <p>Advanced AI-powered trading platform offering automated crypto, forex & stock market analysis. Join thousands of traders maximizing their profits with intelligent algorithms.</p>
-        
-        <div class="hero-buttons">
-          <button class="btn btn-primary" onclick="scrollToSection('contact')">Start Free Trial</button>
-          <button class="btn btn-outline" onclick="scrollToSection('features')">Learn More</button>
-        </div>
-        
-        <div class="timer">
-          <div class="timer-box">
-            <div class="timer-value" id="days">6</div>
-            <div class="timer-label">Days</div>
+        <div class="hero-content">
+          <div class="hero-left">
+            <h1>Mexvorin</h1>
+            <p>Entrez dans les marchés financiers mondiaux avec une nouvelle assurance. Collaborez avec les meilleurs courtiers.</p>
+            
+            <div class="brand-info">
+              Mexvorin™ is the official brand and platform. The only official website is <a href="https://mexvorin.io">https://mexvorin.io</a>
+            </div>
+            
+            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+              <span style="font-weight: 700; font-size: 1.1rem;">Excellent</span>
+              <span style="color: #FFA500; font-size: 1.3rem;">★★★★★</span>
+              <span style="color: #64748B; font-size: 0.95rem;">4,6 sur 5 basé sur 4,361 avis</span>
+              <a href="#" style="color: #5B8FF9; text-decoration: none; font-size: 0.9rem;">⭐ Trustpilot</a>
+            </div>
+            
+            <div class="hero-reviews">
+              <div class="review-card">
+                <div class="review-logo">📋 Capterra</div>
+                <div class="review-name">Capterra</div>
+                <div class="review-stars">★★★★★</div>
+                <div class="review-rating">4.6</div>
+              </div>
+              
+              <div class="review-card">
+                <div class="review-logo">🛡️ SourceForge</div>
+                <div class="review-name">SourceForge</div>
+                <div class="review-stars">★★★★☆</div>
+                <div class="review-rating">4.3</div>
+              </div>
+              
+              <div class="review-card">
+                <div class="review-logo">✓ Slashdot</div>
+                <div class="review-name">Slashdot</div>
+                <div class="review-stars">★★★★☆</div>
+                <div class="review-rating">4.4</div>
+              </div>
+              
+              <div class="review-card">
+                <div class="review-logo">G Google Reviews</div>
+                <div class="review-name">Google Reviews</div>
+                <div class="review-stars">★★★★★</div>
+                <div class="review-rating">4.8</div>
+              </div>
+            </div>
           </div>
-          <div class="timer-box">
-            <div class="timer-value" id="hours">23</div>
-            <div class="timer-label">Hours</div>
-          </div>
-          <div class="timer-box">
-            <div class="timer-value" id="minutes">59</div>
-            <div class="timer-label">Minutes</div>
-          </div>
-          <div class="timer-box">
-            <div class="timer-value" id="seconds">59</div>
-            <div class="timer-label">Seconds</div>
+          
+          <div class="hero-form-container">
+            <form class="hero-form" id="heroForm" onsubmit="handleHeroSubmit(event)">
+              <div class="form-row">
+                <input type="text" class="form-input" placeholder="Prénom" id="heroFirstName" required>
+                <input type="text" class="form-input" placeholder="Nom" id="heroLastName" required>
+              </div>
+              
+              <div style="margin-bottom: 1rem;">
+                <input type="email" class="form-input" placeholder="Adresse e-mail" id="heroEmail" required>
+              </div>
+              
+              <div class="phone-input-group" style="margin-bottom: 1.5rem;">
+                <select class="form-select country-select" id="heroCountry">
+                  <option value="+39">🇮🇹 +39</option>
+                  <option value="+1">🇺🇸 +1</option>
+                  <option value="+44">🇬🇧 +44</option>
+                  <option value="+33">🇫🇷 +33</option>
+                  <option value="+49">🇩🇪 +49</option>
+                  <option value="+34">🇪🇸 +34</option>
+                </select>
+                <input type="tel" class="form-input" placeholder="Numéro de téléphone" id="heroPhone" required>
+              </div>
+              
+              <button type="submit" class="btn-submit-hero">S'INSCRIRE MAINTENANT</button>
+              
+              <div class="form-security">
+                🔒 Vos données sont cryptées et protégées par des protocoles de sécurité
+              </div>
+              
+              <div class="form-disclaimer">
+                En fournissant vos informations, vous reconnaissez avoir lu, compris et accepté les Conditions d'utilisation et la Politique de confidentialité de ce site web.
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -728,19 +992,19 @@
       <div class="stats">
         <div class="stat-card">
           <div class="stat-number">$2.5B+</div>
-          <div class="stat-label">Total Trading Volume</div>
+          <div class="stat-label">Volume de Trading</div>
         </div>
         <div class="stat-card">
-          <div class="stat-number">50K+</div>
-          <div class="stat-label">Active Traders</div>
+          <div class="stat-number">150K+</div>
+          <div class="stat-label">Traders Actifs</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">99.9%</div>
+          <div class="stat-label">Disponibilité</div>
         </div>
         <div class="stat-card">
           <div class="stat-number">24/7</div>
-          <div class="stat-label">Automated Trading</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">150+</div>
-          <div class="stat-label">Countries Supported</div>
+          <div class="stat-label">Support</div>
         </div>
       </div>
     </section>
@@ -1209,6 +1473,32 @@
           setTimeout(() => {
             formMessage.innerHTML = '';
           }, 5000);
+        }, 1500);
+        
+        return false;
+      }
+      
+      function handleHeroSubmit(event) {
+        event.preventDefault();
+        
+        const submitBtn = event.target.querySelector('.btn-submit-hero');
+        const originalText = submitBtn.textContent;
+        
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'ENVOI EN COURS...';
+        
+        const formData = {
+          firstName: document.getElementById('heroFirstName').value,
+          lastName: document.getElementById('heroLastName').value,
+          email: document.getElementById('heroEmail').value,
+          phone: document.getElementById('heroCountry').value + document.getElementById('heroPhone').value
+        };
+        
+        setTimeout(() => {
+          alert('✅ Merci! Votre demande a été envoyée. Notre équipe vous contactera dans les 24 heures.');
+          document.getElementById('heroForm').reset();
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalText;
         }, 1500);
         
         return false;
