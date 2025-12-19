@@ -2046,14 +2046,14 @@
               </div>
               
               <div class="phone-input-group" style="margin-bottom: 1.5rem;">
-                <select class="form-select country-select" id="heroCountry">
-                  <option value="+39">🇮🇹 +39</option>
-                  <option value="+1">🇺🇸 +1</option>
-                  <option value="+44">🇬🇧 +44</option>
-                  <option value="+33">🇫🇷 +33</option>
-                  <option value="+49">🇩🇪 +49</option>
-                  <option value="+34">🇪🇸 +34</option>
-                </select>
+                <div class="country-select-wrapper">
+                  <button type="button" class="country-select-button" id="heroCountrySelectBtn">
+                    <img src="https://flagcdn.com/w40/us.png" alt="US" class="country-flag" id="heroSelectedFlag">
+                    <span id="heroSelectedCode">+1</span>
+                  </button>
+                  <div class="country-select-dropdown" id="heroCountryDropdown"></div>
+                  <input type="hidden" id="heroCountry" value="+1">
+                </div>
                 <input type="tel" class="form-input" placeholder="Phone Number" id="heroPhone" required>
               </div>
               
@@ -3149,6 +3149,59 @@
       if (dropdown.children.length > 0) {
         dropdown.children[0].classList.add('selected');
       }
+      
+      // Initialize Hero form country selector
+      const heroSelectBtn = document.getElementById('heroCountrySelectBtn');
+      const heroDropdown = document.getElementById('heroCountryDropdown');
+      const heroSelectedFlag = document.getElementById('heroSelectedFlag');
+      const heroSelectedCode = document.getElementById('heroSelectedCode');
+      const heroCountryCodeInput = document.getElementById('heroCountry');
+      
+      if (heroSelectBtn && heroDropdown) {
+        // Populate hero dropdown
+        countriesData.forEach(country => {
+          const option = document.createElement('div');
+          option.className = 'country-option';
+          option.innerHTML = `
+            <img src="https://flagcdn.com/w40/${country.code}.png" 
+                 alt="${country.name}" 
+                 class="country-flag">
+            <span>${country.name} ${country.dial}</span>
+          `;
+          option.addEventListener('click', () => {
+            heroSelectedFlag.src = `https://flagcdn.com/w40/${country.code}.png`;
+            heroSelectedFlag.alt = country.name;
+            heroSelectedCode.textContent = country.dial;
+            heroCountryCodeInput.value = country.dial;
+            heroDropdown.classList.remove('active');
+            
+            heroDropdown.querySelectorAll('.country-option').forEach(opt => {
+              opt.classList.remove('selected');
+            });
+            option.classList.add('selected');
+          });
+          heroDropdown.appendChild(option);
+        });
+        
+        // Toggle hero dropdown
+        heroSelectBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          heroDropdown.classList.toggle('active');
+          dropdown.classList.remove('active');
+        });
+        
+        // Select first option as default
+        if (heroDropdown.children.length > 0) {
+          heroDropdown.children[0].classList.add('selected');
+        }
+      }
+      
+      // Update close dropdown handler to handle both dropdowns
+      document.addEventListener('click', (e) => {
+        if (heroSelectBtn && !heroSelectBtn.contains(e.target) && !heroDropdown.contains(e.target)) {
+          heroDropdown.classList.remove('active');
+        }
+      });
     </script>
 </body>
 </html>
