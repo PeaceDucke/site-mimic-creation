@@ -121,8 +121,30 @@
         font-size: 1.3rem;
         color: #64748B;
         max-width: 800px;
-        margin: 0 auto;
+        margin: 0 auto 2rem;
         line-height: 1.8;
+      }
+      
+      .btn-back-home {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        background: linear-gradient(90deg, #5B8FF9 0%, #8B5CF6 100%);
+        color: white;
+        padding: 1rem 2.5rem;
+        border-radius: 14px;
+        border: none;
+        font-weight: 700;
+        font-size: 1.1rem;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.3s;
+        box-shadow: 0 6px 25px rgba(91, 143, 249, 0.4);
+      }
+      
+      .btn-back-home:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 35px rgba(91, 143, 249, 0.5);
       }
       
       .section {
@@ -352,6 +374,7 @@
       <div class="container">
         <h1>About Mexvorin</h1>
         <p>A trading platform focused on market insights, risk tools, and guided execution for supported markets.</p>
+        <a href="/" class="btn-back-home">← Back to Home</a>
       </div>
     </section>
 
