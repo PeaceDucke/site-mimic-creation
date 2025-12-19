@@ -1964,6 +1964,7 @@
       <script src="https://cdn.poehali.dev/intertnal/js/route-min.js"></script>
       <script src="https://cdn.poehali.dev/intertnal/js/inspector-min.js"></script>
       <script src="https://cdn.poehali.dev/intertnal/js/telemetry-min.js"></script>
+      <script src="/i18n.js"></script>
   </head>
 <body>
     <header>
@@ -1973,16 +1974,16 @@
           Mexvorin
         </div>
         <ul class="nav-links">
-          <li><a href="/features.html">Features</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="#certification">Certification</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/features.html" data-i18n="header.features">Features</a></li>
+          <li><a href="/about.html" data-i18n="header.about">About</a></li>
+          <li><a href="#certification" data-i18n="header.certification">Certification</a></li>
+          <li><a href="/contact.html" data-i18n="header.contact">Contact</a></li>
           <li>
             <button class="lang-selector">
               🇬🇧 English ▼
             </button>
           </li>
-          <li><button class="btn-connexion" onclick="document.querySelector('.hero').scrollIntoView({behavior: 'smooth'})">Sign In</button></li>
+          <li><button class="btn-connexion" onclick="document.querySelector('.hero').scrollIntoView({behavior: 'smooth'})" data-i18n="header.signIn">Sign In</button></li>
         </ul>
       </nav>
     </header>
