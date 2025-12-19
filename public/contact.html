@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact Us - Mexvorin AI Trading Platform</title>
+    <meta name="description" content="Get in touch with Mexvorin. Visit our headquarters in New York or reach out through our global support channels."/>
+    <link rel="icon" type="image/png" href="https://cdn.poehali.dev/projects/dec2b247-100c-4952-8c09-827ed14bdcb9/files/favicon-1764961895015.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      :root {
+        --primary: #7C3AED;
+        --secondary: #0EA5E9;
+        --background: #F5F7FA;
+        --card-bg: #FFFFFF;
+        --text-primary: #1A1F2E;
+        --text-muted: #64748B;
+        --border: #E2E8F0;
+        --gradient-primary: linear-gradient(135deg, #7C3AED 0%, #0EA5E9 100%);
+      }
+      
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        background-color: var(--background);
+        color: var(--text-primary);
+        line-height: 1.6;
+      }
+      
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+      
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      
+      header {
+        background: #2C2C2E;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+      
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #5B8FF9;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+      }
+      
+      .logo-icon {
+        width: 32px;
+        height: 32px;
+        background: #5B8FF9;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 800;
+        font-size: 1.2rem;
+      }
+      
+      .nav-links {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        align-items: center;
+      }
+      
+      .nav-links a {
+        text-decoration: none;
+        color: #B4B4B8;
+        font-weight: 500;
+        font-size: 0.95rem;
+        transition: color 0.3s;
+      }
+      
+      .nav-links a:hover {
+        color: white;
+      }
+      
+      .hero-contact {
+        padding: 5rem 0 3rem;
+        background: linear-gradient(135deg, #E8EAF6 0%, #F3E5F5 50%, #FCE4EC 100%);
+        text-align: center;
+      }
+      
+      .contact-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(91, 143, 249, 0.15);
+        color: #5B8FF9;
+        padding: 0.75rem 1.5rem;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
+      }
+      
+      .hero-contact h1 {
+        font-size: 3.5rem;
+        color: #2C2C2E;
+        margin-bottom: 1.5rem;
+      }
+      
+      .text-gradient-blue {
+        background: linear-gradient(135deg, #5B8FF9 0%, #3B82F6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      
+      .hero-contact p {
+        font-size: 1.2rem;
+        color: #64748B;
+        max-width: 800px;
+        margin: 0 auto 2rem;
+        line-height: 1.8;
+      }
+      
+      .btn-back-home {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        background: linear-gradient(90deg, #5B8FF9 0%, #8B5CF6 100%);
+        color: white;
+        padding: 1rem 2.5rem;
+        border-radius: 14px;
+        border: none;
+        font-weight: 700;
+        font-size: 1.1rem;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.3s;
+        box-shadow: 0 6px 25px rgba(91, 143, 249, 0.4);
+      }
+      
+      .btn-back-home:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 35px rgba(91, 143, 249, 0.5);
+      }
+      
+      .section {
+        padding: 5rem 0;
+      }
+      
+      .headquarters-section {
+        background: white;
+        padding: 5rem 0;
+      }
+      
+      .hq-card {
+        background: white;
+        border-radius: 24px;
+        box-shadow: 0 8px 40px rgba(0,0,0,0.1);
+        overflow: hidden;
+        margin-bottom: 4rem;
+      }
+      
+      .hq-header {
+        background: linear-gradient(135deg, #5B8FF9 0%, #8B5CF6 100%);
+        padding: 2.5rem;
+        text-align: center;
+        color: white;
+      }
+      
+      .hq-header h2 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+      
+      .hq-header p {
+        font-size: 1.1rem;
+        opacity: 0.95;
+      }
+      
+      .hq-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+      }
+      
+      .hq-map {
+        width: 100%;
+        height: 450px;
+        border: none;
+      }
+      
+      .hq-info {
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+      .info-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+      }
+      
+      .info-icon {
+        width: 56px;
+        height: 56px;
+        background: linear-gradient(135deg, #5B8FF9 0%, #3B82F6 100%);
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        flex-shrink: 0;
+      }
+      
+      .info-details h3 {
+        font-size: 1.2rem;
+        color: #2C2C2E;
+        margin-bottom: 0.5rem;
+      }
+      
+      .info-details p {
+        color: #64748B;
+        line-height: 1.7;
+        font-size: 1.05rem;
+      }
+      
+      .info-details a {
+        color: #5B8FF9;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      
+      .info-details a:hover {
+        text-decoration: underline;
+      }
+      
+      .global-section {
+        background: linear-gradient(135deg, #F5F7FA 0%, #E8EAF6 100%);
+        padding: 5rem 0;
+      }
+      
+      .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: #2C2C2E;
+      }
+      
+      .section-subtitle {
+        text-align: center;
+        font-size: 1.1rem;
+        color: #64748B;
+        margin-bottom: 4rem;
+      }
+      
+      .countries-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      
+      .country-card {
+        background: white;
+        padding: 1.75rem 2rem;
+        border-radius: 16px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+        transition: all 0.3s;
+        border: 2px solid transparent;
+      }
+      
+      .country-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(91, 143, 249, 0.2);
+        border-color: #5B8FF9;
+      }
+      
+      .country-flag {
+        font-size: 3rem;
+        line-height: 1;
+      }
+      
+      .country-info h3 {
+        font-size: 1.2rem;
+        color: #2C2C2E;
+        margin-bottom: 0.25rem;
+      }
+      
+      .country-info p {
+        color: #64748B;
+        font-size: 0.95rem;
+      }
+      
+      footer {
+        background: #2C2C2E;
+        color: white;
+        padding: 3rem 0 2rem;
+      }
+      
+      .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 3rem;
+        margin-bottom: 2rem;
+      }
+      
+      .footer-section h3 {
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+      }
+      
+      .footer-links {
+        list-style: none;
+      }
+      
+      .footer-links li {
+        margin-bottom: 0.75rem;
+      }
+      
+      .footer-links a {
+        color: rgba(255,255,255,0.8);
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      
+      .footer-links a:hover {
+        color: white;
+      }
+      
+      .footer-bottom {
+        text-align: center;
+        padding-top: 2rem;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        color: rgba(255,255,255,0.6);
+      }
+      
+      @media (max-width: 768px) {
+        .hero-contact h1 {
+          font-size: 2.5rem;
+        }
+        
+        .hq-content {
+          grid-template-columns: 1fr;
+        }
+        
+        .hq-map {
+          height: 350px;
+        }
+        
+        .hq-info {
+          padding: 2rem 1.5rem;
+        }
+        
+        .countries-grid {
+          grid-template-columns: 1fr;
+        }
+        
+        .nav-links {
+          display: none;
+        }
+      }
+    </style>
+    <meta name="pp-name" value="site-mimic-creation">
+      <script src="https://cdn.poehali.dev/intertnal/js/pp-min-2.js"></script>
+      <script src="https://cdn.poehali.dev/intertnal/js/route-min.js"></script>
+      <script src="https://cdn.poehali.dev/intertnal/js/inspector-min.js"></script>
+      <script src="https://cdn.poehali.dev/intertnal/js/telemetry-min.js"></script>
+</head>
+<body>
+    <header>
+      <nav class="container">
+        <a href="/" class="logo">
+          <div class="logo-icon">≋</div>
+          Mexvorin
+        </a>
+        <ul class="nav-links">
+          <li><a href="/features.html">Features</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero-contact">
+      <div class="container">
+        <div class="contact-badge">
+          📍 Get in Touch
+        </div>
+        <h1>Contact <span class="text-gradient-blue">Mexvorin</span></h1>
+        <p>We're here to help. Reach out to our team at our headquarters or through any of our global partner locations.</p>
+        <a href="/" class="btn-back-home">← Back to Home</a>
+      </div>
+    </section>
+
+    <section class="headquarters-section">
+      <div class="container">
+        <div class="hq-card">
+          <div class="hq-header">
+            <h2>🏢 Headquarters</h2>
+            <p>Visit us at our main office in New York</p>
+          </div>
+          
+          <div class="hq-content">
+            <iframe 
+              class="hq-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.860896452826!2d-73.98823492346453!3d40.74537473573178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0x996d5b1b0f5d0d7f!2s1178%20Broadway%2C%20New%20York%2C%20NY%2010001!5e0!3m2!1sen!2sus!4v1703123456789!5m2!1sen!2sus"
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            
+            <div class="hq-info">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-details">
+                  <h3>Address</h3>
+                  <p>1178 Broadway, 3rd Floor<br>New York, NY 10001<br>United States</p>
+                </div>
+              </div>
+              
+              <div class="info-item">
+                <div class="info-icon">📞</div>
+                <div class="info-details">
+                  <h3>Phone</h3>
+                  <p><a href="tel:+16468830912">+1 (646) 883-0912</a></p>
+                </div>
+              </div>
+              
+              <div class="info-item">
+                <div class="info-icon">✉️</div>
+                <div class="info-details">
+                  <h3>Email</h3>
+                  <p><a href="mailto:contact@mexvorin.io">contact@mexvorin.io</a></p>
+                  <p><a href="mailto:support@mexvorin.co">support@mexvorin.co</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="global-section">
+      <div class="container">
+        <h2 class="section-title">Global Support & Operations Coverage</h2>
+        <p class="section-subtitle">Partner locations providing local support and compliance services</p>
+        
+        <div class="countries-grid">
+          <div class="country-card">
+            <div class="country-flag">🇮🇹</div>
+            <div class="country-info">
+              <h3>Italy</h3>
+              <p>Milan</p>
+            </div>
+          </div>
+          
+          <div class="country-card">
+            <div class="country-flag">🇫🇷</div>
+            <div class="country-info">
+              <h3>France</h3>
+              <p>Paris</p>
+            </div>
+          </div>
+          
+          <div class="country-card">
+            <div class="country-flag">🇸🇪</div>
+            <div class="country-info">
+              <h3>Sweden</h3>
+              <p>Stockholm</p>
+            </div>
+          </div>
+          
+          <div class="country-card">
+            <div class="country-flag">🇳🇴</div>
+            <div class="country-info">
+              <h3>Norway</h3>
+              <p>Oslo</p>
+            </div>
+          </div>
+          
+          <div class="country-card">
+            <div class="country-flag">🇫🇮</div>
+            <div class="country-info">
+              <h3>Finland</h3>
+              <p>Helsinki</p>
+            </div>
+          </div>
+          
+          <div class="country-card">
+            <div class="country-flag">🇩🇰</div>
+            <div class="country-info">
+              <h3>Denmark</h3>
+              <p>Copenhagen</p>
+            </div>
+          </div>
+          
+          <div class="country-card">
+            <div class="country-flag">🇦🇹</div>
+            <div class="country-info">
+              <h3>Austria</h3>
+              <p>Vienna</p>
+            </div>
+          </div>
+          
+          <div class="country-card">
+            <div class="country-flag">🇩🇪</div>
+            <div class="country-info">
+              <h3>Germany</h3>
+              <p>Berlin</p>
+            </div>
+          </div>
+          
+          <div class="country-card">
+            <div class="country-flag">🇪🇸</div>
+            <div class="country-info">
+              <h3>Spain</h3>
+              <p>Madrid</p>
+            </div>
+          </div>
+          
+          <div class="country-card">
+            <div class="country-flag">🇨🇦</div>
+            <div class="country-info">
+              <h3>Canada</h3>
+              <p>Toronto</p>
+            </div>
+          </div>
+          
+          <div class="country-card">
+            <div class="country-flag">🇰🇷</div>
+            <div class="country-info">
+              <h3>South Korea</h3>
+              <p>Seoul</p>
+            </div>
+          </div>
+          
+          <div class="country-card">
+            <div class="country-flag">🇯🇵</div>
+            <div class="country-info">
+              <h3>Japan</h3>
+              <p>Tokyo</p>
+            </div>
+          </div>
+          
+          <div class="country-card">
+            <div class="country-flag">🇸🇬</div>
+            <div class="country-info">
+              <h3>Singapore</h3>
+              <p>Singapore</p>
+            </div>
+          </div>
+          
+          <div class="country-card">
+            <div class="country-flag">🇮🇳</div>
+            <div class="country-info">
+              <h3>India</h3>
+              <p>Mumbai</p>
+            </div>
+          </div>
+          
+          <div class="country-card">
+            <div class="country-flag">🇦🇺</div>
+            <div class="country-info">
+              <h3>Australia</h3>
+              <p>Sydney</p>
+            </div>
+          </div>
+          
+          <div class="country-card">
+            <div class="country-flag">🇲🇾</div>
+            <div class="country-info">
+              <h3>Malaysia</h3>
+              <p>Kuala Lumpur</p>
+            </div>
+          </div>
+          
+          <div class="country-card">
+            <div class="country-flag">🇳🇱</div>
+            <div class="country-info">
+              <h3>Netherlands</h3>
+              <p>Amsterdam</p>
+            </div>
+          </div>
+          
+          <div class="country-card">
+            <div class="country-flag">🇮🇪</div>
+            <div class="country-info">
+              <h3>Ireland</h3>
+              <p>Dublin</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>About Mexvorin</h3>
+            <p style="color: rgba(255,255,255,0.8); line-height: 1.7;">
+              Mexvorin is a trading platform focused on market insights, risk tools, and guided execution for supported markets.
+            </p>
+          </div>
+          
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="/features.html">Features</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+              <li><a href="/risk-disclaimer.html">Risk Disclaimer</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h3>Legal</h3>
+            <ul class="footer-links">
+              <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="/terms-and-conditions.html">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h3>Support</h3>
+            <ul class="footer-links">
+              <li><a href="mailto:support@mexvorin.co">support@mexvorin.co</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2025 Mexvorin Platform. All rights reserved.</p>
+          <p style="margin-top: 10px;">Mexvorin - AI-Powered Trading Platform</p>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
