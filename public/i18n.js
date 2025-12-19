@@ -280,6 +280,7 @@ class I18n {
       padding: 0.5rem; display: none; z-index: 1000; min-width: 200px;
     `;
 
+    console.log('Setting up language selector with flags:', this.supportedLanguages);
     Object.entries(this.supportedLanguages).forEach(([code, lang]) => {
       const option = document.createElement('button');
       option.style.cssText = `
@@ -288,7 +289,8 @@ class I18n {
         border-radius: 8px; cursor: pointer; font-size: 0.95rem; transition: background 0.2s;
         text-align: left;
       `;
-      option.innerHTML = `<span style="font-size: 1.5rem;">${lang.flag}</span> ${lang.name}`;
+      option.innerHTML = `<span style="font-size: 1.8rem;">${lang.flag}</span> <span style="font-weight: 500;">${lang.name}</span>`;
+      console.log(`Adding language option: ${code} - ${lang.flag} ${lang.name}`);
       
       option.addEventListener('mouseenter', () => {
         if (code !== this.currentLang) option.style.background = '#F5F7FA';
