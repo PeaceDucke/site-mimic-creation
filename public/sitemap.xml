@@ -7,8 +7,8 @@
 
   <!-- Homepage - Mexvorin Official Trading Platform -->
   <url>
-    <loc>https://mexvorin-official.org/</loc>
-    <lastmod>2025-12-16</lastmod>
+    <loc>https://mexvorin.io/</loc>
+    <lastmod>2025-12-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -18,52 +18,52 @@
     </image:image>
   </url>
 
-  <!-- Home Section -->
+  <!-- Features Page -->
   <url>
-    <loc>https://mexvorin-official.org/#home</loc>
-    <lastmod>2025-12-16</lastmod>
+    <loc>https://mexvorin.io/features.html</loc>
+    <lastmod>2025-12-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- FAQ Section -->
+  <!-- About Page -->
   <url>
-    <loc>https://mexvorin-official.org/#faq</loc>
-    <lastmod>2025-12-16</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://mexvorin.io/about.html</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Join Form Section -->
+  <!-- Contact Page -->
   <url>
-    <loc>https://mexvorin-official.org/#join-form</loc>
-    <lastmod>2025-12-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Features Section -->
-  <url>
-    <loc>https://mexvorin-official.org/#features</loc>
-    <lastmod>2025-12-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Security Section -->
-  <url>
-    <loc>https://mexvorin-official.org/#security</loc>
-    <lastmod>2025-12-16</lastmod>
+    <loc>https://mexvorin.io/contact.html</loc>
+    <lastmod>2025-12-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Active Traders Section -->
+  <!-- Privacy Policy -->
   <url>
-    <loc>https://mexvorin-official.org/#traders</loc>
-    <lastmod>2025-12-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <loc>https://mexvorin.io/privacy-policy.html</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Terms and Conditions -->
+  <url>
+    <loc>https://mexvorin.io/terms-and-conditions.html</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Risk Disclaimer -->
+  <url>
+    <loc>https://mexvorin.io/risk-disclaimer.html</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
 
 </urlset>
