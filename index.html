@@ -2971,7 +2971,7 @@
         setInterval(updateDisplay, 1000);
       }
       
-      function handleSubmit(event) {
+      async function handleSubmit(event) {
         event.preventDefault();
         
         const submitBtn = document.getElementById('submitBtn');
@@ -2989,21 +2989,37 @@
           message: document.getElementById('message').value
         };
         
-        setTimeout(() => {
-          formMessage.innerHTML = '<div class="success-message">✅ Thank you! Your request has been submitted. Our team will contact you within 24 hours.</div>';
-          document.getElementById('contactForm').reset();
+        try {
+          const response = await fetch('https://functions.poehali.dev/cd2bcaff-b8c8-4c3e-b0e7-6ad1796e1cf4', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData)
+          });
+          
+          if (response.ok) {
+            formMessage.innerHTML = '<div class="success-message">✅ Thank you! Your request has been submitted. Our team will contact you within 24 hours.</div>';
+            document.getElementById('contactForm').reset();
+          } else {
+            throw new Error('Submission failed');
+          }
+        } catch (error) {
+          console.error('Form submission error:', error);
+          formMessage.innerHTML = '<div class="error-message">❌ Something went wrong. Please try again.</div>';
+        } finally {
           submitBtn.disabled = false;
           submitBtn.textContent = 'Start Free Trial';
           
           setTimeout(() => {
             formMessage.innerHTML = '';
           }, 5000);
-        }, 1500);
+        }
         
         return false;
       }
       
-      function handleHeroSubmit(event) {
+      async function handleHeroSubmit(event) {
         event.preventDefault();
         
         const submitBtn = event.target.querySelector('.btn-submit-hero');
@@ -3016,15 +3032,33 @@
           firstName: document.getElementById('heroFirstName').value,
           lastName: document.getElementById('heroLastName').value,
           email: document.getElementById('heroEmail').value,
-          phone: document.getElementById('heroCountry').value + document.getElementById('heroPhone').value
+          phone: document.getElementById('heroCountry').value + document.getElementById('heroPhone').value,
+          experience: 'Not specified',
+          message: 'Hero form submission'
         };
         
-        setTimeout(() => {
-          alert('✅ Merci! Votre demande a été envoyée. Notre équipe vous contactera dans les 24 heures.');
-          document.getElementById('heroForm').reset();
+        try {
+          const response = await fetch('https://functions.poehali.dev/cd2bcaff-b8c8-4c3e-b0e7-6ad1796e1cf4', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData)
+          });
+          
+          if (response.ok) {
+            alert('✅ Merci! Votre demande a été envoyée. Notre équipe vous contactera dans les 24 heures.');
+            document.getElementById('heroForm').reset();
+          } else {
+            throw new Error('Submission failed');
+          }
+        } catch (error) {
+          console.error('Hero form submission error:', error);
+          alert('❌ Une erreur s\'est produite. Veuillez réessayer.');
+        } finally {
           submitBtn.disabled = false;
           submitBtn.textContent = originalText;
-        }, 1500);
+        }
         
         return false;
       }
