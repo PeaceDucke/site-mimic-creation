@@ -10,8 +10,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { useTranslation, languages } from "@/useTranslation";
-import type { LanguageCode } from "@/translations";
+
 
 const Index = () => {
   const [email, setEmail] = useState("");
@@ -33,9 +32,6 @@ const Index = () => {
     seconds: 59,
   });
   const [selectedOffice, setSelectedOffice] = useState(0);
-  const [selectedLanguage, setSelectedLanguage] = useState<LanguageCode>("en");
-  const { t } = useTranslation(selectedLanguage);
-  const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
   const [selectedCountry, setSelectedCountry] = useState({
     countryCode: "US",
     code: "+1",
