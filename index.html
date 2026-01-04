@@ -112,6 +112,10 @@
         box-sizing: border-box;
       }
       
+      html {
+        scroll-behavior: smooth;
+      }
+      
       :root {
         --primary: #7C3AED;
         --secondary: #0EA5E9;
@@ -201,6 +205,24 @@
       
       .nav-links a:hover {
         color: white;
+      }
+      
+      .btn-sign-in {
+        background: linear-gradient(135deg, #7C3AED 0%, #5B8FF9 100%);
+        color: white;
+        padding: 0.6rem 1.5rem;
+        border-radius: 8px;
+        border: none;
+        font-weight: 600;
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+      }
+      
+      .btn-sign-in:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5);
       }
       
       .language-selector {
@@ -2047,6 +2069,7 @@
           <li><a href="#about" data-i18n="header.about">About</a></li>
           <li><a href="#contact" data-i18n="header.contact">Contact</a></li>
           <li><a href="/features.html">Roadmap</a></li>
+          <li><button class="btn-sign-in" onclick="scrollToForm()" data-i18n="header.signIn">Sign In</button></li>
           <li class="language-selector">
             <button class="language-btn" id="languageBtn" onclick="toggleLanguageDropdown(event)">
               <img src="https://flagcdn.com/w40/us.png" alt="English" class="lang-flag" id="selectedLangFlag">
@@ -3528,6 +3551,19 @@
         // Load and apply translations
         const translations = await loadTranslations(lang);
         applyTranslations(translations);
+      }
+      
+      // Smooth scroll to registration form
+      function scrollToForm() {
+        const form = document.getElementById('heroForm');
+        if (form) {
+          form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          // Focus first input
+          setTimeout(() => {
+            const firstInput = form.querySelector('input');
+            if (firstInput) firstInput.focus();
+          }, 500);
+        }
       }
       
       // Toggle language dropdown
