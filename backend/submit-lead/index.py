@@ -165,7 +165,7 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     phone_formatted = f"{country_code}{phone}"
     
     spam_marker = "⚠️ SPAM" if is_spam else ""
-    telegram_message = f"""🚀 НОВАЯ ЗАЯВКА с MEXVORIN.IO {spam_marker}
+    telegram_message = f"""🚀 НОВАЯ ЗАЯВКА с Eryxavin.eu {spam_marker}
 
 👤 Имя: {first_name}
 👤 Фамилия: {last_name}
