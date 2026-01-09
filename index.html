@@ -1567,6 +1567,63 @@
         line-height: 1.5;
       }
       
+      .form-success-message {
+        display: none;
+        background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+        color: white;
+        padding: 2rem;
+        border-radius: 16px;
+        text-align: center;
+        animation: slideIn 0.5s ease-out;
+      }
+      
+      .form-success-message.show {
+        display: block;
+      }
+      
+      .success-checkmark {
+        width: 60px;
+        height: 60px;
+        background: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1rem;
+        font-size: 2rem;
+        color: #10B981;
+        animation: scaleIn 0.6s ease-out;
+      }
+      
+      .success-text {
+        font-size: 1.1rem;
+        font-weight: 600;
+        line-height: 1.6;
+      }
+      
+      @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      @keyframes scaleIn {
+        0% {
+          transform: scale(0);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      
       .form-textarea {
         resize: vertical;
         min-height: 150px;
@@ -2204,6 +2261,11 @@
                 By providing your information, you acknowledge that you have read, understood and accepted the Terms of Use and Privacy Policy of this website.
               </div>
             </form>
+            
+            <div class="form-success-message" id="formSuccessMessage">
+              <div class="success-checkmark">✓</div>
+              <div class="success-text" data-i18n="form.successMessage">Thank you for your request! Our manager will contact you shortly.</div>
+            </div>
           </div>
 
         </div>
@@ -3160,8 +3222,10 @@
       async function handleHeroSubmit(event) {
         event.preventDefault();
         
+        const form = document.getElementById('heroForm');
         const submitBtn = event.target.querySelector('.btn-submit-hero');
         const originalText = submitBtn.textContent;
+        const successMessage = document.getElementById('formSuccessMessage');
         
         submitBtn.disabled = true;
         submitBtn.textContent = 'ENVOI EN COURS...';
@@ -3185,15 +3249,19 @@
           });
           
           if (response.ok) {
-            alert('✅ Merci! Votre demande a été envoyée. Notre équipe vous contactera dans les 24 heures.');
-            document.getElementById('heroForm').reset();
+            // Hide form and show success message
+            form.style.display = 'none';
+            successMessage.classList.add('show');
+            
+            // Update success message text with translation
+            const successText = currentTranslations?.form?.successMessage || 'Thank you for your request! Our manager will contact you shortly.';
+            successMessage.querySelector('.success-text').textContent = successText;
           } else {
             throw new Error('Submission failed');
           }
         } catch (error) {
           console.error('Hero form submission error:', error);
           alert('❌ Une erreur s\'est produite. Veuillez réessayer.');
-        } finally {
           submitBtn.disabled = false;
           submitBtn.textContent = originalText;
         }

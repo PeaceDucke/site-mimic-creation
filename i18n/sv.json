@@ -27,7 +27,8 @@
     "phone": "Telefonnummer",
     "submit": "REGISTRERA NU",
     "security": "Dina uppgifter är krypterade och skyddade av säkerhetsprotokoll",
-    "disclaimer": "Genom att lämna dina uppgifter bekräftar du att du har läst, förstått och accepterat denna webbplats användarvillkor och integritetspolicy."
+    "disclaimer": "Genom att lämna dina uppgifter bekräftar du att du har läst, förstått och accepterat denna webbplats användarvillkor och integritetspolicy.",
+    "successMessage": "Tack för din förfrågan! Vår chef kommer att kontakta dig inom kort."
   },
   "aiTools": {
     "title": "AI-drivna verktyg för",

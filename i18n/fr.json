@@ -27,7 +27,8 @@
     "phone": "Numéro de téléphone",
     "submit": "S'INSCRIRE MAINTENANT",
     "security": "Vos données sont cryptées et protégées par des protocoles de sécurité",
-    "disclaimer": "En fournissant vos informations, vous reconnaissez avoir lu, compris et accepté les Conditions d'utilisation et la Politique de confidentialité de ce site Web."
+    "disclaimer": "En fournissant vos informations, vous reconnaissez avoir lu, compris et accepté les Conditions d'utilisation et la Politique de confidentialité de ce site Web.",
+    "successMessage": "Merci pour votre demande ! Notre gestionnaire vous contactera dans les plus brefs délais."
   },
   "aiTools": {
     "title": "Outils alimentés par l'IA pour",

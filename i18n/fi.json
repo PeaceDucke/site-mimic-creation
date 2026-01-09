@@ -27,7 +27,8 @@
     "phone": "Puhelinnumero",
     "submit": "REKISTERÖIDY NYT",
     "security": "Tietosi on salattu ja suojattu tietoturvapöytäkirjoilla",
-    "disclaimer": "Antamalla tietosi vahvistat, että olet lukenut, ymmärtänyt ja hyväksynyt tämän verkkosivuston käyttöehdot ja tietosuojakäytännön."
+    "disclaimer": "Antamalla tietosi vahvistat, että olet lukenut, ymmärtänyt ja hyväksynyt tämän verkkosivuston käyttöehdot ja tietosuojakäytännön.",
+    "successMessage": "Kiitos pyynnöstäsi! Esimiehemme ottaa sinuun yhteyttä pian."
   },
   "aiTools": {
     "title": "Tekoälykäyttöiset työkalut",

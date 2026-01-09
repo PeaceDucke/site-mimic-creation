@@ -27,7 +27,8 @@
     "phone": "Número de Teléfono",
     "submit": "REGISTRARSE AHORA",
     "security": "Tus datos están encriptados y protegidos por protocolos de seguridad",
-    "disclaimer": "Al proporcionar tu información, reconoces que has leído, entendido y aceptado los Términos de Uso y la Política de Privacidad de este sitio web."
+    "disclaimer": "Al proporcionar tu información, reconoces que has leído, entendido y aceptado los Términos de Uso y la Política de Privacidad de este sitio web.",
+    "successMessage": "¡Gracias por su solicitud! Nuestro gerente se pondrá en contacto con usted en breve."
   },
   "aiTools": {
     "title": "Herramientas con IA para",

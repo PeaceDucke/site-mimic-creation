@@ -27,7 +27,8 @@
     "phone": "Phone Number",
     "submit": "REGISTER NOW",
     "security": "Your data is encrypted and protected by security protocols",
-    "disclaimer": "By providing your information, you acknowledge that you have read, understood and accepted the Terms of Use and Privacy Policy of this website."
+    "disclaimer": "By providing your information, you acknowledge that you have read, understood and accepted the Terms of Use and Privacy Policy of this website.",
+    "successMessage": "Thank you for your request! Our manager will contact you shortly."
   },
   "aiTools": {
     "title": "AI-Powered Tools for",

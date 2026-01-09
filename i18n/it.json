@@ -27,7 +27,8 @@
     "phone": "Numero di Telefono",
     "submit": "REGISTRATI ORA",
     "security": "I tuoi dati sono crittografati e protetti da protocolli di sicurezza",
-    "disclaimer": "Fornendo le tue informazioni, riconosci di aver letto, compreso e accettato i Termini di Utilizzo e l'Informativa sulla Privacy di questo sito web."
+    "disclaimer": "Fornendo le tue informazioni, riconosci di aver letto, compreso e accettato i Termini di Utilizzo e l'Informativa sulla Privacy di questo sito web.",
+    "successMessage": "Grazie per la tua richiesta! Il nostro manager ti contatterà a breve."
   },
   "aiTools": {
     "title": "Strumenti AI per un",

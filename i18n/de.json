@@ -27,7 +27,8 @@
     "phone": "Telefonnummer",
     "submit": "JETZT REGISTRIEREN",
     "security": "Ihre Daten sind verschlüsselt und durch Sicherheitsprotokolle geschützt",
-    "disclaimer": "Mit der Angabe Ihrer Daten bestätigen Sie, dass Sie die Nutzungsbedingungen und Datenschutzerklärung dieser Website gelesen, verstanden und akzeptiert haben."
+    "disclaimer": "Mit der Angabe Ihrer Daten bestätigen Sie, dass Sie die Nutzungsbedingungen und Datenschutzerklärung dieser Website gelesen, verstanden und akzeptiert haben.",
+    "successMessage": "Vielen Dank für Ihre Anfrage! Unser Manager wird sich in Kürze mit Ihnen in Verbindung setzen."
   },
   "aiTools": {
     "title": "KI-gestützte Tools für",

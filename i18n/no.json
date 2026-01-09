@@ -27,7 +27,8 @@
     "phone": "Telefonnummer",
     "submit": "REGISTRER NÅ",
     "security": "Dine data er kryptert og beskyttet av sikkerhetsprotokoller",
-    "disclaimer": "Ved å oppgi informasjonen din bekrefter du at du har lest, forstått og akseptert bruksvilkårene og personvernreglene til denne nettsiden."
+    "disclaimer": "Ved å oppgi informasjonen din bekrefter du at du har lest, forstått og akseptert bruksvilkårene og personvernreglene til denne nettsiden.",
+    "successMessage": "Takk for din forespørsel! Vår leder vil kontakte deg snart."
   },
   "aiTools": {
     "title": "AI-drevne verktøy for",
