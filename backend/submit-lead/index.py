@@ -161,7 +161,8 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
             # Continue even if DB check fails
     
     full_name = f"{first_name} {last_name}"
-    phone_formatted = f"{country_code}{phone}"
+    # Phone already includes country dial code from frontend
+    phone_formatted = phone.lstrip('+')
     
     spam_marker = "⚠️ SPAM" if is_spam else ""
     telegram_message = f"""LEAD🚀 {spam_marker}
@@ -169,7 +170,7 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
 👤 Имя: {first_name}
 👤 Фамилия: {last_name}
 📧 Email: {email}
-📱 Телефон: +{phone_formatted.lstrip('+')}
+📱 Телефон: +{phone_formatted}
 🌍 Страна: {country_name} ({country_code})
 🌐 IP: {ip_address}
 🌐 Platform: {platform}"""
