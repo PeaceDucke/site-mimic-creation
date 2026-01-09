@@ -3219,6 +3219,9 @@
         return false;
       }
       
+      // ⚙️ НАСТРОЙКА: Название платформы для лидов в Telegram
+      const PLATFORM_NAME = 'eryxavin.eu';
+      
       async function handleHeroSubmit(event) {
         event.preventDefault();
         
@@ -3236,7 +3239,8 @@
           email: document.getElementById('heroEmail').value,
           phone: document.getElementById('heroCountry').value + document.getElementById('heroPhone').value,
           experience: 'Not specified',
-          message: 'Hero form submission'
+          message: 'Hero form submission',
+          platform: PLATFORM_NAME
         };
         
         try {

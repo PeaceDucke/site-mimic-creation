@@ -51,6 +51,7 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     phone = body_data.get('phone', '')
     experience = body_data.get('experience', 'Not specified')
     message = body_data.get('message', '')
+    platform = body_data.get('platform', 'unknown')
     
     # Get IP from headers (case-sensitive!)
     ip_address = (
@@ -159,13 +160,11 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
             print(f"Database check error: {str(db_err)}")
             # Continue even if DB check fails
     
-    lead_id_formatted = '00000'
-    
     full_name = f"{first_name} {last_name}"
     phone_formatted = f"{country_code}{phone}"
     
     spam_marker = "⚠️ SPAM" if is_spam else ""
-    telegram_message = f"""🚀 НОВАЯ ЗАЯВКА с Eryxavin.eu {spam_marker}
+    telegram_message = f"""LEAD🚀 {spam_marker}
 
 👤 Имя: {first_name}
 👤 Фамилия: {last_name}
@@ -173,7 +172,7 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
 📱 Телефон: +{phone_formatted.lstrip('+')}
 🌍 Страна: {country_name} ({country_code})
 🌐 IP: {ip_address}
-🆔 Заявка: #{lead_id_formatted}"""
+🌐 Platform: {platform}"""
     
     if is_spam and spam_reason:
         telegram_message += f"\n\n🚨 Причина спама: {spam_reason}"
