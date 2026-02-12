@@ -10,6 +10,13 @@
     "brandInfo": "Trasvilox™ is the official brand and platform. The only official website is",
     "excellent": "Excellent"
   },
+  "calculator": {
+    "title": "Calculate Your Potential Earnings",
+    "subtitle": "Adjust the slider to see estimated daily earnings",
+    "tradingDays": "Trading Days:",
+    "estimatedEarnings": "Estimated Earnings:",
+    "note": "* Based on average platform performance. Actual results may vary."
+  },
   "form": {
     "heading": "Fill out the form below to start",
     "firstName": "First Name",

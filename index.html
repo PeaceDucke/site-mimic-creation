@@ -1176,6 +1176,140 @@
         gap: 0.5rem;
       }
       
+      .earnings-calculator {
+        background: rgba(36, 226, 240, 0.06);
+        backdrop-filter: blur(15px);
+        padding: 2.5rem;
+        border-radius: 24px;
+        border: 2px solid rgba(36, 226, 240, 0.2);
+        box-shadow: 0 8px 32px rgba(36, 226, 240, 0.15);
+        margin-bottom: 2rem;
+      }
+      
+      .calculator-title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #F1F5F9;
+        text-align: center;
+        margin-bottom: 0.5rem;
+      }
+      
+      .calculator-subtitle {
+        font-size: 0.95rem;
+        color: #94A3B8;
+        text-align: center;
+        margin-bottom: 2.5rem;
+      }
+      
+      .calculator-slider-container {
+        margin-bottom: 2rem;
+      }
+      
+      .earnings-slider {
+        width: 100%;
+        height: 8px;
+        background: linear-gradient(90deg, rgba(36, 226, 240, 0.2) 0%, rgba(36, 226, 240, 0.5) 100%);
+        border-radius: 10px;
+        outline: none;
+        -webkit-appearance: none;
+        cursor: pointer;
+        margin-bottom: 1rem;
+      }
+      
+      .earnings-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 24px;
+        height: 24px;
+        background: linear-gradient(135deg, #24e2f0 0%, #14b8c4 100%);
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(36, 226, 240, 0.5);
+        transition: all 0.3s;
+      }
+      
+      .earnings-slider::-webkit-slider-thumb:hover {
+        transform: scale(1.2);
+        box-shadow: 0 6px 20px rgba(36, 226, 240, 0.7);
+      }
+      
+      .earnings-slider::-moz-range-thumb {
+        width: 24px;
+        height: 24px;
+        background: linear-gradient(135deg, #24e2f0 0%, #14b8c4 100%);
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(36, 226, 240, 0.5);
+        border: none;
+        transition: all 0.3s;
+      }
+      
+      .earnings-slider::-moz-range-thumb:hover {
+        transform: scale(1.2);
+        box-shadow: 0 6px 20px rgba(36, 226, 240, 0.7);
+      }
+      
+      .slider-labels {
+        display: flex;
+        justify-content: space-between;
+        color: #94A3B8;
+        font-size: 0.85rem;
+        font-weight: 500;
+      }
+      
+      .calculator-result {
+        background: rgba(255, 255, 255, 0.03);
+        padding: 2rem;
+        border-radius: 16px;
+        border: 1px solid rgba(36, 226, 240, 0.15);
+        margin-bottom: 1.5rem;
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+      
+      .result-days, .result-earnings {
+        text-align: center;
+        flex: 1;
+        min-width: 200px;
+      }
+      
+      .result-label {
+        display: block;
+        font-size: 0.9rem;
+        color: #94A3B8;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+      }
+      
+      .result-value {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: #24e2f0;
+        display: block;
+        text-shadow: 0 0 20px rgba(36, 226, 240, 0.4);
+      }
+      
+      .result-amount {
+        font-size: 3rem;
+        font-weight: 800;
+        background: linear-gradient(135deg, #24e2f0 0%, #14b8c4 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        display: block;
+        text-shadow: 0 0 30px rgba(36, 226, 240, 0.5);
+      }
+      
+      .calculator-note {
+        text-align: center;
+        font-size: 0.8rem;
+        color: #64748B;
+        font-style: italic;
+        margin: 0;
+      }
+      
       .hero-content {
         display: grid;
         grid-template-columns: 0.65fr 1.35fr;
@@ -2344,41 +2478,30 @@
               Trasvilox™ is the official brand and platform. The only official website is <a href="https://trasvilox.eu">https://trasvilox.eu</a>
             </div>
             
-            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
-              <span style="font-weight: 700; color: #FFFFFF; font-size: 1.15rem; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);" data-i18n="hero.excellent">Excellent</span>
-              <span style="color: #FFA500; font-size: 1.3rem; filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));">★★★★★</span>
-              <span style="font-weight: 600; color: #FFFFFF; font-size: 1.15rem; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);">4.6</span>
-              <span style="color: #FFFFFF; font-size: 0.85rem; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);" data-i18n="hero.userFeedback">User feedback collected across multiple independent platforms.</span>
-            </div>
-            
-            <div class="hero-reviews">
-              <div class="review-card">
-                <img src="https://cdn.poehali.dev/files/capterra-logo.png" alt="Capterra" class="review-logo">
-                <div class="review-name">Capterra</div>
-                <div class="review-stars">★★★★★</div>
-                <div class="review-rating">4.6</div>
+            <div class="earnings-calculator">
+              <h3 class="calculator-title" data-i18n="calculator.title">Calculate Your Potential Earnings</h3>
+              <p class="calculator-subtitle" data-i18n="calculator.subtitle">Adjust the slider to see estimated daily earnings</p>
+              
+              <div class="calculator-slider-container">
+                <input type="range" min="1" max="30" value="7" class="earnings-slider" id="earningsSlider">
+                <div class="slider-labels">
+                  <span>1 day</span>
+                  <span>30 days</span>
+                </div>
               </div>
               
-              <div class="review-card">
-                <img src="https://cdn.poehali.dev/files/sourceforge-logo.png" alt="SourceForge" class="review-logo">
-                <div class="review-name">SourceForge</div>
-                <div class="review-stars">★★★★☆</div>
-                <div class="review-rating">4.3</div>
+              <div class="calculator-result">
+                <div class="result-days">
+                  <span class="result-label" data-i18n="calculator.tradingDays">Trading Days:</span>
+                  <span class="result-value" id="daysValue">7</span>
+                </div>
+                <div class="result-earnings">
+                  <span class="result-label" data-i18n="calculator.estimatedEarnings">Estimated Earnings:</span>
+                  <span class="result-amount" id="earningsAmount">$5,810</span>
+                </div>
               </div>
               
-              <div class="review-card">
-                <img src="https://cdn.poehali.dev/files/slashdot-logo.png" alt="Slashdot" class="review-logo">
-                <div class="review-name">Slashdot</div>
-                <div class="review-stars">★★★★☆</div>
-                <div class="review-rating">4.4</div>
-              </div>
-              
-              <div class="review-card">
-                <img src="https://cdn.poehali.dev/files/google-reviews-logo.png" alt="Google Reviews" class="review-logo">
-                <div class="review-name">Google Reviews</div>
-                <div class="review-stars">★★★★★</div>
-                <div class="review-rating">4.8</div>
-              </div>
+              <p class="calculator-note" data-i18n="calculator.note">* Based on average platform performance. Actual results may vary.</p>
             </div>
           </div>
           
@@ -3853,6 +3976,28 @@
         applyTranslations(translations);
         currentLang = lang;
       })();
+    </script>
+    
+    <script>
+      // Earnings Calculator
+      const slider = document.getElementById('earningsSlider');
+      const daysValue = document.getElementById('daysValue');
+      const earningsAmount = document.getElementById('earningsAmount');
+      const dailyRate = 830; // $830 per day
+      
+      function updateCalculator() {
+        const days = parseInt(slider.value);
+        const earnings = days * dailyRate;
+        
+        daysValue.textContent = days;
+        earningsAmount.textContent = '$' + earnings.toLocaleString('en-US');
+      }
+      
+      // Initialize calculator
+      updateCalculator();
+      
+      // Update on slider change
+      slider.addEventListener('input', updateCalculator);
     </script>
 </body>
 </html>
