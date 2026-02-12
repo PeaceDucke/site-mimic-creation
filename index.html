@@ -1277,7 +1277,7 @@
       .earnings-calculator {
         background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(139, 92, 246, 0.12) 100%);
         backdrop-filter: blur(20px);
-        padding: 1.8rem 3rem 1.5rem;
+        padding: 1.5rem 2rem 1.25rem;
         border-radius: 24px;
         border: 3px solid rgba(59, 130, 246, 0.4);
         box-shadow: 
@@ -1324,29 +1324,29 @@
       }
       
       .calculator-title {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-weight: 800;
         background: linear-gradient(135deg, #60A5FA 0%, #A78BFA 50%, #F472B6 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-align: center;
-        margin-bottom: 0.4rem;
+        margin-bottom: 0.25rem;
         margin-top: 0.5rem;
         text-shadow: 0 0 30px rgba(96, 165, 250, 0.5);
         letter-spacing: -0.5px;
       }
       
       .calculator-subtitle {
-        font-size: 1rem;
+        font-size: 0.85rem;
         color: #CBD5E1;
         text-align: center;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
         font-weight: 500;
       }
       
       .calculator-slider-container {
-        margin-bottom: 1rem;
+        margin-bottom: 0.75rem;
       }
       
       .earnings-slider {
@@ -1403,53 +1403,48 @@
       
       .calculator-result {
         background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(52, 211, 153, 0.05) 100%);
-        padding: 1.5rem 1.5rem;
+        padding: 1rem 1.5rem;
         border-radius: 16px;
         border: 2px solid rgba(16, 185, 129, 0.3);
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        align-items: center;
         gap: 2rem;
-        flex-wrap: wrap;
         box-shadow: 0 4px 20px rgba(16, 185, 129, 0.15);
       }
       
       .result-days, .result-earnings {
-        text-align: center;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
         flex: 1;
-        min-width: 200px;
       }
       
       .result-label {
-        display: block;
-        font-size: 1rem;
+        font-size: 0.85rem;
         color: #E2E8F0;
-        margin-bottom: 0.75rem;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.5px;
+        white-space: nowrap;
       }
       
       .result-value {
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 800;
         background: linear-gradient(135deg, #10B981 0%, #34D399 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        font-weight: 800;
-        color: #24e2f0;
-        display: block;
-        text-shadow: 0 0 20px rgba(36, 226, 240, 0.4);
       }
       
       .result-amount {
-        font-size: 3rem;
+        font-size: 2.25rem;
         font-weight: 900;
         background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 50%, #EAB308 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        display: block;
         filter: drop-shadow(0 0 30px rgba(251, 191, 36, 0.6));
         letter-spacing: -1px;
         animation: amountPulse 2s ease-in-out infinite;
@@ -1578,7 +1573,7 @@
       .hero-form-container {
         background: rgba(255, 255, 255, 0.03);
         backdrop-filter: blur(20px);
-        padding: 2.5rem 4rem 2.5rem;
+        padding: 1.75rem 3rem 1.5rem;
         border-radius: 32px;
         box-shadow: 0 12px 60px rgba(0, 0, 0, 0.4), 0 0 0 2px rgba(139, 92, 246, 0.1);
         border: 2px solid rgba(139, 92, 246, 0.15);
@@ -1589,6 +1584,8 @@
         max-width: 1400px;
         width: 100%;
         margin-left: auto;
+        display: flex;
+        flex-direction: column;
       }
       
       .hero-form-container:before {
@@ -1624,8 +1621,8 @@
       .form-row {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
-        margin-bottom: 1.5rem;
+        gap: 1rem;
+        margin-bottom: 0.85rem;
       }
       
       .hero-buttons {
@@ -1939,10 +1936,10 @@
       .form-textarea,
       .form-select {
         width: 100%;
-        padding: 1.3rem 2rem;
+        padding: 0.9rem 1.5rem;
         border: 2px solid rgba(139, 92, 246, 0.15);
-        border-radius: 16px;
-        font-size: 1.1rem;
+        border-radius: 12px;
+        font-size: 0.95rem;
         font-family: 'Inter', sans-serif;
         transition: all 0.3s;
         background: rgba(255, 255, 255, 0.03);
@@ -1964,13 +1961,13 @@
       
       .btn-submit-hero {
         width: 100%;
-        padding: 1.75rem;
+        padding: 1.1rem;
         border: none;
-        border-radius: 18px;
+        border-radius: 14px;
         background: linear-gradient(135deg, #EC4899 0%, #8B5CF6 50%, #3B82F6 100%);
         color: white;
         font-weight: 700;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         cursor: pointer;
         transition: all 0.3s;
         text-transform: uppercase;
@@ -1987,22 +1984,22 @@
         display: flex;
         align-items: center;
         gap: 0.5rem;
-        margin-top: 1.25rem;
-        margin-bottom: 1.25rem;
-        padding: 1rem;
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
+        padding: 0.65rem;
         background: rgba(16, 185, 129, 0.1);
-        border-radius: 10px;
-        font-size: 0.9rem;
+        border-radius: 8px;
+        font-size: 0.8rem;
         color: #10B981;
         border: 1px solid rgba(16, 185, 129, 0.2);
       }
       
       .form-disclaimer {
-        font-size: 0.85rem;
+        font-size: 0.7rem;
         color: #94A3B8;
         text-align: center;
         margin-top: 0;
-        line-height: 1.6;
+        line-height: 1.4;
       }
       
       .form-success-message {
@@ -2689,11 +2686,11 @@
                 <input type="text" class="form-input" placeholder="Last Name" data-i18n-placeholder="form.lastName" id="heroLastName" required>
               </div>
               
-              <div style="margin-bottom: 1rem;">
+              <div style="margin-bottom: 0.65rem;">
                 <input type="email" class="form-input" placeholder="Email Address" data-i18n-placeholder="form.email" id="heroEmail" required>
               </div>
               
-              <div class="phone-input-group" style="margin-bottom: 1.5rem;">
+              <div class="phone-input-group" style="margin-bottom: 0.85rem;">
                 <div class="country-select-wrapper">
                   <button type="button" class="country-select-button" id="heroCountrySelectBtn">
                     <img src="https://flagcdn.com/w40/us.png" alt="US" class="country-flag" id="heroSelectedFlag">
