@@ -2439,15 +2439,90 @@
         .hero-content {
           grid-template-columns: 1fr;
           gap: 2rem;
+          align-items: center;
         }
         
         .hero-left h1 {
+          font-size: 2rem;
+        }
+        
+        .hero-left p {
+          font-size: 1rem;
+        }
+        
+        .earnings-calculator {
+          padding: 1.5rem 1.5rem 1.25rem;
+          min-height: auto;
+          transform: scale(1);
+        }
+        
+        .earnings-calculator::before {
+          width: 45px;
+          height: 45px;
+          top: -22px;
+          font-size: 1.8rem;
+        }
+        
+        .calculator-title {
+          font-size: 1.2rem;
+          margin-top: 0.75rem;
+        }
+        
+        .calculator-subtitle {
+          font-size: 0.75rem;
+          margin-bottom: 0.85rem;
+        }
+        
+        .calculator-result {
+          flex-direction: column;
+          padding: 1.25rem 1rem;
+          min-height: auto;
+          gap: 1rem;
+        }
+        
+        .result-days, .result-earnings {
+          min-width: 100%;
+        }
+        
+        .result-label {
+          font-size: 0.75rem;
+          margin-bottom: 0.5rem;
+        }
+        
+        .result-value {
+          font-size: 2rem;
+          min-width: 60px;
+        }
+        
+        .result-amount {
           font-size: 2.5rem;
+          min-width: 150px;
+        }
+        
+        .hero-form-container {
+          transform: scale(1) translateX(0) translateY(0);
+          padding: 2rem 1.5rem;
+          margin-top: 2rem;
+        }
+        
+        .form-input {
+          padding: 1rem 1.5rem;
+          font-size: 1rem;
+        }
+        
+        .btn-submit-hero {
+          padding: 1.25rem;
+          font-size: 1.1rem;
         }
         
         .hero-reviews {
           flex-wrap: wrap;
           justify-content: center;
+          gap: 1rem;
+        }
+        
+        .brand-info {
+          font-size: 0.85rem;
         }
         
         .review-card {
