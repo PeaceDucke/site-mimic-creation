@@ -1,4 +1,4 @@
-// Trasvilox i18n System - Auto language detection & switching
+// Haltrovex i18n System - Auto language detection & switching
 class I18n {
   constructor() {
     this.currentLang = 'en';
@@ -31,7 +31,7 @@ class I18n {
   }
 
   async init() {
-    const savedLang = localStorage.getItem('Trasvilox_language');
+    const savedLang = localStorage.getItem('Haltrovex_language');
     if (savedLang && this.supportedLanguages[savedLang]) {
       this.currentLang = savedLang;
     } else {
@@ -122,7 +122,7 @@ class I18n {
     if (heroP && !heroP.classList.contains('brand-info')) heroP.textContent = t.hero?.subtitle;
     
     const brandLink = document.querySelector('.brand-info a');
-    const brandHref = brandLink ? brandLink.href : 'https://trasvilox.eu';
+    const brandHref = brandLink ? brandLink.href : 'https://haltrovex-official.org';
     this.updateHTML('.brand-info', `${t.hero?.brandInfo} <a href="${brandHref}" style="color: #5B8FF9; text-decoration: none; font-weight: 600;">${brandHref}</a>`);
     
     const excellent = document.querySelector('.hero-left span[style*="font-weight: 700"]');
@@ -327,7 +327,7 @@ class I18n {
   async switchLanguage(lang) {
     if (!this.supportedLanguages[lang]) return;
     this.currentLang = lang;
-    localStorage.setItem('Trasvilox_language', lang);
+    localStorage.setItem('Haltrovex_language', lang);
     await this.loadTranslations(lang);
     this.applyTranslations();
     document.documentElement.lang = lang;

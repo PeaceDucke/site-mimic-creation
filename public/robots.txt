@@ -1,5 +1,5 @@
-# Trasvilox Official - robots.txt
-# https://trasvilox.eu
+# Haltrovex Official - robots.txt
+# https://haltrovex-official.org
 
 User-agent: Googlebot
 Allow: /
@@ -47,7 +47,7 @@ Allow: /
 Crawl-delay: 2
 
 # Sitemaps
-Sitemap: https://trasvilox.eu/sitemap.xml
+Sitemap: https://haltrovex-official.orgsitemap.xml
 
 # Disallow admin/private areas (if any)
 Disallow: /api/

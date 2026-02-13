@@ -1,13 +1,13 @@
 {
   "meta": {
-    "title": "Trasvilox - Tekoälyvetoinen kaupankäyntialusta | Sijoitusratkaisut 2025",
-    "description": "Trasvilox-alusta: Edistynyt tekoälypohjainen kaupankäyntiekosysteemi. Liity kauppiaisiin, jotka käyttävät Trasviloxin älykkäitä algoritmeja automatisoidussa krypto-, forex- ja osakekaupassa. Aloita Trasviloxin kanssa tänään.",
-    "keywords": "Trasvilox, trasvilox.eu, Trasvilox-alusta, Trasvilox-kaupankäynti, tekoälykaupankäyntialusta, automatisoitu kaupankäynti, kryptokaupankäyntibotti, forex-kaupankäynti-AI, osakekaupan automatisointi"
+    "title": "Haltrovex - Tekoälyvetoinen kaupankäyntialusta | Sijoitusratkaisut 2025",
+    "description": "Haltrovex-alusta: Edistynyt tekoälypohjainen kaupankäyntiekosysteemi. Liity kauppiaisiin, jotka käyttävät Haltrovexin älykkäitä algoritmeja automatisoidussa krypto-, forex- ja osakekaupassa. Aloita Haltrovexin kanssa tänään.",
+    "keywords": "Haltrovex, haltrovex-official.org, Haltrovex-alusta, Haltrovex-kaupankäynti, tekoälykaupankäyntialusta, automatisoitu kaupankäynti, kryptokaupankäyntibotti, forex-kaupankäynti-AI, osakekaupan automatisointi"
   },
   "hero": {
-    "title": "Trasvilox — Virallinen tekoälykaupankäyntialusta",
-    "subtitle": "Trasvilox on virallinen tekoälyvetoinen kaupankäyntialusta, joka on suunniteltu käyttäjille, jotka haluavat yksinkertaistetun pääsyn kryptoon, forexiin, osakkeisiin ja hyödykkeisiin älykkään automatisoinnin kautta.",
-    "brandInfo": "Trasvilox™ on virallinen brändi ja alusta. Ainoa virallinen verkkosivusto on",
+    "title": "Haltrovex — Virallinen tekoälykaupankäyntialusta",
+    "subtitle": "Haltrovex on virallinen tekoälyvetoinen kaupankäyntialusta, joka on suunniteltu käyttäjille, jotka haluavat yksinkertaistetun pääsyn kryptoon, forexiin, osakkeisiin ja hyödykkeisiin älykkään automatisoinnin kautta.",
+    "brandInfo": "Haltrovex™ on virallinen brändi ja alusta. Ainoa virallinen verkkosivusto on",
     "excellent": "Erinomainen"
   },
   "form": {
@@ -23,7 +23,7 @@
   "aiTools": {
     "title": "Tekoälykäyttöiset työkalut",
     "titleHighlight": "älykkäämpään kaupankäyntiin",
-    "description": "Trasvilox yhdistää huippuluokan tekoälyn intuitiiviseen suunnitteluun tarjotakseen kauppiaille reaaliaikaisia oivalluksia, automatisoituja strategioita ja saumatonta toteutusta useilla markkinoilla.",
+    "description": "Haltrovex yhdistää huippuluokan tekoälyn intuitiiviseen suunnitteluun tarjotakseen kauppiaille reaaliaikaisia oivalluksia, automatisoituja strategioita ja saumatonta toteutusta useilla markkinoilla.",
     "tool1Title": "Ennakoiva markkina-analyysi",
     "tool1Desc": "Tekoälyalgoritmimme analysoivat miljoonia datapisteitä ennustaakseen markkinatrendit ennen niiden tapahtumista, antaen sinulle kilpailuedun.",
     "tool2Title": "Automatisoitu salkunhallinta",
@@ -52,13 +52,13 @@
     "step2Desc": "Valitse valmiista tekoälystrategioista tai mukauta omasi. Aseta riskinsietosi ja sijoitustavoitteesi.",
     "step3Title": "Aloita automaattinen kaupankäynti",
     "step3Desc": "Katso, kun tekoälymme toteuttaa kauppoja puolestasi, optimoiden maksimaalisen tuoton, kun keskityt olennaisiin asioihin.",
-    "description1": "Trasviloxin älykäs kaupankäyntialusta käsittelee monimutkaisuuden, kun sinä säilytät täyden hallinnan. Teknologiamme toimii ympäri vuorokauden, analysoi markkinoita ja toteuttaa strategioita tarkkuudella, joka ylittää inhimilliset kyvyt.",
-    "description2": "Oletpa sitten aloittelija tai kokenut kauppias, Trasvilox mukautuu tarpeisiisi ja kasvaa asiantuntemuksesi mukana."
+    "description1": "Haltrovexin älykäs kaupankäyntialusta käsittelee monimutkaisuuden, kun sinä säilytät täyden hallinnan. Teknologiamme toimii ympäri vuorokauden, analysoi markkinoita ja toteuttaa strategioita tarkkuudella, joka ylittää inhimilliset kyvyt.",
+    "description2": "Oletpa sitten aloittelija tai kokenut kauppias, Haltrovex mukautuu tarpeisiisi ja kasvaa asiantuntemuksesi mukana."
   },
   "reviews": {
     "title": "Todellisia tuloksia todellisiltä kauppiailta",
     "joinText": "Valmis liittymään menestyviä kauppiaita yhteisöömme?",
-    "joinNow": "Liity Trasviloxiin nyt"
+    "joinNow": "Liity Haltrovexiin nyt"
   },
   "countdown": {
     "badge": "Rajoitettu aika tarjous",
@@ -73,7 +73,7 @@
   },
   "certification": {
     "title": "Sertifioitu ja säännelty kaupankäyntialusta",
-    "description": "Trasvilox toimii tiukkojen rahoitussäännösten mukaisesti ja ylläpitää korkeimpia turvallisuusstandardeja. Sijoituksesi on suojattu alan johtavalla salauksella ja vaatimustenmukaisuusprotokollilla.",
+    "description": "Haltrovex toimii tiukkojen rahoitussäännösten mukaisesti ja ylläpitää korkeimpia turvallisuusstandardeja. Sijoituksesi on suojattu alan johtavalla salauksella ja vaatimustenmukaisuusprotokollilla.",
     "viewCertificate": "Näytä sertifikaatti",
     "hideDetails": "Piilota tiedot"
   }
