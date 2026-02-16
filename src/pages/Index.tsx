@@ -9,7 +9,7 @@ import DashboardSection from '@/components/DashboardSection';
 import MasterySection from '@/components/MasterySection';
 import ReviewsSection from '@/components/ReviewsSection';
 import CountdownSection from '@/components/CountdownSection';
-import CertificationSection from '@/components/CertificationSection';
+
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -47,7 +47,7 @@ const Index = () => {
         <MasterySection t={t} />
         <ReviewsSection t={t} onRegisterClick={scrollToTop} />
         <CountdownSection t={t} onRegisterClick={scrollToTop} />
-        <CertificationSection t={t} />
+
         <Footer />
       </div>
     </div>
