@@ -1775,109 +1775,6 @@
         font-weight: 500;
       }
       
-      .certification-section {
-        background: rgba(255, 255, 255, 0.02);
-        backdrop-filter: blur(20px);
-        border-radius: 24px;
-        padding: 3rem;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-        margin: 3rem 0;
-        border: 2px solid rgba(139, 92, 246, 0.1);
-      }
-      
-      .certification-content {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        margin-bottom: 2rem;
-      }
-      
-      .certification-badge {
-        flex-shrink: 0;
-      }
-      
-      .certification-text h3 {
-        font-size: 1.8rem;
-        color: #F1F5F9;
-        margin-bottom: 0.75rem;
-        font-weight: 700;
-      }
-      
-      .certification-text p {
-        color: #CBD5E1;
-        line-height: 1.7;
-        font-size: 1rem;
-      }
-      
-      .btn-view-cert {
-        background: linear-gradient(135deg, #5B8FF9 0%, #EC4899 100%);
-        color: white;
-        border: none;
-        padding: 1rem 2.5rem;
-        border-radius: 12px;
-        font-weight: 600;
-        font-size: 1rem;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        margin: 0 auto;
-        transition: all 0.3s;
-      }
-      
-      .btn-view-cert:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 25px rgba(91, 143, 249, 0.4);
-      }
-      
-      .cert-icon {
-        font-size: 1.2rem;
-      }
-      
-      .certification-details {
-        background: rgba(255, 255, 255, 0.03);
-        border-radius: 16px;
-        padding: 2.5rem;
-        margin: 2rem 0;
-        border: 1px solid rgba(139, 92, 246, 0.2);
-      }
-      
-      .cert-info-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2rem;
-        margin-bottom: 2rem;
-      }
-      
-      .cert-info-item h4 {
-        font-size: 1.1rem;
-        margin-bottom: 0.5rem;
-        color: #F1F5F9;
-      }
-      
-      .cert-info-item p {
-        color: #CBD5E1;
-        font-size: 0.95rem;
-        line-height: 1.6;
-      }
-      
-      .btn-hide-cert {
-        background: transparent;
-        border: 2px solid #5B8FF9;
-        color: #5B8FF9;
-        padding: 0.75rem 2rem;
-        border-radius: 10px;
-        font-weight: 600;
-        cursor: pointer;
-        display: block;
-        margin: 0 auto;
-        transition: all 0.3s;
-      }
-      
-      .btn-hide-cert:hover {
-        background: #5B8FF9;
-        color: white;
-      }
       
       .section {
         padding: 5rem 0;
@@ -2667,18 +2564,6 @@
           display: none;
         }
         
-        .certification-content {
-          flex-direction: column;
-          text-align: center;
-        }
-        
-        .certification-section {
-          padding: 2rem 1.5rem;
-        }
-        
-        .cert-info-grid {
-          grid-template-columns: 1fr;
-        }
         
         .nav-links {
           display: none;
@@ -2922,73 +2807,7 @@
         </div>
       </div>
       
-      <div class="certification-section">
-        <div class="certification-content">
-          <div class="certification-badge">
-            <img src="https://cdn.poehali.dev/files/65a652f97767238a8bec89a8_MicrosoftTeams-image (29)-p-1600.png" alt="ISO 27001 Certified" style="width: 160px; height: 160px; object-fit: contain;">
-          </div>
-          <div class="certification-text">
-            <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;">Security Standards Overview</h3>
-            <p style="font-size: 1rem; line-height: 1.7; margin-bottom: 0.75rem;">Our security framework is aligned with ISO/IEC 27001 principles. We apply standard identity verification and risk controls where required.</p>
-            <p style="font-size: 0.85rem; color: #64748B; line-height: 1.6;">We follow data protection practices and respect user privacy rights. Our approach includes encryption, access controls, and regular security reviews.</p>
-          </div>
-        </div>
-        <button class="btn-view-cert" id="viewCertBtn" onclick="toggleCertification()">
-          <span class="cert-icon">🛡️</span> View Certification
-        </button>
-      </div>
-      
-      <div class="certification-details" id="certificationDetails" style="display: none;">
-        <div style="text-align: center; margin-bottom: 2.5rem;">
-          <img src="https://cdn.poehali.dev/files/изображение_2026-01-09_164239302.png" alt="ISO 27001:2005 Certificate - Haltrovex" style="max-width: 500px; width: 100%; border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.15);">
-        </div>
-        
-        <div style="max-width: 900px; margin: 0 auto;">
-          <div style="background: #E8F4F8; border-left: 4px solid #5B8FF9; padding: 1.5rem 2rem; border-radius: 8px; margin-bottom: 1.5rem;">
-            <h4 style="font-size: 1rem; font-weight: 700; color: #1A1F2E; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
-              <span style="color: #5B8FF9;">✓</span> Data Protection and Privacy Policy
-            </h4>
-            <p style="color: #4A5568; line-height: 1.7; font-size: 0.95rem;">Haltrovex is committed to protecting the privacy and security of all user information in accordance with applicable data protection laws and regulations, including the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA). All personal data collected through our platform is processed lawfully, fairly, and in a transparent manner.</p>
-          </div>
-          
-          <div style="background: #E8F4F8; border-left: 4px solid #5B8FF9; padding: 1.5rem 2rem; border-radius: 8px; margin-bottom: 1.5rem;">
-            <h4 style="font-size: 1rem; font-weight: 700; color: #1A1F2E; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
-              <span style="color: #5B8FF9;">✓</span> Security Standards and Certifications
-            </h4>
-            <p style="color: #4A5568; line-height: 1.7; font-size: 0.95rem;">Our platform maintains compliance with ISO/IEC 27001:2013 Information Security Management System standards. All data transmissions are protected using industry-standard 256-bit Advanced Encryption Standard (AES) encryption protocols.</p>
-          </div>
-          
-          <div style="background: #E8F4F8; border-left: 4px solid #5B8FF9; padding: 1.5rem 2rem; border-radius: 8px; margin-bottom: 1.5rem;">
-            <h4 style="font-size: 1rem; font-weight: 700; color: #1A1F2E; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
-              <span style="color: #5B8FF9;">✓</span> Confidentiality Obligations
-            </h4>
-            <p style="color: #4A5568; line-height: 1.7; font-size: 0.95rem;">All user information is treated as strictly confidential. Access to user data is restricted to authorized personnel only, who are bound by confidentiality agreements.</p>
-          </div>
-          
-          <div style="background: #E8F4F8; border-left: 4px solid #5B8FF9; padding: 1.5rem 2rem; border-radius: 8px; margin-bottom: 1.5rem;">
-            <h4 style="font-size: 1rem; font-weight: 700; color: #1A1F2E; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
-              <span style="color: #5B8FF9;">✓</span> Regulatory Compliance
-            </h4>
-            <p style="color: #4A5568; line-height: 1.7; font-size: 0.95rem;">Haltrovex operates in full compliance with all applicable financial regulations and anti-money laundering (AML) requirements. Our platform adheres to Know Your Customer (KYC) procedures as mandated by regulatory authorities.</p>
-          </div>
-          
-          <div style="background: #E8F4F8; border-left: 4px solid #5B8FF9; padding: 1.5rem 2rem; border-radius: 8px; margin-bottom: 1.5rem;">
-            <h4 style="font-size: 1rem; font-weight: 700; color: #1A1F2E; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
-              <span style="color: #5B8FF9;">✓</span> User Rights
-            </h4>
-            <p style="color: #4A5568; line-height: 1.7; font-size: 0.95rem;">Users retain full rights over their personal data, including the right to access, rectify, erase, restrict processing, and data portability as provided under applicable data protection legislation.</p>
-          </div>
-          
-          <p style="text-align: center; color: #64748B; font-size: 0.85rem; margin-top: 2rem; line-height: 1.6;">
-            This document constitutes a legally binding statement of our commitment to data protection and user privacy. Last updated: December 19, 2025.<br>
-            © 2025 Haltrovex. All rights reserved. Registration No. 2024-FIN-0535.
-          </p>
-        </div>
-        
-        <button class="btn-hide-cert" onclick="toggleCertification()" style="margin-top: 2rem;">
-          Hide Details ▲
-        </button>
-      </div>
+
     </section>
 
     <section class="ai-tools-section">
@@ -3903,18 +3722,7 @@
         return false;
       }
       
-      function toggleCertification() {
-        const details = document.getElementById('certificationDetails');
-        const btn = document.getElementById('viewCertBtn');
-        
-        if (details.style.display === 'none') {
-          details.style.display = 'block';
-          btn.style.display = 'none';
-        } else {
-          details.style.display = 'none';
-          btn.style.display = 'flex';
-        }
-      }
+
       
       updateTimer();
     </script>
