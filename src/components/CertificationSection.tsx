@@ -56,25 +56,12 @@ const CertificationSection = ({ t }: CertificationProps) => {
             </button>
 
             {expanded && (
-              <div className="mt-6 p-6 bg-white/[0.02] rounded-xl border border-white/5 text-left animate-fade-in">
-                <div className="grid sm:grid-cols-2 gap-4 text-sm">
-                  <div>
-                    <span className="text-neutral-500">Platform:</span>
-                    <span className="text-white ml-2">Haltrovex Official</span>
-                  </div>
-                  <div>
-                    <span className="text-neutral-500">Website:</span>
-                    <span className="text-red-400 ml-2">haltrovex-official.org</span>
-                  </div>
-                  <div>
-                    <span className="text-neutral-500">Security:</span>
-                    <span className="text-white ml-2">AES-256 Encryption</span>
-                  </div>
-                  <div>
-                    <span className="text-neutral-500">Uptime:</span>
-                    <span className="text-white ml-2">99.99% SLA</span>
-                  </div>
-                </div>
+              <div className="mt-6 flex justify-center animate-fade-in">
+                <img
+                  src="https://cdn.poehali.dev/projects/dec2b247-100c-4952-8c09-827ed14bdcb9/bucket/22117264-f33d-4e7d-9ced-c0a5ad51c932.png"
+                  alt="ISO 27001:2005 Certificate — Kratuxil"
+                  className="max-w-md w-full rounded-xl border border-white/10 shadow-lg shadow-red-500/5"
+                />
               </div>
             )}
           </div>
