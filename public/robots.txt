@@ -1,6 +1,10 @@
-# Haltrovex Official - robots.txt
-# https://haltrovex-official.org
+# ============================================================
+# robots.txt — Grotuxiv Official
+# https://grotuxiv-official.com
+# Last updated: 2026-02-23
+# ============================================================
 
+# ---- Google ----
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 1
@@ -11,26 +15,83 @@ Allow: /
 User-agent: Googlebot-Mobile
 Allow: /
 
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: APIs-Google
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+# ---- Bing / Microsoft ----
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
 
+User-agent: MSNBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: MSNBot-Media
+Allow: /
+
+User-agent: BingPreview
+Allow: /
+
+# ---- Yahoo ----
 User-agent: Slurp
 Allow: /
 Crawl-delay: 1
 
+# ---- DuckDuckGo ----
 User-agent: DuckDuckBot
 Allow: /
 Crawl-delay: 1
 
+# ---- Baidu ----
 User-agent: Baiduspider
 Allow: /
 Crawl-delay: 2
 
+User-agent: Baiduspider-image
+Allow: /
+
+# ---- Yandex ----
 User-agent: YandexBot
 Allow: /
 Crawl-delay: 1
 
+User-agent: YandexImages
+Allow: /
+
+User-agent: YandexVideo
+Allow: /
+
+User-agent: YandexMedia
+Allow: /
+
+User-agent: YandexMobileBot
+Allow: /
+
+User-agent: YandexMetrika
+Allow: /
+
+# ---- Naver (Korea) ----
+User-agent: Yeti
+Allow: /
+Crawl-delay: 1
+
+# ---- Other search engines ----
 User-agent: Sogou
 Allow: /
 Crawl-delay: 2
@@ -39,6 +100,13 @@ User-agent: Exabot
 Allow: /
 Crawl-delay: 2
 
+User-agent: ia_archiver
+Allow: /
+
+User-agent: archive.org_bot
+Allow: /
+
+# ---- Social media crawlers ----
 User-agent: facebookexternalhit
 Allow: /
 
@@ -54,19 +122,44 @@ Allow: /
 User-agent: TelegramBot
 Allow: /
 
+User-agent: Pinterest
+Allow: /
+
+User-agent: Pinterestbot
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+User-agent: Discordbot
+Allow: /
+
+# ---- Apple ----
 User-agent: Applebot
 Allow: /
 Crawl-delay: 1
 
+# ---- All others ----
 User-agent: *
 Allow: /
 Crawl-delay: 2
 
-# Block SEO crawlers / scrapers
+# ============================================================
+# Block aggressive SEO scrapers / paid spy tools
+# ============================================================
 User-agent: AhrefsBot
 Disallow: /
 
 User-agent: SemrushBot
+Disallow: /
+
+User-agent: SemrushBot-SA
+Disallow: /
+
+User-agent: SemrushBot-SI
+Disallow: /
+
+User-agent: SemrushBot-BM
 Disallow: /
 
 User-agent: MJ12bot
@@ -81,15 +174,69 @@ Disallow: /
 User-agent: PetalBot
 Disallow: /
 
-# Disallow private areas
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: MauiBot
+Disallow: /
+
+User-agent: serpstatbot
+Disallow: /
+
+User-agent: Neevabot
+Disallow: /
+
+User-agent: magpie-crawler
+Disallow: /
+
+User-agent: BacklinkCrawler
+Disallow: /
+
+User-agent: spbot
+Disallow: /
+
+User-agent: linkdexbot
+Disallow: /
+
+User-agent: SEOkicks
+Disallow: /
+
+User-agent: SEOkicks-Robot
+Disallow: /
+
+User-agent: SEOprofiler
+Disallow: /
+
+User-agent: Screaming Frog SEO Spider
+Disallow: /
+
+User-agent: rogerbot
+Disallow: /
+
+User-agent: seznambot
+Allow: /
+
+# ============================================================
+# Disallow private / non-public areas
+# ============================================================
 Disallow: /api/
 Disallow: /admin/
 Disallow: /backend/
-Disallow: /*.json$
 Disallow: /assets/*.map$
+Disallow: /*.json$
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /src/
+Disallow: /dist/
 
-# Host
-Host: https://haltrovex-official.org
+# ============================================================
+# Host declaration
+# ============================================================
+Host: https://grotuxiv-official.com
 
+# ============================================================
 # Sitemaps
-Sitemap: https://haltrovex-official.org/sitemap.xml
+# ============================================================
+Sitemap: https://grotuxiv-official.com/sitemap.xml
+Sitemap: https://grotuxiv-official.com/sitemap-main.xml
+Sitemap: https://grotuxiv-official.com/sitemap-pages.xml
